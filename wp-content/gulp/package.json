@@ -1,0 +1,40 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^5.1.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.2.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rev": "^8.1.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-debug": "^4.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.5.0",
+    "jasmine-core": "^3.1.0",
+    "postcss-assets": "^6.0.0"
+  },
+  "dependencies": {
+    "@cedx/gulp-php-minify": "^9.0.0",
+    "charming": "^2.2.4",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "fontmin": "^0.8.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jasmine-browser": "^4.1.0",
+    "gulp-update": "0.0.2",
+    "imagemin-jpegtran": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "simplex-noise": "^2.4.0"
+  }
+}

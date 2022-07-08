@@ -1,0 +1,11 @@
+/wp-content/upgrades
+/sitemap.*
+/wp-config.php
+/node_modules
+/.idea/
+*.DS_Store
+*Thumbs.db
+*.sass-cache*
+*~imageoptim*
+/wp-content/gulp/node_modules
+wp-content/cache

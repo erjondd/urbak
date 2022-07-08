@@ -1,0 +1,685 @@
+.container {
+    display: block;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+}
+@media screen and (min-width: 1920px) {
+    .acceuil-center-text {
+        padding-bottom: 100px;
+    }
+    .form-inputs input,
+    .form-inputs select {
+        height: 50px;
+        font-size: 20px;
+    }
+    .form-textarea textarea {
+        font-size: 20px;
+    }
+    .partner-top {
+        padding-bottom: 90px;
+        padding-top: 85px;
+    }
+}
+@media screen and (max-width: 768px) {
+    // .main .lights-and-tech .apple-watch {
+    //     position: absolute;
+    //     left: -160px;
+    //     top: 40%;
+    //     transform: translate(0,-50%);
+    //     z-index: -1;
+    //     width: 100%;
+    // }
+    // .main .lights-and-tech .iphone {
+    //     position: absolute;
+    //     right: -160px;
+    //     top: 60%;
+    //     transform: translate(0,-50%);
+    //     z-index: -1;
+    //     width: 100%;
+    // }
+    .n-p-f-bottom-slide ul li {
+        align-items: center;
+    }
+    .fsmenu-list ul li {
+        a::before,
+        a::after {
+            display: none;
+        }
+    }
+    .onmenu-socials {
+        display: flex;
+    }
+    .onemenu-insta {
+        padding-right: 20px;
+    }
+    .onmenu-languages {
+        align-self: flex-end;
+    }
+    .footer-onmenu {
+        &.is-open {
+            width: calc(100% - 40px);
+            left: 0;
+            bottom: 0;
+            height: calc(35vh - 50px);
+            background-color: #fff;
+            display: flex;
+            z-index: 222;
+            padding: 25px 20px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .fs-menu.is-open {
+        flex-direction: column;
+    }
+    .onmenu-logo {
+        img {
+            height: 50px;
+        }
+    }
+    .onmenu-infos,
+    .onmenu-languages {
+        font-family: "satoshi";
+        font-size: 15px;
+    }
+    .onmenu-first-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .onmenu-info {
+        padding-top: 8px;
+    }
+    .onmenu-second-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .fsmenu-list-wrapper {
+        padding-top: 30px;
+    }
+    section.ecobike .container {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .ecobike-content .ecobike-top {
+        padding-bottom: 30px;
+    }
+    html body .header {
+        margin-top: 40px;
+    }
+    .header-wrapper .header-menu {
+        display: none;
+    }
+    section.main .acceuil-center-text {
+        font-size: 60px;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+    section.main .big-text {
+        font-size: 20px;
+    }
+    .main .small-text {
+        font-size: 15px;
+    }
+    .scroll-down {
+        display: none;
+    }
+    .swiper-top .swiper-section {
+        font-size: 16px;
+    }
+    .swiper-top .swiper-page {
+        font-size: 25px;
+    }
+    .container .swiper-big-text {
+        font-size: 65px;
+    }
+    .swiper-container-home .swiper-slide .swiper-slider-pic {
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    .about-us-image {
+        position: relative;
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    section.nos-points-forts {
+        height: 100%;
+    }
+    .nos-points-forts-image {
+        position: relative;
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .micro-s .container .micro-s-image {
+        position: relative;
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    section.micro-s {
+        height: 100%;
+    }
+    section.ecobike {
+        height: 100%;
+    }
+    .ecobike-image {
+        position: relative;
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .micro-s-content {
+        height: calc(50% - 50px) !important;
+    }
+    .ecobike-top {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .ecobike-mid {
+        padding-left: 0px;
+    }
+    .about-us .about-us-content,
+    .micro-s-content,
+    .ecobike-content {
+        color: #000;
+        padding-top: 50px !important;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .micro-s-top {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+    .micro-s-mid {
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .micro-s-content {
+        min-height: 550px;
+    }
+    .micro-s-bot {
+        padding-bottom: 40px;
+        display: flex;
+        width: 100%;
+        a {
+            font-family: satoshi;
+            font-size: 20px;
+            background: #000;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .nos-points-forts-content {
+        color: white;
+        padding-top: 50px !important;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .about-us-content-top .about-us-pagename,
+    .nos-points-forts-top .nos-points-forts-pagename {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .ecobike-top .ecobike-pagename {
+        font-size: 16px;
+    }
+
+    .ecobike-bot {
+        padding-bottom: 40px;
+        padding-left: 0px;
+        display: flex;
+
+        a {
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            text-align: center;
+        }
+    }
+    .ecobike-top .ecobike-section {
+        font-size: 25px;
+    }
+    .ecobike-content .ecobike-mid {
+        font-size: 15px;
+        padding-bottom: 70px;
+    }
+    .form-input {
+        padding-bottom: 30px;
+    }
+    .about-us-content-top .about-us-bold,
+    .nos-points-forts-top .nos-points-forts-bold {
+        font-size: 25px;
+        width: 100%;
+    }
+    .about-us-content .about-us-content-bottom {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    .about-us-content-top {
+        padding-bottom: 30px;
+    }
+    .nos-points-forts-top {
+        padding-top: 0px;
+    }
+    .nos-points-forts .n-p-f-bottom-slide ul li {
+        font-size: 20px;
+    }
+    .rs-mid {
+        display: none;
+    }
+    .n-p-f-bottom-slide ul li {
+        display: flex;
+        line-height: 1;
+    }
+    .n-p-f-bottom-slide {
+        padding-top: 75px;
+        padding-bottom: 35px;
+    }
+    .nos-points-forts-bottom {
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+    .nos-points-forts-bottom .n-p-f-bottom-text {
+        font-size: 15px;
+    }
+    .absolute-rectangle {
+        display: none;
+    }
+    .s-reconditiones-top .s-r-top-pagename {
+        font-size: 16px;
+    }
+    .s-reconditiones-top .s-r-top-section {
+        font-size: 25px;
+    }
+    .s-reconditiones-content .s-reconditiones-mid {
+        font-size: 15px;
+    }
+    .s-reconditiones-content {
+        width: 100%;
+    }
+    .s-reconditiones-top {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .s-reconditiones-bot {
+        display: flex;
+        a {
+            font-family: satoshi;
+            font-size: 20px;
+            background: 0 0;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #fff;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            width: 100%;
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    section.s-reconditiones:before {
+        background-position-x: -395px;
+        background-size: cover;
+    }
+    .micro-s-top .micro-s-pagename {
+        font-size: 16px;
+    }
+    .micro-s-top .micro-s-section {
+        font-size: 25px;
+    }
+    .micro-s-content .micro-s-mid {
+        font-size: 20px;
+    }
+    .partner-top .partner-top-pagename {
+        font-size: 16px;
+    }
+    .partner-top .partner-section {
+        font-size: 25px;
+    }
+    .partner-top-pagename {
+        padding-bottom: 0px;
+    }
+    .partner-top {
+        padding-top: 50px;
+        padding-bottom: 65px;
+    }
+    .partner-inputs-wrapper {
+        flex-direction: column;
+    }
+    .form-input-row {
+        flex-direction: column;
+    }
+    .form-input-half {
+        padding-right: 0px;
+    }
+    .form-inputs {
+        width: 100%;
+    }
+    section.partner {
+        height: 100%;
+    }
+    .form-input select {
+        height: 50px !important;
+        margin-top: 50px;
+    }
+    .partner-footer {
+        display: flex;
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        padding-bottom: 50px;
+    }
+    section.partner:before {
+        background-position-x: 1350px;
+    }
+    .assurance-top .assurance-top-pagename {
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    .assurance-top .assurance-section {
+        font-size: 25px;
+    }
+    .assurance-mid .a-m-text {
+        font-size: 40px;
+    }
+    .assurance-top {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .a-m-text {
+        padding-bottom: 35px;
+    }
+    .assurance-bot {
+        padding-bottom: 50px;
+        width: 100%;
+        display: flex;
+        a {
+            font-family: satoshi;
+            font-size: 20px;
+            background: 0 0;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    section.assurance:before {
+        background-position-x: -600px;
+    }
+    section.about-us {
+        height: 100%;
+    }
+    .fsmenu-list-wrapper {
+        flex-direction: column-reverse;
+        flex: 0 0 calc(70% - 30px);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fsmenu-infos {
+        display: none;
+    }
+    .main .lights-and-tech .apple-watch {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-40%, -80%);
+        z-index: -1;
+        width: 120%;
+    }
+    .main .lights-and-tech .iphone {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(40%, 0%);
+        z-index: -1;
+    }
+    .main::after {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.85), transparent),
+            linear-gradient(to top, rgba(0, 0, 0, 1.05), transparent);
+    }
+    html {
+        overflow-x: hidden;
+        body {
+            overflow-x: hidden;
+        }
+    }
+    .footer-all-content {
+        flex-direction: column;
+    }
+    .footer-leftside {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    .ls-firstcol,
+    .ls-secondcol,
+    .ls-thirdcol {
+        padding: 0px;
+    }
+    .footer-bot {
+        display: flex;
+        padding-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .footer-all-content .rs-mid-mobile {
+        display: inline-grid;
+        padding-top: 40px;
+        
+        img {
+            padding-bottom: 25px;
+        }
+    }
+    .f-b-r {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 50px;
+        a {
+            padding-left: 0px !important;
+        }
+    }
+    .ls-firstcol-1,
+    .ls-fourthcol-1,
+    .ls-secondcol-1,
+    .ls-thirdcol-1 {
+        padding-bottom: 30px;
+        padding-top: 45px;
+    }
+    .ls-fourthcol-2 span {
+        padding-right: 30px;
+    }
+    .rs-top {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    //For Laptops
+    .container {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    //For Large Laptops
+    .container {
+        max-width: 892px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .form-textarea {
+        padding-bottom: 35px;
+        padding-top: 35px;
+    }
+    .partner-top {
+        padding-bottom: 60px;
+        padding-top: 55px;
+    }
+    .ecobike-bot a,
+    .micro-s-bot a {
+        padding: 10px 50px;
+        text-align: center;
+    }
+    .partner-inputsrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    //For Big TV's (HD Screens)
+    .container {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1580px) {
+    //For Big TV's (HD Screens)
+    .container {
+        max-width: 1480px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    //For Big TV's (HD Screens)
+    .acceuil-center-text {
+        font-size: 150px;
+    }
+    .about-us-content-bottom,
+    .nos-points-forts-bottom,
+    .micro-s-mid {
+        padding-right: 100px;
+    }
+    .form-inputs {
+        padding-right: 40px;
+    }
+    .form-inputs {
+        flex: 0 0 calc(50% - 40px);
+    }
+
+    .a-m-text {
+        font-size: 90px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    //For Projectors or Higher Resolution Screens (Full HD)
+    .container {
+        max-width: 1720px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 3840px) {
+    //For 4K Displays (Ultra HD)
+    .container {
+        max-width: 3640px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1580px) {
+    .fsmenu-infos {
+        flex: 0 0 190px;
+        padding: 150px 40px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .a-m-text {
+        font-size: 70px;
+    }
+    .micro-s-top {
+        padding-right: 60px !important;
+    }
+    .header-menu {
+        display: none !important;
+    }
+    .acceuil-center-text {
+        font-size: 115px;
+    }
+    .main .big-text {
+        font-size: 26px;
+    }
+    .small-text,
+    .n-p-f-bottom-text,
+    .micro-s-bot a,
+    .s-reconditiones-bot a,
+    .ecobike-mid,
+    .ecobike-bot a,
+    .partner-content,
+    .assurance-bot a {
+        font-size: 18px;
+    }
+    .swiper-section,
+    .about-us-pagename,
+    .nos-points-forts-pagename,
+    .s-r-top-pagename,
+    .micro-s-pagename,
+    .ecobike-pagename,
+    .partner-top-pagename,
+    .assurance-top-pagename {
+        font-size: 22px;
+    }
+    .swiper-page,
+    .about-us-bold,
+    .nos-points-forts-bold,
+    .s-r-top-section,
+    .micro-s-section,
+    .ecobike-section,
+    .partner-section,
+    .assurance-section {
+        font-size: 40px;
+    }
+    .n-p-f-bottom-slide ul li,
+    .micro-s-mid {
+        font-size: 25px;
+    }
+    .about-us-content-bottom,
+    .s-reconditiones-mid {
+        font-size: 18px;
+    }
+    .swiper-big-text {
+        font-size: 135px;
+    }
+    .about-us-content-bottom,
+    .micro-s-mid,
+    .nos-points-forts-bottom {
+        padding-right: 60px;
+    }
+}

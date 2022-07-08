@@ -1,0 +1,219 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: "mont-extralight";
+
+    .header-logo {
+        padding-right: 15px;
+    }
+
+    .header-menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: center;
+        ul {
+            display: block;
+            li {
+                display: inline-block;
+                margin: 0 15px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .header-icons {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        align-items: center;
+        .search-icon {
+            padding-right: 20px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .cart-icon {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+.fs-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    display: none;
+    &.is-open {
+        display: flex;
+    }
+}
+
+.fsmenu-list-wrapper {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 80px;
+    background-color: #000;
+}
+.fsmenu-infos {
+    flex: 0 0 270px;
+    font-family: satoshi;
+    font-size: 25px;
+    padding: 150px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fsmenu-list {
+    flex-grow: 1;
+    ul {
+        li {
+            list-style: none;
+
+            &.reparation-menulink {
+                a {
+                    &:before {
+                        background-image: url(../images/reparation-menu.jpg);
+                    }
+                }
+            }
+            &.acheter-menulink {
+                a {
+                    &:before {
+                        background-image: url(../images/acheter-menu.jpg);
+                    }
+                }
+            }
+            &.vendre-menulink {
+                a {
+                    &:before {
+                        left: calc(100% + 250px);
+                        background-image: url(../images/vendre-menu.jpg);
+                    }
+                }
+            }
+            &.assurance-menulink {
+                a {
+                    &:before {
+                        background-image: url(../images/assurances-menu.jpg);
+                    }
+                }
+            }
+            &.accessoires-menulink {
+                a {
+                    &:before {
+                        background-image: url(../images/accessoires-menu.jpg);
+                    }
+                }
+            }
+            a {
+                position: relative;
+                color: white;
+                text-decoration: none;
+                font-size: calc(3vh + 3vw);
+                font-family: mont-heavy;
+                line-height: 1.3;
+                &:hover {
+                    color: rgb(58, 58, 58);
+                    &:after,
+                    &:before {
+                        content: "";
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    left: calc(100% + 150px);
+                    width: 36vh;
+                    height: 36vh;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &:after {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    left: 100%;
+                    background-image: url(../../../themes/urbak/images/arrow-menu.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    height: 100%;
+                    margin-left: 20px;
+                }
+                .main-menu-text {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.fsmenu-close {
+    flex: 0 0 55px;
+    span {
+        color: #fff;
+        font-family: satoshi;
+        font-size: 20px;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+        &:hover {
+            border-width: 2px;
+        }
+    }
+}
+.fsmenu-languages {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.fsmenu-logo {
+    padding-top: 35px;
+}
+.fsmenu-telephone {
+    padding-top: 25px;
+}
+.fsmenu-email {
+    padding-top: 25px;
+}
+.fsmenu-address {
+    padding-top: 25px;
+}
+.fsmenu-social {
+    display: flex;
+    padding-top: 25px;
+    .fsmenu-insta {
+        margin-right: 25px;
+        img {
+            height: 30px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .fsmenu-fb {
+        img {
+            height: 25px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
