@@ -31,6 +31,7 @@
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "fontmin": "^0.8.1",
     "gulp-htmlmin": "^4.0.0",
+    "gulp-install": "^1.1.0",
     "gulp-jasmine-browser": "^4.1.0",
     "gulp-update": "0.0.2",
     "imagemin-jpegtran": "^7.0.0",

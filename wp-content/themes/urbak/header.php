@@ -26,7 +26,7 @@
 
 </head>
 
-<body  <?php body_class(); ?>>
+<body id="body" <?php body_class(); ?>>
     <header class="header <?= $header_color_class ?>">
    
         <div class="container">

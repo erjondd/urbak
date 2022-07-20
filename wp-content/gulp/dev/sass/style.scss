@@ -14,10 +14,9 @@
 @import "vendre.scss";
 @import "contact.scss";
 
-.black-menu{
+.black-menu {
   height: 180px;
-  background-color:black;
- 
+  background-color: black;
 }
 html,
 body {
@@ -29,12 +28,18 @@ body {
 body {
   font-family: "Open Sans", sans-serif;
   // background-color: black;
+  &.menu-is-open {
+    overflow: hidden;
+  }
 }
 .footer-onmenu {
   display: none;
 }
 img {
   max-width: 100%;
+}
+a:hover {
+  text-decoration-line: none;
 }
 
 ul {
@@ -60,8 +65,7 @@ ul {
   cursor: pointer;
   font-size: 20px;
   &:hover {
-    font-weight: bold;
-    border-width: 2px;
+    opacity: 0.6;
   }
 }
 .main {
@@ -162,6 +166,9 @@ ul {
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 2;
+  &:hover {
+    opacity: 0.6;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -185,6 +192,16 @@ section.s-reconditiones {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0000004a;
+    z-index: -1;
+  }
   &:before {
     content: "";
     background-image: url(../../../themes/urbak/images/s-r-image.jpg);
@@ -239,7 +256,7 @@ section.s-reconditiones {
     padding: 10px 100px;
     cursor: pointer;
     border: 1px solid white;
-    display:inline-block;
+    display: inline-block;
     &:hover {
       opacity: 0.5;
     }
@@ -362,10 +379,10 @@ section.nos-points-forts {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: #000;
 }
 .nos-points-forts-content {
   width: 50%;
-  background-color: #000;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -376,8 +393,8 @@ section.nos-points-forts {
   font-size: 25px;
   padding-bottom: 10px;
 }
-.footer-leftside  .rs-mid-mobile{
-  display:none;
+.footer-leftside .rs-mid-mobile {
+  display: none;
 }
 .n-p-f-bottom-slide {
   ul {
@@ -455,13 +472,9 @@ section.nos-points-forts {
   transform: rotate(105deg);
   img {
     position: absolute;
-    top: -108px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-  }
-  &:hover{
-    transform:rotate(360deg);
-    transition:2s;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    height: 100px;
   }
 }
 section.micro-s {
@@ -527,7 +540,7 @@ section.micro-s {
     color: white;
     padding: 10px 100px;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
   }
 }
 section.ecobike {
@@ -591,7 +604,7 @@ section.ecobike {
     color: white;
     padding: 10px 100px;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
   }
 }
 .ecobike-bot {
@@ -780,7 +793,7 @@ footer {
           // opacity: 0;
           animation-name: expandimage;
           animation-duration: 1s;
-          animation-delay: 0.1s;
+          animation-delay: 0.5s;
           animation-fill-mode: forwards;
         }
       }
@@ -792,12 +805,8 @@ footer {
 }
 @keyframes expandimage {
   0% {
-    transform: translate(-50%, -200%);
-    width: 0px;
-  }
-  80% {
     transform: translate(-50%, -50%);
-    width: 36px;
+    width: 0px;
   }
   100% {
     transform: translate(-50%, -50%);
@@ -904,8 +913,12 @@ footer {
   }
 }
 .form-inputs .form-input-row select {
+  padding: 5px 10px;
   border: 1px solid white;
   border-radius: 10px;
+  option {
+    color: #333;
+  }
 }
 .partner-content {
   font-family: satoshi;
@@ -928,7 +941,7 @@ footer {
     padding-bottom: 20px;
   }
 }
-.rs-top{
-  margin-bottom:100px;
+.rs-top {
+  margin-bottom: 100px;
 }
 @import "_responsive.scss";

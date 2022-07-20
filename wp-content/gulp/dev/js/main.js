@@ -1,47 +1,20 @@
 jQuery(document).ready(function () {
-  console.log("ready");
-
-  // Menu list on hover add color
-  jQuery(document).on(
-    {
-      mouseenter: function () {
-        console.log(this);
-        var _this = jQuery(this);
-        console.log(_this);
-        //stuff to do on mouse enterurba
-      },
-      mouseleave: function () {
-        //stuff to do on mouse leave
-      },
-    },
-    ".fsmenu-list ul li"
-  ); //pass the element as an argument to .on
-
-  // jQuery(".fsmenu-list ul li").hover(
-  //   () => {
-  //     console.log(this)
-  //     var _this = jQuery(this);
-  //     console.log(_this)
-  //   },
-  //   () => {}
-  // );
 
   jQuery(".extra-menu").on("click", function () {
-    const _elm = document.getElementById("fsmenu");
+    const _fsmenu = document.getElementById("fsmenu");
+    const _body = document.getElementById("body");
+    const _onMenu = document.getElementById("onmenu");
 
-    console.log(_elm);
-    if (_elm !== null) _elm.classList.add("is-open");
+    _body.classList.add("menu-is-open")
+    if (_onMenu !== null) _onMenu.classList.add("is-open");
+    if (_fsmenu !== null) _fsmenu.classList.add("is-open");
   });
+
   jQuery("#fsmenuclose").on("click", function () {
     const _elm = document.getElementById("fsmenu");
-
+    const _body = document.getElementById("body");
+    _body.classList.remove("menu-is-open")
     if (_elm !== null) _elm.classList.remove("is-open");
-  });
-
-  jQuery(".extra-menu").on("click", function () {
-    const _elm = document.getElementById("onmenu");
-
-    if (_elm !== null) _elm.classList.add("is-open");
   });
 
   var htmlHeight = jQuery("html").innerHeight();
@@ -60,7 +33,7 @@ jQuery(document).ready(function () {
   });
 
 
-  if($('body').hasClass('page-id-185')){
+  if ($('body').hasClass('page-id-185')) {
     $('header').addClass('black-menu');
   }
 
@@ -79,62 +52,8 @@ jQuery(document).ready(function () {
 
   homepageSwiper.on("slideChange", function () {
     var index = homepageSwiper.activeIndex;
-    console.log(index);
-    console.log(jQuery(".swiper-container-home .swiper-slide").eq(index));
   });
-  // //About Us Slider
-  // var aboutSwiper = new Swiper('.swiper-container-about', {
-  //     slidesPerView: 1,
-  //     navigation: {
-  //         nextEl: '.swiper-button-next',
-  //         prevEl: '.swiper-button-prev',
-  //     },
-  //     on: {
-  //         slideChangeTransitionEnd: function (i, elm) {
-  //             var allModules = jQuery('.module');
-  //             // console.log(i, elm);
-  //             allModules.each(function (i, elm) {
-  //                 if (jQuery(elm).visible(true)) {
-  //                     jQuery(elm).addClass('module-ready');
-  //                 }
-  //             });
-  //         }
-  //     }
 
-  // });
-
-  // //Team Slider
-  // var teamSwiper = new Swiper('.swiper-container-team', {
-  //     init: true,
-  //     effect: 'fade',
-  //     grabCursor: true,
-  //     navigation: {
-  //         nextEl: '.swiper-button-next',
-  //         prevEl: '.swiper-button-prev',
-  //     },
-  // });
-
-  // //About Us Project Counter
-
-  // var spanCounter = jQuery('.section-projects');
-  // jQuery(document).on('scroll', function () {
-  //     if (jQuery(spanCounter).visible(true) && !spanCounter.hasClass('start')) {
-  //         spanCounter.addClass('start');
-
-  //         jQuery('.count').each(function () {
-  //             jQuery(this).prop('Counter', 0).animate({
-  //                 Counter: jQuery(this).text()
-  //             }, {
-  //                 duration: 5000,
-  //                 easing: 'swing',
-  //                 step: function (now) {
-  //                     jQuery(this).text(Math.ceil(now));
-  //                 }
-  //             });
-  //         });
-  //     }
-
-  // });
 
   //Module Add On First Window
   var allModules = jQuery(".module");
@@ -154,278 +73,115 @@ jQuery(document).ready(function () {
       }
     });
 
-    // console.log(scroll);
   });
 });
-
-
-
-
-
-
 
 jQuery(".scroll-down").click(function () {
   jQuery("html, body").animate(
     {
       scrollTop: jQuery("#home-slider").offset().top,
-      
+
     },
-    2000
+    1000
   );
 });
 jQuery("#scroll-down-assurance").click(function () {
-console.log("asdasds")
   jQuery("html, body").animate(
-   
     {
       scrollTop: jQuery("#assurance-form").offset().top,
-      
-      
     },
-    2000
+    1000
   );
 });
 
 jQuery("#scroll-down-repetation").click(function () {
-  console.log("asdasds")
-    jQuery("html, body").animate(
-     
-      {
-        scrollTop: jQuery("#repetation-phone").offset().top,
-        
-        
-      },
-      2000
-    );
-  });
+  jQuery("html, body").animate(
+    {
+      scrollTop: jQuery("#repetation-phone").offset().top,
 
-jQuery(document).on({
-  mouseenter: function () {
-    //stuff to do on mouse enter
-  },
-  mouseleave: function () {
-    //stuff to do on mouse leave
-  },
+    },
+    1000
+  );
 });
 
 jQuery(document).ready(function () {
   jQuery(".color-FDCE2C a").mouseenter(function () {
-    jQuery(".color-FDCE2C a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#FDCE2C");
     jQuery(".color-FDCE2C a").css("color", "white");
   });
   jQuery(".color-FDCE2C a").mouseleave(function () {
-    jQuery(".color-FDCE2C a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 
 jQuery(document).ready(function () {
   jQuery(".color-2562EF  a").mouseenter(function () {
-    jQuery(".color-2562EF  a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#2562EF ");
     jQuery(".color-2562EF a").css("color", "white");
   });
   jQuery(".color-2562EF  a").mouseleave(function () {
-    jQuery(".color-2562EF  a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 
 jQuery(document).ready(function () {
   jQuery(".color-FF6100 a").mouseenter(function () {
-    jQuery(".color-FF6100 a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#FF6100");
     jQuery(".color-FF6100 a").css("color", "white");
   });
   jQuery(".color-FF6100 a").mouseleave(function () {
-    jQuery(".color-FF6100 a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 
 jQuery(document).ready(function () {
   jQuery(".color-D13F7E a").mouseenter(function () {
-    jQuery(".color-D13F7E a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#D13F7E");
     jQuery(".color-D13F7E a").css("color", "white");
   });
   jQuery(".color-D13F7E a").mouseleave(function () {
-    jQuery(".color-D13F7E a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 
 jQuery(document).ready(function () {
   jQuery(".color-000000 a").mouseenter(function () {
-    jQuery(".color-000000 a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
     jQuery(".color-000000 a").css("color", "white");
   });
   jQuery(".color-000000 a").mouseleave(function () {
-    jQuery(".color-000000 a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 jQuery(document).ready(function () {
   jQuery(".contact-menulink a").mouseenter(function () {
-    jQuery(".contact-menulink a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
     jQuery(".contact-menulink a").css("color", "white");
   });
   jQuery(".contact-menulink a").mouseleave(function () {
-    jQuery(".contact-menulink a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
 });
 jQuery(document).ready(function () {
   jQuery(".acceuil-menulink a").mouseenter(function () {
-    jQuery(".acceuil-menulink a").css("text-decoration", "underline");
     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
     jQuery(".acceuil-menulink a").css("color", "white");
   });
   jQuery(".acceuil-menulink a").mouseleave(function () {
-    jQuery(".acceuil-menulink a").css("text-decoration", "none");
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
   });
-  
+
 });
 
 jQuery(document).ready(function () {
-
- 
-    console.log(jQuery(".reperation-phone-pieces-picture span"))
-
-
-  jQuery(".reperation-phone-pieces-list ul li").click(function(){
+  jQuery(".reperation-phone-pieces-list ul li").click(function () {
     const id = this.id;
     const _class = "." + id;
     jQuery(".reperation-phone-pieces-list ul li").removeClass("active");
     jQuery(".reperation-phone-pieces-picture span").removeClass("active");
-    jQuery( _class).addClass("active");
+    jQuery(_class).addClass("active");
     jQuery(this).addClass("active");
-   
-  
+
+
   })
 });
-
-// jQuery(document).ready(function () {
-//   jQuery("#circle-1").mouseenter(function () {
-//     
-//   });
-//   jQuery("#circle-1").mouseleave(function () {
-//     jQuery(".circle-1").css("background-color", "black");
- 
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-2").mouseenter(function () {
-//     jQuery(".circle-2").css("background-color", "#FDCE2C");
-   
-//     jQuery(".circle-2").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-2").mouseleave(function () {
-//     jQuery(".circle-2").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-3").mouseenter(function () {
-//     jQuery(".circle-3").css("background-color", "#FDCE2C");
-
-//     jQuery(".circle-3").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-3").mouseleave(function () {
-//     jQuery(".circle-3").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-4").mouseenter(function () {
-//     jQuery(".circle-4").css("background-color", "#FDCE2C");
-   
-//     jQuery(".circle-4").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-4").mouseleave(function () {
-//     jQuery(".circle-4").css("background-color", "black");
-   
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-5").mouseenter(function () {
-//     jQuery(".circle-5").css("background-color", "#FDCE2C");
-   
-//     jQuery(".circle-5").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-5").mouseleave(function () {
-//     jQuery(".circle-5").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-6").mouseenter(function () {
-//     jQuery(".circle-6").css("background-color", "#FDCE2C");
-   
-//     jQuery(".circle-6").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-6").mouseleave(function () {
-//     jQuery(".circle-6").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-7").mouseenter(function () {
-//     jQuery(".circle-7").css("background-color", "#FDCE2C");
-   
-//     jQuery(".circle-7").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-7").mouseleave(function () {
-//     jQuery(".circle-7").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-8").mouseenter(function () {
-//     jQuery(".circle-8").css("background-color", "#FDCE2C");
-  
-
-//     jQuery(".circle-8").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-8").mouseleave(function () {
-//     jQuery(".circle-8").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-9").mouseenter(function () {
-//     jQuery(".circle-9").css("background-color", "#FDCE2C");
-
-//     jQuery(".circle-9").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-9").mouseleave(function () {
-//     jQuery(".circle-9").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-10").mouseenter(function () {
-//     jQuery(".circle-10").css("background-color", "#FDCE2C");
-
-//     jQuery(".circle-10").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-10").mouseleave(function () {
-//     jQuery(".circle-10").css("background-color", "black");
-
-//   });
-// });
-// jQuery(document).ready(function () {
-//   jQuery("#circle-11").mouseenter(function () {
-//     jQuery(".circle-11").css("background-color", "#FDCE2C");
-
-//     jQuery(".circle-11").css("transition", "0.5s");
-//   });
-//   jQuery("#circle-11").mouseleave(function () {
-//     jQuery(".circle-11").css("background-color", "black");
-
-//   });
-// });
