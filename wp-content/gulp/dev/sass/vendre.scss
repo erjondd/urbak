@@ -1,0 +1,55 @@
+section.vendre{
+    height:100vh;
+    position: relative;
+    overflow:hidden;
+    .container{
+        height:100%;
+    }
+    &:before{
+        content: "";
+        background-color: #FF6100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(0deg,rgbA(255 255 255/45%),rgbA(255 97 0/14%));
+    }
+  
+    .lights-and-tech {
+        .apple-watch {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: -1;
+        }
+        .iphone {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: -1;
+        }
+    }
+    .vendre-center-text {
+        font-family: mont-heavy;
+        font-size: 200px;
+        color: #fff;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,258 @@
+section.reperation-main {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #fdce2c;
+        opacity: 0.8;
+    }
+    &::before {
+        content: "";
+        background-image: url(../../../themes/urbak/images/reperation-main.jpg);
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        left: 0;
+        background-size: cover;
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .reperation-tittle {
+        display: flex;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 200px;
+        color: white;
+        font-family: mont-heavy;
+    }
+}
+section.reperation-phone {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    .reperation-phone-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 90px;
+    }
+    .reperation-phone-pieces {
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 70%;
+    }
+    .reperation-phone-pieces-picture {
+        font-family: satoshi;
+        font-size: 20px;
+        position: relative;
+        ul {
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+        span {
+            background-color: #000;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            position: absolute;
+            &.active {
+                background-color: rgb(253, 206, 44);
+            }
+        }
+        .circle-1 {
+            top: 50%;
+            right: 32%;
+        }
+        .circle-2 {
+            top: 44%;
+            right: 24%;
+        }
+        .circle-3 {
+            bottom: 8%;
+            left: 57%;
+        }
+        .circle-4 {
+            left: 12%;
+            bottom: 26%;
+        }
+        .circle-5 {
+            left: 10%;
+            top: 50%;
+        }
+        .circle-6 {
+            left: 18%;
+            top: 31%;
+        }
+        .circle-7 {
+            left: 40%;
+            bottom: 27%;
+        }
+        .circle-8 {
+            right: 50%;
+            top: 30%;
+        }
+        .circle-9 {
+            top: 47%;
+            left: 22%;
+        }
+        .circle-10 {
+            top: 20%;
+            left: 14%;
+        }
+        .circle-11 {
+            top: 13%;
+            left: 30%;
+        }
+    }
+    .reperation-phone-infos {
+        padding-right: 50px;
+    }
+    .reperation-phone-subtittle {
+        font-family: satoshi;
+        font-size: 25px;
+    }
+    .reperation-phone-tittle {
+        font-family: mont-heavy;
+        font-size: 50px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        line-height: 1.2;
+    }
+    .reperation-phone-info {
+        font-family: satoshi;
+        font-size: 20px;
+    }
+    .reperation-phone-pieces-list {
+        ul {
+            li {
+                font-family: satoshi;
+                font-size: 27px;
+                font-weight: bold;
+                list-style: none;
+                padding-bottom: 20px;
+                cursor: pointer;
+                span {
+                    background-color: black;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    margin-right: 20px;
+                }
+                &.active {
+                    span {
+                        background-color: rgb(253, 206, 44);
+                    }
+                }
+            }
+        }
+    }
+}
+section.reperation-type {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    .reperation-type-subtittle {
+        font-family: satoshi;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .reperation-type-tittle {
+        font-family: mont-heavy;
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .reperation-type-content {
+        padding-top: 90px;
+    }
+    .reperation-types {
+        display: flex;
+        flex-direction: row;
+    }
+    .reperation-smartphones {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 calc(33% - 25px);
+
+        margin-right: 25px;
+    }
+    .reperation-laptops {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 33%;
+    }
+    .reperation-tablets {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 calc(33% - 25px);
+        margin-left: 25px;
+    }
+    .reperation-smartphones-recentagle,
+    .reperation-laptops-recentagle,
+    .reperation-tablets-recentagle {
+        background-color: #f7f7f7;
+        height: 100%;
+        padding: 50px;
+        cursor: pointer;
+    }
+    .reperation-types-link {
+        font-family: satoshi;
+        font-size: 25px;
+    }
+    .reperation-smatphones-link,
+    .reperation-laptops-link,
+    .reperation-tablets-link {
+        display: flex;
+        align-self: center;
+        font-family: "satoshi";
+        font-size: 25px;
+        padding-top: 15px;
+        cursor: pointer;
+        span {
+            padding-left: 15px;
+        }
+    }
+    .reperation-smartphones:hover,
+    .reperation-tablets:hover,
+    .reperation-laptops:hover {
+        img {
+            transform: scale(0.95);
+            transition: ease 1s;
+        }
+        .reperation-smatphones-link,
+        .reperation-laptops-link,
+        .reperation-tablets-link {
+            opacity: 0.5;
+        }
+    }
+}

@@ -37,6 +37,68 @@
     //     z-index: -1;
     //     width: 100%;
     // }
+    .partner-inputs-wrapper .form-textarea textarea{
+        width: 100%;
+        height: 100%;
+    }
+    .contact-form-picture{
+        position: relative;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .contact-form-content{
+        width: 100%;
+    }
+    .contact-form-wrapper{
+        padding-right: 0px;
+    }
+    body section.contact .contact-big-text{
+        font-size:100px;
+    }
+    body section.contact .contact-infos {
+        font-size: 14px;
+        min-width: 430px;
+    }
+    body section.reperation-main .reperation-tittle,
+    section.assurance-page .assurance-center-text{
+        font-size:90px;
+    }
+    section.reperation-phone{
+        height: 100%;
+    }
+    section.reperation-phone .reperation-phone-content{
+        flex-direction: column;
+    }
+    .reperation-phone-infos{
+        padding-bottom: 50px;
+    }
+    section.reperation-type{
+        height:100%;
+    }
+    section.reperation-type .reperation-types{
+        flex-direction: column;
+    }
+    section.reperation-type .reperation-smartphones{
+        flex: 0 0 33%;
+        margin-right:0px;
+        
+    }
+    .reperation-smartphones{
+        padding-bottom: 50px;
+    }
+    .reperation-laptops{
+        padding-bottom: 50px;
+    }
+    .reperation-tablets{
+        padding-bottom: 50px;
+    }
+    section.reperation-type .reperation-tablets{
+        flex:0 0 33%;
+        margin-left: 0px;
+    }
+    section.reperation-phone .reperation-phone-pieces{
+        flex-direction: column-reverse;
+    }
     .n-p-f-bottom-slide ul li {
         align-items: center;
     }
@@ -529,6 +591,7 @@
 }
 
 @media screen and (min-width: 992px) {
+   
     //For Large Laptops
     .container {
         max-width: 892px;
@@ -537,6 +600,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+    section.reperation-main .reperation-tittle,
+    section.assurance-page .assurance-center-text{
+        font-size:150px;
+    }
     .form-textarea {
         padding-bottom: 35px;
         padding-top: 35px;
@@ -571,7 +638,39 @@
     }
 }
 
-@media screen and (max-width: 1580px) {
+@media screen and (min-width: 1280px) and (max-width: 1580px) {
+    .form-textarea textarea{
+        width: 587px;
+    height: 438px;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
+        top: 26%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-6 {
+        left: 18%;
+        top: 34%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-8 {
+        right: 50%;
+        top: 34%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-4 {
+        left: 11%;
+        bottom: 31%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-5 {
+        left: 9%;
+        top: 49%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-11 {
+        top: 20%;
+        left: 30%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-3{
+        bottom:18%;
+    }
+}
+    @media screen and (max-width: 1580px) {
     //For Big TV's (HD Screens)
     .acceuil-center-text {
         font-size: 150px;
@@ -607,10 +706,62 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .footer-righside{
+        display:none;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-5 {
+        left: 8%;
+        top: 49%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-9 {
+        top: 49%;
+        left: 22%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-4 {
+        left: 9%;
+        bottom: 36%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-3 {
+        bottom: 26%;
+        left: 57%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-7 {
+        left: 40%;
+        bottom: 34%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-2 {
+        top: 46%;
+        right: 22%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-6 {
+        left: 17%;
+        top: 38%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
+        top: 32%;
+        left: 13%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-11 {
+        top: 27%;
+        left: 27%;
+    }
 }
 
 @media screen and (max-width: 1280px) {
+    .form-textarea textarea{
+        width: 459px;
+    height: 398px;
+    }
+    section.reperation-phone .reperation-phone-content{
+        flex-direction: column;
+    }
+    section.reperation-phone{
+        height: 100%;
+    }
+    section.reperation-phone .reperation-phone-infos{
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 1580px) {
@@ -621,6 +772,20 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    section.contact .contact-big-text{
+        font-size:150px;
+    }
+    section.contact .contact-infos{
+        font-size:20px;
+        min-width: 645px;
+    }
+    .assurance-form-rows, .assurance-form-top, .assurance-page-bottom{
+        width: 100%;
+    }
+    section.reperation-main .reperation-tittle,
+    section.assurance-page .assurance-center-text{
+        font-size:120px;
+    }
     .a-m-text {
         font-size: 70px;
     }
@@ -682,4 +847,31 @@
     .nos-points-forts-bottom {
         padding-right: 60px;
     }
+}
+@media screen and (max-width: 450px) {
+    body section.reperation-main .reperation-tittle,
+    section.assurance-page .assurance-center-text{
+        font-size:50px;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
+        top: 15%;
+        left: 11%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-2 {
+        top: 41%;
+        right: 21%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-5 {
+        left: 7%;
+        top: 47%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-4 {
+        left: 8%;
+        bottom: 24%;
+    }
+    section.reperation-phone .reperation-phone-pieces-picture .circle-7 {
+        left: 35%;
+        bottom: 20%;
+    }
+    
 }

@@ -31,7 +31,6 @@ Template Name: Homepage Template
 
     <div class="swiper-container swiper-container-home">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide yellow module">
                 <div class="container">
                     <div class="swiper-top">
@@ -41,14 +40,12 @@ Template Name: Homepage Template
                             <div class="swiper-pagenum">01</div>
                         </div>
                     </div>
-
                     <div class="swiper-big-text">Reparation</div>
                     <div class="swiper-slider-pic">
                         <img src="<?php echo get_bloginfo('template_url') ?>/images/slider-pic-1.jpg" />
                     </div>
                 </div>
             </div>
-
             <div class="swiper-slide blue module">
                 <div class="container">
                     <div class="swiper-top">
@@ -100,7 +97,6 @@ Template Name: Homepage Template
         <div class="swiper-button-prev"></div>
         <div class="swiper-scrollbar"></div>
     </div>
-
 </section>
 <section class="about-us">
     <div class="container">
@@ -163,7 +159,6 @@ Template Name: Homepage Template
             <img src="<?php echo get_bloginfo('template_url') ?>/images/nos-points-forts-image.svg" />
         </div>
     </div>
-
 </section>
 <div class="absolute-rectangle">
     <img src="<?php echo get_bloginfo('template_url') ?>/images/rectangle.svg" />
@@ -205,7 +200,7 @@ Template Name: Homepage Template
                 Votre téléphone ne s’allume plus et il n’y a pas de défaut apparent ?
             </div>
             <div class="micro-s-bot">
-               <a>Contactez-nous</a>
+                <a>Contactez-nous</a>
             </div>
         </div>
         <div class="micro-s-image">
@@ -230,7 +225,7 @@ Template Name: Homepage Template
 
                 Ce dernier permettra de faciliter la vie de la communauté de la cité de Calvin. En effet, plus besoin de vous déplacer, l’équipe URBAK vient à vous !</div>
             <div class="ecobike-bot">
-               <a>Prendre rendez-vous</a>
+                <a>Prendre rendez-vous</a>
             </div>
         </div>
     </div>
@@ -251,7 +246,7 @@ Template Name: Homepage Template
                     <div class="form-input-row">
                         <div class="form-input">
                             <label>
-                               <input type="checkbox">
+                                <input type="checkbox">
                                 <span class="checkmark"></span>
                                 Je suis une société de réparation
                             </label>
@@ -299,12 +294,10 @@ Template Name: Homepage Template
                                 <input type="text" placeholder="N° de rue" name="street-number">
                             </div>
                             <div class="form-input form-input-half">
-                            <select name="code-postal" placeholder="Code postal">
-    <option value="123">123</option>
-    <option value="1333">1333</option>
-    <option value="fi12323at">12323</option>
-    <option value="a12323udi">123232</option>
-  </select>
+                                <select name="code-postal" placeholder="Code postal">
+                                    <option value="123">Code Postal</option>
+                                 
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -314,7 +307,7 @@ Template Name: Homepage Template
                     </div>
                 </div>
                 <div class="partner-footer">
-                Envoyer<span>  <img src="<?php echo get_bloginfo('template_url') ?>/images/partner-arrow.svg" /></span>
+                    Envoyer<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/partner-arrow.svg" /></span>
                 </div>
 
             </div>
@@ -341,7 +334,7 @@ Template Name: Homepage Template
                 </div>
             </div>
             <div class="assurance-bot">
-               <a>Acheter un smartphone</a>
+                <a>Acheter un smartphone</a>
             </div>
         </div>
     </div>

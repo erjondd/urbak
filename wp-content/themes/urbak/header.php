@@ -1,10 +1,4 @@
-<?php
-$logo = get_field("main_logo", "options");
-$has_page_banner = get_field("has_page_banner");
-if (!$has_page_banner) {
-    $header_color_class =  " dark-background";
-}
-?>
+
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -32,7 +26,7 @@ if (!$has_page_banner) {
 
 </head>
 
-<body>
+<body  <?php body_class(); ?>>
     <header class="header <?= $header_color_class ?>">
    
         <div class="container">
@@ -50,7 +44,7 @@ if (!$has_page_banner) {
                     ?>
                 </div>
                 <div class="header-icons">
-                    <div class="search-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon.svg" /></div>
+                    <div class="search-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></div>
                     <div class="cart-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" /></div>
                 </div>
             </div>
