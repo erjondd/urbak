@@ -97,17 +97,17 @@ get_header();
                 </div>
                 <div class="form-input-row">
                 <div class="form-input form-input-half">
-                            <label>
+                            <label class="flex-label">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
-                                Tarif 1 personne : 5.50 CHF.-/mois (TTC)
+                                <span class="check-text">Tarif 1 personne : 5.50 CHF.-/mois (TTC)</span>
                             </label>
                         </div>
                         <div class="form-input form-input-half">
-                            <label>
+                            <label class="flex-label">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
-                                Tarif 2 personnes : 10.50 CHF.-/mois (TTC) 
+                                <span class="check-text">2 personnes : 10.50 CHF.-/mois (TTC)</span> 
                             </label>
                         </div>
                 </div>

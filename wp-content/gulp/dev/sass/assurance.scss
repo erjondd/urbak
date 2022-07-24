@@ -62,6 +62,16 @@ section.assurance-form {
   .container {
     height: 100%;
   }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0000004a;
+    z-index: -1;
+  }
   &::before {
     content: "";
     background-image: url(../../../themes/urbak/images/assurance-bigimage.jpg);

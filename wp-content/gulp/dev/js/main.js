@@ -107,10 +107,12 @@ jQuery("#scroll-down-repetation").click(function () {
 jQuery(document).ready(function () {
   jQuery(".color-FDCE2C a").mouseenter(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "#FDCE2C");
+    jQuery(".fsmenu-list ul").addClass("is-hover");
     jQuery(".color-FDCE2C a").css("color", "white");
   });
   jQuery(".color-FDCE2C a").mouseleave(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+    jQuery(".fsmenu-list ul").addClass("is-hover");
   });
 });
 
@@ -118,6 +120,7 @@ jQuery(document).ready(function () {
   jQuery(".color-2562EF  a").mouseenter(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "#2562EF ");
     jQuery(".color-2562EF a").css("color", "white");
+    
   });
   jQuery(".color-2562EF  a").mouseleave(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");

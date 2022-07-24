@@ -86,6 +86,15 @@
 .fsmenu-list {
     flex-grow: 1;
     ul {
+        &.is-hover {
+            li.current_page_item {
+                a {
+                    &:not(:hover) {
+                        opacity: 0.2;
+                    }
+                }
+            }
+        }
         li {
             position: relative;
             max-width: 600px;
@@ -98,16 +107,6 @@
                 &::after {
                     content: "";
                 }
-            }
-
-            &:after {
-                position: absolute;
-                width: 100%;
-                max-width: 580px;
-                height: 2px;
-                left: 0;
-                top: 100%;
-                background-color: #fff;
             }
 
             &:before {
@@ -153,15 +152,28 @@
                     background-image: url(../images/accessoires-menu.jpg);
                 }
             }
+            &.current_page_item {
+                a {
+                    opacity: 1;
+                    text-decoration: underline;
+                    &:after,
+                    &:before {
+                        content: "";
+                    }
+                }
+            }
             a {
                 position: relative;
+                opacity: 0.2;
                 color: white;
                 text-decoration: none;
                 font-size: calc(3vh + 3vw);
                 font-family: mont-heavy;
                 line-height: 1;
                 &:hover {
+                    text-decoration: underline;
                     color: rgb(58, 58, 58);
+                    opacity: 1;
                     &:after,
                     &:before {
                         content: "";

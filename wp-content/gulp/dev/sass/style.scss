@@ -188,6 +188,7 @@ ul {
     cursor: pointer;
   }
 }
+
 section.s-reconditiones {
   height: 100vh;
   position: relative;
@@ -300,6 +301,16 @@ section.assurance {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #00000029;
+    z-index: -1;
+  }
   &:before {
     content: "";
     background-image: url(../images/assurance-homepage.jpg);
@@ -840,6 +851,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   margin-top: 30px;
+  align-self: flex-end;
   cursor: pointer;
   &:hover {
     opacity: 0.7;
@@ -868,6 +880,9 @@ footer {
       background-position: center 0px;
       margin-right: 10px;
       vertical-align: sub;
+    }
+    &.flex-label {
+      display:flex;
     }
     input:checked + .checkmark {
       background-image: url(../../../themes/urbak/images/input-checkbox.svg);
