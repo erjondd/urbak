@@ -44,8 +44,8 @@
                     ?>
                 </div>
                 <div class="header-icons">
-                    <div class="search-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></div>
-                    <div class="cart-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" /></div>
+                    <div class="search-icon"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></a></div>
+                    <div class="cart-icon"><a href="<?php echo get_home_url() ?>/cart"><img src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" /></a></div>
                 </div>
             </div>
             <div class="header-extra-menu">

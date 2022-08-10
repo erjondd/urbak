@@ -1,0 +1,24 @@
+2022-08-10T16:54:51+00:00 CRITICAL Uncaught Error: Call to undefined function wpforms_display() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php:53
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php on line 53
+
+2022-08-10T17:33:15+00:00 CRITICAL Uncaught Error: Call to undefined function wpforms_display() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php:53
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php on line 53
+
+2022-08-10T17:42:28+00:00 CRITICAL Uncaught Error: Call to undefined function wpforms_display() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php:53
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php on line 53
+

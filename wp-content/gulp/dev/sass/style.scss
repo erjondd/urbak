@@ -335,6 +335,17 @@ section.about-us {
   background-color: white;
 }
 
+.main-half{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 50px 0;
+  background-color: #000;
+  color:#fff;
+}
+
 .nos-points-forts-image {
   position: absolute;
   height: 100%;
