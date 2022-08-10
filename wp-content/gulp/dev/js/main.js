@@ -43,6 +43,11 @@ jQuery(document).ready(function () {
   if ($("body").hasClass("page-id-220")) {
     $("header").addClass("black-menu");
   }
+  if ($("body").hasClass("single-product")) {
+    $("header").addClass("black-fonts");
+  }
+
+
 
   //Homepage Slider
   var homepageSwiper = new Swiper(".swiper-container-home", {

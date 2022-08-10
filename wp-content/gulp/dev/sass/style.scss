@@ -15,10 +15,8 @@
 @import "contact.scss";
 @import "reperation-smartphone-categories.scss";
 @import "single-product-page.scss";
-.black-menu {
-  height: 180px;
-  background-color: black;
-}
+@import "woocommerce.scss";
+
 html,
 body {
   min-height: 100%;
@@ -971,9 +969,7 @@ footer {
 .rs-top {
   margin-bottom: 100px;
 }
-.single-product{
-  margin-top: 160px;
-}
+
 .product-tittle-price{
   display:flex;
   justify-content: space-between;

@@ -49,7 +49,8 @@ if ($count > 0) {
             $cat_thumb_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
             $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
 
-            echo "<div class='category-smartphone'><img src=" . $cat_thumb_url . "></div>";
+   
+            echo "<div class='category-smartphone'><a href='" . get_home_url()   . "/product-category/" .  $product_category->slug . "'><img src=" . $cat_thumb_url . "></a></div>";
         }
 
 

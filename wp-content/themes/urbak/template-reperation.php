@@ -67,35 +67,33 @@ Template Name: Reperation Template
             <div class="reperation-type-subtittle">Reperation</div>
             <div class="reperation-type-tittle">Reparer mon appareil</div>
             <div class="reperation-types">
-      
                 <div class="reperation-smartphones">
-                    
-
+                    <a href="<?php echo get_home_url(); ?>/reperation-smartphone-categories">
                         <div class="reperation-smartphones-recentagle">
-
                             <img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-smartphones.png" />
-
                         </div>
-
-                        <div class="reperation-smatphones-link">Smartphones<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.svg" /></span></div>
-
+                        <div class="reperation-smatphones-link">Smartphones
+                            <span>
+                                <img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.svg" />
+                            </span>
+                        </div>
+                    </a>
                 </div>
-           
                 <div class="reperation-laptops">
-                    <div class="reperation-laptops-recentagle">
-                 
+                    <a href="<?php echo get_home_url(); ?>/reperation-laptops-categories">
+                        <div class="reperation-laptops-recentagle">
                             <img src="<?php echo get_bloginfo('template_url') ?>/images/laptop.png" />
-
-                    </div>
-                    <div class="reperation-laptops-link">Ordinateurs<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.png" /></span></div>
+                        </div>
+                        <div class="reperation-laptops-link">Ordinateurs<span><img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.png" /></span></div>
+                    </a>
                 </div>
                 <div class="reperation-tablets">
-                    <div class="reperation-tablets-recentagle">
-                      
+                    <a href="<?php echo get_home_url(); ?>/reperation-tablets-categories">
+                        <div class="reperation-tablets-recentagle">
                             <img src="<?php echo get_bloginfo('template_url') ?>/images/tablet.png" />
-
-                    </div>
-                    <div class="reperation-tablets-link">Tablettes<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.png" /></span></div>
+                        </div>
+                        <div class="reperation-tablets-link">Tablettes<span><img src="<?php echo get_bloginfo('template_url') ?>/images/reperation-arrow.png" /></span></div>
+                    </a>
                 </div>
             </div>
 

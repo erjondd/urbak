@@ -251,3 +251,41 @@
         }
     }
 }
+
+body {
+    &.woocommerce {
+        padding-top: 150px;
+        .header-wrapper {
+            .header-logo,
+            .search-icon,
+            .cart-icon {
+                img {
+                    filter: invert(1);
+                }
+            }
+            .header-menu {
+                ul {
+                    li {
+                        a {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// .black-menu {
+//     height: 180px;
+//     background-color: black;
+//   }
+//   .black-fonts .header-wrapper .header-menu ul li a{
+//     color:black;
+//     &:hover{
+//       opacity:1;
+//     }
+//   }
+//   .black-fonts .woocommerce img
+//   {
+//     filter:invert(1);
+//   }

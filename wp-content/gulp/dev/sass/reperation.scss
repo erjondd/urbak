@@ -198,6 +198,14 @@ section.reperation-type {
     .reperation-types {
         display: flex;
         flex-direction: row;
+        a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            color:black;
+        }
     }
     .reperation-smartphones {
         display: flex;

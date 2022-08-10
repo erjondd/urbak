@@ -1,0 +1,19 @@
+.entry-summary {
+    .cart {
+        .wapf-wrapper {
+            .wapf-field-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .wapf-field-row {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+.product-description-field{
+    textarea{
+        min-height:250px;
+    }
+}

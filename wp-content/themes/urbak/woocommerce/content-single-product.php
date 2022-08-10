@@ -30,9 +30,12 @@ if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
-?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
+?>
+
+
+<div class="container">
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
@@ -59,9 +62,11 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+		
 	</div>
-
+	</div>
 	<?php
+	
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
 	 *
