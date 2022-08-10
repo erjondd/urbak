@@ -1,0 +1,154 @@
+body.page-id-230 header {
+    height: 90px;
+    background-color: black;
+    position: relative;
+}
+section.reperationsingleproduct {
+    background-color: #ffffff;
+}
+.all-content {
+    display: flex;
+}
+.other-options {
+    flex-wrap: wrap;
+    display: flex;
+  
+    font-family:satoshi;
+}
+.smartphone-image {
+    flex: 0 0 40%;
+    justify-content: center;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 100px 0px;
+}
+.option-disponal{
+  font-size:10px;
+}
+.option-image-select {
+    display: flex;
+
+}
+.one-option {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin:20px 0px;
+}
+.option-image{
+    padding: 0px 20px;
+}
+.all-other-options{
+    flex-grow: 1;
+    
+    padding: 0px 100px;
+}
+.option-select {
+    align-self: center;
+    cursor: pointer;
+}
+.option-price{
+    color:#A5A5A5;
+   
+}
+section.reperationsingleproduct {
+    margin-top: 100px;
+}
+.option-name-price{
+   
+}
+.smartphone-name {
+    font-family: mont-heavy;
+    font-size: 50px;
+}
+.smartphone-reviews{
+    display:flex;
+    align-items: center;
+}
+.stars-number {
+    padding: 0 20px;
+}
+.name-other-options {
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+.suplements-content-t {
+    display: flex;
+    
+}
+.suplements-slider{
+    font-family:satoshi;
+    font-size:20px;
+    display: flex;
+    flex-direction: column;
+}
+.suplements-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.slide-name{
+    font-size:20px;
+}
+.slider-price{
+    font-size:18px;
+    color:#A5A5A5;
+}
+.suplements-all-slider {
+    display: flex;
+}
+.one-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    flex: 0 0 calc(33% - 30px);
+    margin-right: 30px;
+}
+.option-name-price{
+    padding-top: 10px;
+}
+.name-price{
+    margin-top: 15px;
+}
+.suplements-title{
+    padding-bottom: 20px;
+}
+.slider-picture {
+    display: flex;
+    align-content: center;
+    height: 100%;
+    background: #F7F7F7;
+    padding: 20px;
+    img {
+        object-fit: none;
+    }
+}
+.right-arrow {
+    align-self: center;
+    padding-left: 40px;
+}
+.left-arrow {
+    align-self: center;
+    padding-right: 40px;
+}
+.micro-s-bot {
+    padding-bottom: 90px;
+    display: flex;
+    
+    margin-top: 50px;
+    a {
+      font-family: satoshi;
+      font-size: 20px;
+      background: black;
+      border-radius: 10px;
+      color: white;
+      padding: 10px 100px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+

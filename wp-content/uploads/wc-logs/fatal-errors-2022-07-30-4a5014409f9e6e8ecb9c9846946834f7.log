@@ -1,0 +1,140 @@
+2022-07-30T15:58:22+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:9
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 9
+
+2022-07-30T16:23:56+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:9
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 9
+
+2022-07-30T16:24:14+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:9
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 9
+
+2022-07-30T16:24:34+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:9
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 9
+
+2022-07-30T16:24:55+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:9
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 9
+
+2022-07-30T16:28:33+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:11
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 11
+
+2022-07-30T16:31:08+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:13
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 13
+
+2022-07-30T16:33:10+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\urbak\index.php(17): require('C:\\x in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+
+2022-07-30T16:42:57+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 158
+
+2022-07-30T16:45:21+00:00 CRITICAL syntax error, unexpected '>' in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 93
+
+2022-07-30T16:46:48+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 113
+
+2022-07-30T16:47:46+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 92
+
+2022-07-30T16:49:16+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 91
+
+2022-07-30T16:50:04+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 103 and exactly 2 expected in C:\xampp\htdocs\urbak\wp-includes\plugin.php:165
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php(103): apply_filters('woocommerce_pro...')
+#1 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-includes\plugin.php on line 165
+
+2022-07-30T17:48:37+00:00 CRITICAL Uncaught Error: Call to undefined function var_dumb() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php:54
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 54
+
+2022-07-30T17:54:23+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 51
+
+2022-07-30T17:55:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_template_part(), 0 passed in C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php on line 38 and at least 1 expected in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php(38): wc_get_template_part()
+#1 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php on line 242
+
+2022-07-30T18:27:55+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\loop\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1395): wc_get_template('loop/sale-flash...')
+#2 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): woocommerce_show_product_loop_sale_flash('')
+#3 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\urbak\wp-content\themes\urbak\single.php(2): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\ in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\loop\sale-flash.php on line 25
+
+2022-07-30T19:10:03+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\urbak\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xa in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+
+2022-07-30T19:15:22+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\urbak\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xa in C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+

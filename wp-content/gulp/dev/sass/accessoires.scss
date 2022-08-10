@@ -1,3 +1,4 @@
+
 section.accessoires {
     height: 100vh;
     overflow: hidden;
@@ -38,4 +39,48 @@ section.accessoires {
         justify-content: center;
         color: white;
     }
+}
+.accesoires-title{
+    font-family:satoshi;
+    font-size:25px;
+}
+.accessories-smartphone{
+    font-family:mont-heavy;
+    font-size:50px;
+}
+.slide-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    flex: 0 0 calc(33% - 30px);
+    margin-right: 30px;
+}
+.slide-picture {
+    display: flex;
+    height: 100%;
+    background: #F7F7F7;
+    justify-content: center;
+    img {
+        object-fit: contain;
+    }
+}
+.accessories-all-slide{
+    display:flex;
+}
+.slider-name{
+    font-family:satoshi;
+    font-size:22px;
+}
+.first{
+    padding-top: 80px;
+}
+.accesoires-title{
+    padding-bottom: 30px;
+}
+.accessories-smartphone{
+    padding-bottom: 50px;
+}
+.second{
+    padding:130px 0px;
 }

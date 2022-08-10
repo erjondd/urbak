@@ -1,13 +1,13 @@
-section.vendre{
-    height:100vh;
+section.vendre {
+    height: 100vh;
     position: relative;
-    overflow:hidden;
-    .container{
-        height:100%;
+    overflow: hidden;
+    .container {
+        height: 100%;
     }
-    &:before{
+    &:before {
         content: "";
-        background-color: #FF6100;
+        background-color: #ff6100;
         position: absolute;
         top: 0;
         left: 0;
@@ -15,7 +15,7 @@ section.vendre{
         width: 100%;
         height: 100%;
     }
-    &:after{
+    &:after {
         content: "";
         position: absolute;
         top: 0;
@@ -24,9 +24,9 @@ section.vendre{
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: linear-gradient(0deg,rgbA(255 255 255/45%),rgbA(255 97 0/14%));
+        background: linear-gradient(0deg, rgbA(255 255 255/45%), rgbA(255 97 0/14%));
     }
-  
+
     .lights-and-tech {
         .apple-watch {
             position: absolute;
@@ -52,4 +52,95 @@ section.vendre{
         justify-content: center;
         align-items: center;
     }
+}
+section.vendre-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.vendre-content-leftside {
+    display:flex;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    align-self: baseline;
+    
+}
+.vendre-content-rightside {
+    flex: 0 0 50%;
+}
+.vendre-content-form-output {
+    display: flex;
+    flex: 0 0 calc(50% - 80px);
+    margin-right: 40px;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.vendre-title {
+    color: #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+.vendre-value {
+}
+.vendre-page{
+    font-family:satoshi;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.vendre-information{
+    font-family: mont-heavy;
+    font-size:50px;
+}
+.vendre-all-form{
+    display:flex;
+}
+.vendre-content-top{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.vendre-title{
+    font-family: satoshi;
+    font-size:20px;
+}
+.vendre-value{
+    font-family: satoshi;
+    font-size:20px;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-label{
+    font-family: satoshi;
+    font-size:20px;
+}
+.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form .wpforms-page-indicator{
+    font-family: satoshi;
+    font-size:20px;
+}
+.wpforms-form{
+    font-family: satoshi;
+    font-size: 20px;
+}
+#wpforms-226-field_12,
+#wpforms-226-field_19{
+    display:flex;
+    li{
+        display:flex;
+        flex:0 0 50%;
+    }
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field-label{
+    margin-bottom: 25px;
+}
+.wpforms-field-container{
+    min-height: 450px !important;
+    
+}
+.wpforms-page > div{
+    flex-grow: 1 !important;
+    display:flex;
+
+}
+.wpforms-field{
+    display:flex;
+    flex-direction: column;
 }

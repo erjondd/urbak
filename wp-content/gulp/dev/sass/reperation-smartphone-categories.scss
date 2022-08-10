@@ -1,0 +1,29 @@
+.reparation-smartphones-category {
+    margin-top: 270px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.category-smartphone {
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 40px 0px;
+    margin: 5px;
+    width: 19%;
+    justify-content: center;
+    img {
+        height: 100%;
+        object-fit: scale-down;
+    }
+}
+.r-s-c-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reparation-smartphones-category-title{
+    font-family:mont-heavy;
+    font-size:60px;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
