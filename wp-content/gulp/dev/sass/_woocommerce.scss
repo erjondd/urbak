@@ -12,8 +12,94 @@
         }
     }
 }
-.product-description-field{
-    textarea{
-        min-height:250px;
+.product-description-field {
+    textarea {
+        min-height: 250px;
     }
+}
+.wapf-checkable {
+    display: flex;
+}
+span.wapf-label-text {
+    display: flex;
+    flex-direction: column;
+}
+.wapf-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wapf-checkable {
+    display: flex;
+    margin: 20px;
+    flex: 0 0 calc(25% - 40px);
+}
+.entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
+    width: 100%;
+}
+.woocommerce-product-gallery--with-images {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+.woocommerce div.product p.price {
+    font-family: mont-extralight;
+    font-size: 50px;
+    color: #000;
+}
+
+.product-tittle-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1.entry-title {
+    font-family: mont-heavy;
+    font-size: 50px;
+}
+.woocommerce-product-details__short-description {
+    font-family: satoshi;
+    font-size: 20px;
+}
+.wapf-field-group {
+    select {
+        font-family: satoshi;
+        font-size: 20px;
+        height:50px;
+        border-radius: 10px;
+    }
+}
+.entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row{
+    width:50%;
+}
+button.single_add_to_cart_button.button.alt {
+    width: 100%;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 50px;
+}
+.quantity{
+    display:none;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-family:satoshi;
+    font-size:25px;
+    color:black;
+    text-align: center;
+}
+.woocommerce ul.products li.product .price{
+    font-size:20px;
+    font-family:satoshi;
+    color:#6b6b6b;
+    text-align: center;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    width:calc(33.33% - 15px);
+    margin-right:15px;
+    padding:0;
+}
+.woocommerce ul.products li.product .button {
+    display:none;
 }

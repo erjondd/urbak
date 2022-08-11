@@ -46,6 +46,16 @@ jQuery(document).ready(function () {
   if ($("body").hasClass("single-product")) {
     $("header").addClass("black-fonts");
   }
+  if ($("body").hasClass("page-id-201")) {
+    $("header").addClass("black-menu");
+  }
+  if ($("body").hasClass("page-id-210")) {
+    $("header").addClass("black-menu");
+  }
+  if ($("body").hasClass("page-id-185")) {
+    $("header").addClass("black-menu");
+  }
+  
 
 
 

@@ -20,7 +20,7 @@ Template Name: Acheter Template
         <div class="acheter-center-text">Acheter</div>
         
     </div>
-    <div class="scroll-down-acheter" id="scroll-down-acheter"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
+    <div class="scroll-down" id="scroll-down"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
 </section>
 
 

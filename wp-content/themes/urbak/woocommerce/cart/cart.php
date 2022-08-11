@@ -18,9 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<section class="main-half">
-    Cart
-</section>
+
 
 <?php 
 do_action( 'woocommerce_before_cart' ); ?>

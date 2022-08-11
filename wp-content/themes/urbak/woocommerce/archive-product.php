@@ -30,9 +30,7 @@ get_header( 'shop' );
  ?>
 
 
-<section class="main-half">
-    Shop
-</section>
+
 <div class="container">
 
 <?php

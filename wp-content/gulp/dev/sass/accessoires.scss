@@ -61,6 +61,7 @@ section.accessoires {
     height: 100%;
     background: #F7F7F7;
     justify-content: center;
+    padding: 80px 0px;
     img {
         object-fit: contain;
     }
@@ -83,4 +84,10 @@ section.accessoires {
 }
 .second{
     padding:130px 0px;
+}    
+
+.accessoires-smartphones-category{
+    padding-top: 80px;
+    overflow: hidden;
+    position: relative;
 }

@@ -894,8 +894,12 @@ footer {
     &.flex-label {
       display:flex;
     }
+    .checkmark{
+      cursor: pointer;
+    }
     input:checked + .checkmark {
       background-image: url(../../../themes/urbak/images/input-checkbox.svg);
+     
     }
   }
 }
@@ -915,6 +919,7 @@ footer {
 }
 .form-inputs .form-input-row select {
   height: 100%;
+ 
 }
 .form-inputs input,
 .form-inputs select,
@@ -970,17 +975,12 @@ footer {
   margin-bottom: 100px;
 }
 
-.product-tittle-price{
-  display:flex;
-  justify-content: space-between;
-}
-h1.entry-title {
-  font-family: mont-heavy;
-  font-size: 50px;
-}
+
 .acheter-smartphones-category{
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
+
+
 @import "_responsive.scss";
