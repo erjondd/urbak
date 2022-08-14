@@ -34,6 +34,9 @@ use SW_WAPF\Includes\Classes\Html;
             <div rv-show="field.type | eq 'radio'">
                 <svg height="16" width="16" viewBox="0 0 16 16"><path d="M8 4c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"></path><path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7zM8 0c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8v0z"></path></svg>
             </div>
+            <div rv-show="field.type | eq 'paragraph'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 179 179"><path d="M0,3.416h143.082v36.929l-22.313-0.064v-9.083c0-4.645-3.609-8.447-8.235-8.699H84.061V145.17	c0.199,5.258,4.458,9.365,9.727,9.365h7.896l0.065,20.299h-60.38l0.067-20.299h7.894c5.192,0,9.442-4.038,9.72-9.21V22.498h-28.5c-4.626,0.252-8.235,4.055-8.235,8.699v9.083L0,40.345V3.416z M163.541,175.125h15V3.416h-15V175.125z"></path></svg>
+            </div>
         </div>
         <div class="wapf-field__label" rv-on-click="setActiveField">
             {field.label} <span class="wapf-field__type"><span rv-text="field.type | fieldType"></span>&nbsp;&nbsp;&nbsp;&nbsp;ID: {field.id}</span>
@@ -72,6 +75,8 @@ use SW_WAPF\Includes\Classes\Html;
             'is_field_setting'  => true
         ]);
 
+        echo '<div rv-if="field.type | neq \'paragraph\'">';
+
         Html::setting([
             'type'              => 'textarea',
             'id'                => 'description',
@@ -88,6 +93,8 @@ use SW_WAPF\Includes\Classes\Html;
             'is_field_setting'  => true
         ]);
 
+        echo '</div>';
+
         foreach(\SW_WAPF\Includes\Classes\Fields::get_field_options($type) as $field_type => $options) {?>
             <div rv-if="field.type | eq '<?php echo $field_type; ?>'" class="wapf_field__options">
                 <?php
@@ -100,11 +107,13 @@ use SW_WAPF\Includes\Classes\Html;
         <?php
         }
 
+        echo '<div rv-if="field.type | neq \'paragraph\'">';
+
         Html::setting([
             'type'              => 'true-false',
             'id'                => 'qty_based',
-            'label'             => __('Quantity based','advanced-product-fields-for-woocommerce'),
-            'description'       => __('Should this field appear multiple times depending on the chosen quantity?','advanced-product-fields-for-woocommerce'),
+            'label'             => __('Repeat field','advanced-product-fields-for-woocommerce'),
+            'description'       => __('Should this field be repeated multiple times either by a button or quantity input box?','advanced-product-fields-for-woocommerce'),
             'is_field_setting'  => true,
             'pro'               => true
         ]);
@@ -117,6 +126,8 @@ use SW_WAPF\Includes\Classes\Html;
             'description'       => __('Only show this field when conditional rules are true.','advanced-product-fields-for-woocommerce'),
             'is_field_setting'  => true
         ]);
+
+        echo '</div>';
 
         Html::setting([
             'type'              => 'attributes',

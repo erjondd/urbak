@@ -57,6 +57,11 @@ namespace SW_WAPF\Includes\Classes {
 					'pro'   => false,
 				],
 				[
+					'id'    => 'paragraph',
+					'title' => __('Content: paragraph','advanced-product-fields-for-woocommerce'),
+					'pro'   => false,
+				],
+				[
 					'id'    => 'file',
 					'title' => __('File upload','advanced-product-fields-for-woocommerce'),
 					'pro'   => true,
@@ -79,11 +84,6 @@ namespace SW_WAPF\Includes\Classes {
 				[
 					'id'    => 'text-swatch',
 					'title' => __('Text swatches','advanced-product-fields-for-woocommerce'),
-					'pro'   => true,
-				],
-				[
-					'id'    => 'paragraph',
-					'title' => __('Content: paragraph','advanced-product-fields-for-woocommerce'),
 					'pro'   => true,
 				],
 				[
@@ -275,7 +275,7 @@ namespace SW_WAPF\Includes\Classes {
 
 	        ],
 
-                'radio'  => [
+            'radio'  => [
 		        [
 			        'type'                  => 'options',
 			        'id'                    => 'options',
@@ -285,6 +285,14 @@ namespace SW_WAPF\Includes\Classes {
 			        'show_pricing_options'  => true
 		        ],
 
+	        ],
+	        'paragraph' => [
+		        [
+			        'type'                  => 'textarea',
+			        'id'                    => 'p_content',
+			        'label'                 => __("Content",'sw-wapf'),
+			        'description'           => __('Enter your text here. Do you need to add shortcodes & HTML? Consider upgrading to our Pro version.', 'sw-wapf')
+		        ]
 	        ],
 
             ];

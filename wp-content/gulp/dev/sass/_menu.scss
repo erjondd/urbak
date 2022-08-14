@@ -279,13 +279,19 @@ body {
     height: 180px;
     background-color: black;
    }
-//   .black-fonts .header-wrapper .header-menu ul li a{
-//     color:black;
-//     &:hover{
-//       opacity:1;
-//     }
-//   }
-//   .black-fonts .woocommerce img
-//   {
-//     filter:invert(1);
-//   }
+  .black-fonts .header-wrapper .header-menu ul li a{
+    color:black;
+    &:hover{
+      opacity:1;
+    }
+  }
+  .black-fonts .header-extra-menu .extra-menu{
+    color:black;
+    &:hover{
+      opacity:1;
+    }
+  }
+  .black-fonts .header-wrapper img
+  {
+    filter:invert(1);
+  }

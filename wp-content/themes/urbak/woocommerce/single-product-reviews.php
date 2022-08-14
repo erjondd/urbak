@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Display single product reviews (comments)
  *
@@ -133,4 +133,4 @@ if ( ! comments_open() ) {
 	<?php endif; ?>
 
 	<div class="clear"></div>
-</div>
+</div> 

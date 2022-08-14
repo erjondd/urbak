@@ -220,6 +220,12 @@ namespace SW_WAPF\Includes\Classes
 
         private static function field_value(Field $field) {
 
+	        if( $field->type === 'paragraph' ) {
+		        return empty($field->options['p_content']) ?
+			        '' :
+			        esc_html( $field->options['p_content'] );
+	        }
+
             $value = empty($field->options['default']) ? '' : esc_html($field->options['default']);
 
             return $value;

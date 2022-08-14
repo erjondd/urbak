@@ -104,9 +104,10 @@ namespace SW_WAPF\Includes\Classes {
                     $field->options['placeholder'] = sanitize_text_field($raw_field['placeholder']);
                 if(isset($raw_field['default']))
                     $field->options['default'] = sanitize_text_field($raw_field['default']);
-
+	            if(isset($raw_field['p_content']))
+		            $field->options['p_content'] = sanitize_textarea_field($raw_field['p_content'] );
                 foreach($raw_field as $k => $v) {
-                    if( in_array($k, ['id','key','label','description','default','placeholder','choices','conditionals','type','required','options','class','width','pricing','qty_based']) )
+                    if( in_array($k, ['id','key','label','description','default','placeholder','p_content','choices','conditionals','type','required','options','class','width','pricing','qty_based']) )
                         continue;
                     $field->options[sanitize_text_field($k)] = sanitize_textarea_field($v);
                 }

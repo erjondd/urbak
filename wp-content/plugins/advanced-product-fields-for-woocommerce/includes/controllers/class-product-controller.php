@@ -20,7 +20,7 @@ namespace SW_WAPF\Includes\Controllers {
         {
             add_action('woocommerce_before_add_to_cart_button',             [$this, 'display_field_groups']);
 
-            add_filter('woocommerce_add_to_cart_validation',                [$this, 'validate_cart_data'], 10, 4);
+            add_filter('woocommerce_add_to_cart_validation',                [$this, 'validate_cart_data'], 10, 6);
 
             add_action('woocommerce_before_calculate_totals',               [$this,'adjust_cart_item_pricing']);
 
@@ -35,6 +35,38 @@ namespace SW_WAPF\Includes\Controllers {
             add_filter('woocommerce_product_supports',                      [$this, 'check_product_support'], 10, 3);
 
             add_filter('woocommerce_product_add_to_cart_url',               [$this, 'set_add_to_cart_url'], 10, 2);
+
+	        add_filter('woocommerce_order_again_cart_item_data',            [$this, 'order_again_cart_item_data'], 10, 3);
+
+        }
+
+        public function order_again_cart_item_data($cart_item_data, $order_item, $order) {
+
+	        $meta_data = $order_item->get_meta('_wapf_meta');
+
+	        if( ! empty($meta_data) && is_array($meta_data) ) {
+
+		        $wapf = [];
+		        $field_groups = Field_Groups::get_field_groups_of_product( $order_item->get_product_id() );
+		        $fields = Enumerable::from( $field_groups )->merge( function($x){return $x->fields; } )->toArray();
+
+		        foreach( $meta_data as $field_id => $field_meta ) {
+			        $field = Enumerable::from($fields)->firstOrDefault(function($x) use($field_id){ return $x->id === $field_id;});
+					if( ! $field ) continue;
+
+			        $cart_field = $this->to_cart_fields( $field, $order_item->get_product(), $field_meta['raw'] );
+			        $wapf[] = $cart_field;
+		        }
+
+		        if(!empty($wapf)) {
+			        $cart_item_data['wapf'] = $wapf;
+			        $cart_item_data['wapf_field_groups'] = Enumerable::from( $field_groups )->select(function($x){return $x->id;})->toArray();
+			        $cart_item_data['wapf_order_again'] = true;
+		        }
+
+	        }
+
+	        return $cart_item_data;
 
         }
 
@@ -72,36 +104,50 @@ namespace SW_WAPF\Includes\Controllers {
 
         }
 
-	    public function validate_cart_data($passed, $product_id, $qty, $variation_id = null) {
+	    public function validate_cart_data($passed, $product_id, $qty, $variation_id = null, $variations = null, $cart_item_data = null) {
 
-		    if(!isset($_REQUEST['wapf_field_groups']))
+		    if( ! isset( $_REQUEST['wapf_field_groups'] ) && ! isset( $_GET['add-to-cart'] ) )
 			    return $passed;
 
-		    $field_groups = Field_Groups::get_field_groups_of_product($product_id);
-		    if(empty($field_groups))
+		    $field_groups = Field_Groups::get_field_groups_of_product( $product_id );
+		    if( empty( $field_groups ) )
 			    return $passed;
 
-		    $field_group_ids = explode(',', sanitize_text_field($_REQUEST['wapf_field_groups']));
-		    foreach ($field_groups as $fg) {
-			    if(!in_array($fg->id,$field_group_ids)) {
-				    wc_add_notice(esc_html(__('Error adding product to cart.','sw-wapf')), 'error');
-				    return false;
-			    }
-		    }
+		    $skip_fieldgroup_validation = false;
+		    $is_order_again =  isset( $cart_item_data['wapf_order_again'] ) && $cart_item_data['wapf_order_again'];
+		    if( ! empty( $cart_item_data ) && $is_order_again )
+			    $skip_fieldgroup_validation = true;
 
-		    foreach($field_groups as $group) {
-			    foreach($group->fields as $field) {
+		    if( ! $skip_fieldgroup_validation) {
 
-				    if(!Fields::should_field_be_filled_out($group,$field))
-					    continue;
+			    if ( isset( $_REQUEST['wapf_field_groups'] ) ) {
 
-				    $value = Fields::get_raw_field_value_from_request($field, 0, true);
+				    $field_group_ids = explode( ',', sanitize_text_field( $_REQUEST['wapf_field_groups'] ) );
+				    foreach ( $field_groups as $fg ) {
+					    if ( ! in_array( $fg->id, $field_group_ids ) ) {
+						    wc_add_notice( esc_html( __( 'Error adding product to cart.', 'sw-wapf' ) ), 'error' );
 
-				    if(empty($value)) {
-					    wc_add_notice(sprintf(__('The field "%s" is required.', 'advanced-product-fields-for-woocommerce'), esc_html($field->label)), 'error');
-					    return false;
+						    return false;
+					    }
 				    }
 
+			    }
+
+			    foreach ( $field_groups as $group ) {
+				    foreach ( $group->fields as $field ) {
+
+					    if ( ! Fields::should_field_be_filled_out( $group, $field ) ) {
+						    continue;
+					    }
+
+					    $value = Fields::get_raw_field_value_from_request( $field, 0, true );
+
+					    if ( empty( $value ) ) {
+						    wc_add_notice( sprintf( __( 'The field "%s" is required.', 'advanced-product-fields-for-woocommerce' ), esc_html( $field->label ) ), 'error' );
+
+						    return false;
+					    }
+				    }
 			    }
 		    }
 
@@ -114,11 +160,26 @@ namespace SW_WAPF\Includes\Controllers {
             if (empty($values['wapf']))
                 return;
 
+	        $fields_meta = [];
+
             foreach ($values['wapf'] as $field) {
 
-                if(!empty($field['value']))
-                    $item->add_meta_data( $field['label'], $field['value']);
+                if( ! empty( $field['value'] ) ) {
+	                $item->add_meta_data( $field['label'], $field['value'] );
+	                $fields_meta[$field['id']] = [
+	                	'label' => $field['label'],
+		                'value' => $field['value'],
+		                'raw'   => $field['raw']
+	                ];
+                }
             }
+
+	        if( ! empty( $fields_meta ) ) {
+				$item->add_meta_data(
+					'_wapf_meta',
+					$fields_meta
+				);
+	        }
 
         }
 
@@ -143,6 +204,7 @@ namespace SW_WAPF\Includes\Controllers {
 
             $group_ids = [];
 
+            echo '<div class="wapf">';
             echo '<div class="wapf-wrapper">';
             foreach ($field_groups as $field_group) {
 
@@ -185,7 +247,7 @@ namespace SW_WAPF\Includes\Controllers {
             echo '<input type="hidden" value="'.implode(',',$group_ids).'" name="wapf_field_groups"/>';
             echo '</div>';
             Html::product_totals($product);
-
+			echo '</div>';
         }
 
         public function add_fields_to_cart_item($cart_item_data, $product_id, $variation_id) {
@@ -199,8 +261,6 @@ namespace SW_WAPF\Includes\Controllers {
             $field_groups = Field_Groups::get_by_ids(explode(',', sanitize_text_field($_REQUEST['wapf_field_groups'])));
 
             $fields = Enumerable::from($field_groups)->merge(function($x){return $x->fields; })->toArray();
-
-            $quantity = empty($_REQUEST['quantity']) ? 1 : wc_stock_amount($_REQUEST['quantity']);
 
             $wapf_data = [];
 
@@ -219,10 +279,9 @@ namespace SW_WAPF\Includes\Controllers {
                 if(!$field)
                     continue;
 
-                $wapf_data[] = self::to_cart_fields($field, $product, $quantity);
+                $wapf_data[] = self::to_cart_fields($field, $product);
 
             }
-            $wapf_data['clones'] = [];
 
             if(!empty($wapf_data))
                 $cart_item_data['wapf'] = $wapf_data;
@@ -236,7 +295,7 @@ namespace SW_WAPF\Includes\Controllers {
             if (is_admin() && ! defined('DOING_AJAX'))
                 return;
 
-            foreach( $cart_obj->get_cart() as $key=>$item ) {
+            foreach( $cart_obj->get_cart() as $key => $item ) {
 
                 if(empty($item['wapf']))
                     continue;
@@ -294,9 +353,10 @@ namespace SW_WAPF\Includes\Controllers {
 
         #region Private Helpers
 
-        private function to_cart_fields(Field $field, $product, $quantity = 1, $clone_idx = 0) {
+        private function to_cart_fields(Field $field, $product, $raw_value = null) {
 
-            $raw_value = Fields::get_raw_field_value_from_request($field, $clone_idx);
+        	if($raw_value === null)
+                $raw_value = Fields::get_raw_field_value_from_request( $field );
 
             $price_addition = []; 
 
@@ -306,11 +366,10 @@ namespace SW_WAPF\Includes\Controllers {
 
             return [
                 'id'                => $field->id,
+	            'raw'               => is_string( $raw_value ) ? sanitize_textarea_field( $raw_value ) : array_map('sanitize_textarea_field', $raw_value),
                 'value'             => Fields::value_to_string($field, $raw_value, $price_addition > 0, $product),
                 'value_cart'        => Fields::value_to_string($field, $raw_value, $price_addition > 0, $product,'cart'),
                 'price'             => $price_addition,
-                'qty'               => $quantity,
-                'qty_based'         => false,
                 'label'             => esc_html($field->label)
             ];
         }

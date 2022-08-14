@@ -46,6 +46,10 @@ jQuery(document).ready(function () {
   if ($("body").hasClass("single-product")) {
     $("header").addClass("black-fonts");
   }
+  if ($("body").hasClass("woocommerce-cart")) {
+    $("header").addClass("black-fonts");
+  }
+
   if ($("body").hasClass("page-id-201")) {
     $("header").addClass("black-menu");
   }
@@ -123,75 +127,75 @@ jQuery("#scroll-down-repetation").click(function () {
   );
 });
 
-jQuery(document).ready(function () {
-  jQuery(".color-FDCE2C a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#FDCE2C");
-    jQuery(".fsmenu-list ul").addClass("is-hover");
-    jQuery(".color-FDCE2C a").css("color", "white");
-  });
-  jQuery(".color-FDCE2C a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-    jQuery(".fsmenu-list ul").addClass("is-hover");
-  });
-});
+// jQuery(document).ready(function () {
+//   jQuery(".color-FDCE2C a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#FDCE2C");
+//     jQuery(".fsmenu-list ul").addClass("is-hover");
+//     jQuery(".color-FDCE2C a").css("color", "white");
+//   });
+//   jQuery(".color-FDCE2C a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//     jQuery(".fsmenu-list ul").addClass("is-hover");
+//   });
+// });
 
-jQuery(document).ready(function () {
-  jQuery(".color-2562EF  a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#2562EF ");
-    jQuery(".color-2562EF a").css("color", "white");
-  });
-  jQuery(".color-2562EF  a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
+// jQuery(document).ready(function () {
+//   jQuery(".color-2562EF  a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#2562EF ");
+//     jQuery(".color-2562EF a").css("color", "white");
+//   });
+//   jQuery(".color-2562EF  a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
 
-jQuery(document).ready(function () {
-  jQuery(".color-FF6100 a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#FF6100");
-    jQuery(".color-FF6100 a").css("color", "white");
-  });
-  jQuery(".color-FF6100 a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
+// jQuery(document).ready(function () {
+//   jQuery(".color-FF6100 a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#FF6100");
+//     jQuery(".color-FF6100 a").css("color", "white");
+//   });
+//   jQuery(".color-FF6100 a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
 
-jQuery(document).ready(function () {
-  jQuery(".color-D13F7E a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#D13F7E");
-    jQuery(".color-D13F7E a").css("color", "white");
-  });
-  jQuery(".color-D13F7E a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
+// jQuery(document).ready(function () {
+//   jQuery(".color-D13F7E a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#D13F7E");
+//     jQuery(".color-D13F7E a").css("color", "white");
+//   });
+//   jQuery(".color-D13F7E a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
 
-jQuery(document).ready(function () {
-  jQuery(".color-000000 a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
-    jQuery(".color-000000 a").css("color", "white");
-  });
-  jQuery(".color-000000 a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
-jQuery(document).ready(function () {
-  jQuery(".contact-menulink a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
-    jQuery(".contact-menulink a").css("color", "white");
-  });
-  jQuery(".contact-menulink a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
-jQuery(document).ready(function () {
-  jQuery(".acceuil-menulink a").mouseenter(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
-    jQuery(".acceuil-menulink a").css("color", "white");
-  });
-  jQuery(".acceuil-menulink a").mouseleave(function () {
-    jQuery(".fsmenu-list-wrapper").css("background-color", "black");
-  });
-});
+// jQuery(document).ready(function () {
+//   jQuery(".color-000000 a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
+//     jQuery(".color-000000 a").css("color", "white");
+//   });
+//   jQuery(".color-000000 a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
+// jQuery(document).ready(function () {
+//   jQuery(".contact-menulink a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
+//     jQuery(".contact-menulink a").css("color", "white");
+//   });
+//   jQuery(".contact-menulink a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
+// jQuery(document).ready(function () {
+//   jQuery(".acceuil-menulink a").mouseenter(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "#000000 ");
+//     jQuery(".acceuil-menulink a").css("color", "white");
+//   });
+//   jQuery(".acceuil-menulink a").mouseleave(function () {
+//     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
+//   });
+// });
 
 jQuery(document).ready(function () {
   jQuery(".reperation-phone-pieces-list ul li").click(function () {

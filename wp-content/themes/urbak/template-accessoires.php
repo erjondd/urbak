@@ -31,11 +31,11 @@ Template Name: Accessoires Template
 </section>
 <section class="accessoires-smartphones-category">
     <div class="container">
-    <div class="accesoires-title">
+        <div class="accesoires-title">
             Accessoires
         </div>
         <div class="reparation-smartphones-category-title">
-        Accessoires smartphone
+            Accessoires smartphone
         </div>
         <div class="r-s-c-content">
             <?php
@@ -58,7 +58,6 @@ Template Name: Accessoires Template
                         $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
 
                         echo "<div class='slide-product'><div class='slide-picture'><a href='" . get_home_url()   . "/product-category/" .  $product_category->slug . "'><img src=" . $cat_thumb_url . "></a></div></div>";
-                      
                     }
 
 
@@ -95,9 +94,9 @@ Template Name: Accessoires Template
 </section>
 <section class="accessoires-smartphones-category">
     <div class="container">
-   
+
         <div class="reparation-smartphones-category-title">
-        Accessoires PC
+            Accessoires PC
         </div>
         <div class="r-s-c-content">
             <?php
@@ -120,7 +119,6 @@ Template Name: Accessoires Template
                         $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
 
                         echo "<div class='slide-product'><div class='slide-picture'><a href='" . get_home_url()   . "/product-category/" .  $product_category->slug . "'><img src=" . $cat_thumb_url . "></a></div></div>";
-                      
                     }
 
 
@@ -157,9 +155,9 @@ Template Name: Accessoires Template
 </section>
 <section class="accessoires-smartphones-category">
     <div class="container">
-    
+
         <div class="reparation-smartphones-category-title">
-        Accessoires Macbook
+            Accessoires Macbook
         </div>
         <div class="r-s-c-content">
             <?php
@@ -182,7 +180,6 @@ Template Name: Accessoires Template
                         $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
 
                         echo "<div class='slide-product'><div class='slide-picture'><a href='" . get_home_url()   . "/product-category/" .  $product_category->slug . "'><img src=" . $cat_thumb_url . "></a></div></div>";
-                      
                     }
 
 
@@ -241,7 +238,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/apple-charger.png" />
                 </div>
                 <div class="slider-name">
-                Chargeurs
+                    Chargeurs
                 </div>
             </div>
             <div class="slide-product">
@@ -249,7 +246,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/apple-mous.png" />
                 </div>
                 <div class="slider-name">
-                Ecouteurs
+                    Ecouteurs
                 </div>
             </div>
         </div>
@@ -257,9 +254,9 @@ Template Name: Accessoires Template
 </section>
 <section class="accessoires-slider second">
     <div class="container">
-      
+
         <div class="accessories-smartphone">
-        Accessoires PC
+            Accessoires PC
         </div>
         <div class="accessories-all-slide">
             <div class="slide-product">
@@ -267,7 +264,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/keyboard.png" />
                 </div>
                 <div class="slider-name">
-                Claviers
+                    Claviers
                 </div>
             </div>
             <div class="slide-product">
@@ -275,7 +272,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/headset.png" />
                 </div>
                 <div class="slider-name">
-                Casque gaming
+                    Casque gaming
                 </div>
             </div>
             <div class="slide-product">
@@ -283,7 +280,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/mouse.png" />
                 </div>
                 <div class="slider-name">
-                Souris
+                    Souris
                 </div>
             </div>
         </div>
@@ -291,9 +288,9 @@ Template Name: Accessoires Template
 </section>
 <section class="accessoires-slider ">
     <div class="container">
-     
+
         <div class="accessories-smartphone">
-        Accessoires Macbook
+            Accessoires Macbook
         </div>
         <div class="accessories-all-slide">
             <div class="slide-product">
@@ -301,7 +298,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/apple-keyboard.png" />
                 </div>
                 <div class="slider-name">
-                Chargeurs
+                    Chargeurs
                 </div>
             </div>
             <div class="slide-product">
@@ -309,7 +306,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/apple-charger.png" />
                 </div>
                 <div class="slider-name">
-                Souris
+                    Souris
                 </div>
             </div>
             <div class="slide-product">
@@ -317,7 +314,7 @@ Template Name: Accessoires Template
                     <img src="<?php echo get_bloginfo('template_url') ?>/images/apple-mous.png" />
                 </div>
                 <div class="slider-name">
-                Claviers
+                    Claviers
                 </div>
             </div>
         </div>

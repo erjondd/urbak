@@ -18,7 +18,6 @@ Template Name: Laptops Categories Template
     </div>
         <div class="r-s-c-content">
             <?php
-
             $args = array(
                 'number'     => $number,
                 'orderby'    => 'title',

@@ -1,4 +1,4 @@
-.entry-summary {
+.product_cat-acheter .entry-summary {
     .cart {
         .wapf-wrapper {
             .wapf-field-group {
@@ -11,6 +11,48 @@
             }
         }
     }
+}
+.product_cat-repair .entry-summary {
+    .cart {
+        .wapf-wrapper {
+            .wapf-field-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .wapf-field-row {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+.product_cat-acheter {
+    display: flex;
+    flex-direction: row;
+}
+.product_cat-repair {
+    display: flex;
+    flex-direction: row;
+}
+.product_cat-accessoires {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    form {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+    padding-left: 100px;
+}
+.woocommerce div.product form.cart .button {
+    width: 40%;
+    float: right;
 }
 .product-description-field {
     textarea {
@@ -33,8 +75,9 @@ span.wapf-label-text {
     margin: 20px;
     flex: 0 0 calc(25% - 40px);
 }
-.entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
-    width: 100%;
+.woocommerce-tabs,
+.product_meta {
+    display: none;
 }
 .woocommerce-product-gallery--with-images {
     background: #f7f7f7;
@@ -65,12 +108,66 @@ h1.entry-title {
     select {
         font-family: satoshi;
         font-size: 20px;
-        height:50px;
+        height: 50px;
         border-radius: 10px;
     }
 }
-.entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row{
-    width:50%;
+.woocommerce-error {
+    display: none;
+}
+.woocommerce-cart {
+    .woocommerce {
+        margin-top: 220px;
+        font-family: satoshi;
+        thead,
+        tbody {
+            font-size: 20px;
+        }
+        .actions {
+            display: none;
+        }
+        .product-thumbnail {
+            img {
+                height: 150px;
+                width:150px;
+            }
+        }
+    }
+}
+.woocommerce table.shop_table{
+    border-left:none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0px;
+}
+.woocommerce ul.products li.product a img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+    padding: 20px;
+}
+.woocommerce .products ul, .woocommerce ul.products{
+    flex-wrap: wrap;
+    display:flex;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    display: flex;
+    justify-content: center;
+}
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals{
+    padding:100px 0px;
+}
+.woocommerce a.button.alt{
+    background-color: #000;
+}
+.woocommerce table.shop_table td a{
+    color:#6b6b6b;
+    text-decoration: none;
 }
 button.single_add_to_cart_button.button.alt {
     width: 100%;
@@ -80,26 +177,33 @@ button.single_add_to_cart_button.button.alt {
     border-radius: 10px;
     height: 50px;
 }
-.quantity{
-    display:none;
+.quantity {
+    display: none;
 }
-.woocommerce ul.products li.product .woocommerce-loop-product__title{
-    font-family:satoshi;
-    font-size:25px;
-    color:black;
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-family: satoshi;
+    font-size: 25px;
+    color: black;
     text-align: center;
 }
-.woocommerce ul.products li.product .price{
-    font-size:20px;
-    font-family:satoshi;
-    color:#6b6b6b;
+.woocommerce ul.products li.product .price {
+    font-size: 20px;
+    font-family: satoshi;
+    color: #6b6b6b;
     text-align: center;
 }
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
-    width:calc(33.33% - 15px);
-    margin-right:15px;
-    padding:0;
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    width: calc(33.33% - 15px);
+    margin-right: 15px;
+    padding: 0;
 }
 .woocommerce ul.products li.product .button {
-    display:none;
+    display: none;
+}
+//accessoires product page
+.product_cat-accessoires {
+    .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
+        width: 60%;
+    }
 }

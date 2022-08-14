@@ -68,7 +68,6 @@ namespace SW_WAPF\Includes\Controllers {
                 wp_localize_script( 'wapf-admin-js', 'wapf_language', [
                     'title_required'        => __("Please add a field group title first.", 'advanced-product-fields-for-woocommerce'),
                     'fields_required'       => __("Please add some fields first.", 'advanced-product-fields-for-woocommerce'),
-                    'field_limit'           => __('You can only add 5 fields in the free version. Please consider upgrading to premium to support our product. Thank you!','advanced-product-fields-for-woocommerce'),
                     'fieldgroup_limit'      => __("You've reached the amount of field groups you can create in the free version. Please consider upgrading to premium to add unlimited field groups. Thank you!",'advanced-product-fields-for-woocommerce')
                 ]);
 

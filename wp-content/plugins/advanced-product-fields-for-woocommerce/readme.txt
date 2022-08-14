@@ -2,11 +2,11 @@
 Contributors: studiowombat,maartenbelmans
 Tags: woocommerce product addons, woocommerce, woocommerce product options, product addons, product fields
 Requires at least: 4.5
-Tested up to: 5.9.2
+Tested up to: 6.0.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.4.6
+Stable tag: 1.5.2
 
 Customize WooCommerce product pages with powerful and intuitive options ( = product add-ons).
 
@@ -141,6 +141,26 @@ From your WordPress dashboard
  You'll need WooCommerce 3.4.0 or higher, WordPress 4.7 or higher, and PHP 5.6 or higher to make this plugin work.
 
 == Changelog ==
+
+= 1.5.2 =
+ * New: new field type "paragraph", allowing you to add static content (text) in between other fields.
+
+= 1.5.1 =
+ * Improvement: added styling to support modern page builders & themes like Elementor, Astra, and the Avada theme.
+
+= 1.5.0 =
+ * New: included "order again" functionality.
+ * Other: tested & verified new Woo version.
+
+= 1.4.9 =
+ * Other: tested and verified new major WP release + WooCommerce version.
+ * Other: bumped minimum required WooCommerce version from 3.4 to 3.6.
+
+= 1.4.8 =
+ * Fix: fixed a bug with a field limit alert dialog showing incorrectly.
+
+= 1.4.7 =
+ * Improvement: adding to cart via the URL (with '?add-to-cart=') now validates required fields.
 
 = 1.4.6 =
  * Improvement: the "True/False" fields's labels 'true' or 'false' can now be translated.
