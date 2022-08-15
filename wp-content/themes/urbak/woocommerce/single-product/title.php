@@ -20,3 +20,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 the_title( '<div class="product-tittle-price"><h1 class=" entry-title">', '</h1>' );
+?>
+

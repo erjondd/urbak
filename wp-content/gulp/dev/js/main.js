@@ -59,7 +59,13 @@ jQuery(document).ready(function () {
   if ($("body").hasClass("page-id-185")) {
     $("header").addClass("black-menu");
   }
-  
+  jQuery( document ).ready(function() {
+    jQuery(".title-desc").click(function(){
+      var tabId = jQuery(this).attr("tab-id")
+      jQuery(".info-desc").removeClass("show");
+      jQuery(".info_desc_"+tabId).addClass("show");
+      });
+});
 
 
 

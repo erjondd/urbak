@@ -35,11 +35,9 @@
     flex-direction: row;
 }
 .product_cat-accessoires {
-    height: 100%;
     display: flex;
     flex-direction: row;
     form {
-        height: 100%;
         display: flex;
         justify-content: flex-end;
     }
@@ -129,18 +127,18 @@ h1.entry-title {
         .product-thumbnail {
             img {
                 height: 150px;
-                width:150px;
+                width: 150px;
             }
         }
     }
 }
-.woocommerce table.shop_table{
-    border-left:none;
+.woocommerce table.shop_table {
+    border-left: none;
     border-right: none;
     border-top: none;
     border-radius: 0px;
 }
-.woocommerce ul.products li.product a img{
+.woocommerce ul.products li.product a img {
     width: 100%;
     height: auto;
     display: block;
@@ -148,25 +146,28 @@ h1.entry-title {
     box-shadow: none;
     display: flex;
     justify-content: center;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     padding: 20px;
 }
-.woocommerce .products ul, .woocommerce ul.products{
+.woocommerce .products ul,
+.woocommerce ul.products {
     flex-wrap: wrap;
-    display:flex;
+    display: flex;
 }
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
     display: flex;
     justify-content: center;
 }
-.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals{
-    padding:100px 0px;
+.woocommerce .cart-collaterals,
+.woocommerce-page .cart-collaterals {
+    padding: 100px 0px;
 }
-.woocommerce a.button.alt{
+.woocommerce a.button.alt {
     background-color: #000;
 }
-.woocommerce table.shop_table td a{
-    color:#6b6b6b;
+.woocommerce table.shop_table td a {
+    color: #6b6b6b;
     text-decoration: none;
 }
 button.single_add_to_cart_button.button.alt {
@@ -206,4 +207,28 @@ button.single_add_to_cart_button.button.alt {
     .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
         width: 60%;
     }
+}
+.info-desc {
+    &.show {
+        .text-desc {
+            height: 100%;
+            z-index: 11;
+            width: 100%;
+        }
+    }
+    .text-desc {
+        font-family: satoshi;
+        font-size: 15px;
+        height: 0px;
+        width: 0px;
+        z-index: -10;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+.title-desc {
+    font-size: 20px;
+    font-family: satoshi;
+    cursor: pointer;
 }
