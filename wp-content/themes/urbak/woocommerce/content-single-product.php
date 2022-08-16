@@ -25,17 +25,37 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
-do_action('woocommerce_before_single_product');
 
-if (post_password_required()) {
-	echo get_the_password_form(); // WPCS: XSS ok.
-	return;
+$category_ids =  $product->category_ids;
+if(in_array(24, $category_ids)){
+	echo "  <div class='woocommerce-navigation'>
+        <div class='container'>
+            <div class='bck-btn'>< Retour</div>
+            <div class='navigation-bar'>
+                <div class='nav-one-tab service'>1 .Service</div>
+                <div class='nav-one-tab service'>2. Prise de rendez-vous</div>
+                <div class='nav-one-tab service'>3. Horaires</div>
+                <div class='nav-one-tab service'>4. Panier</div>
+                <div class='nav-one-tab service'>5. Informations</div>
+                <div class='nav-one-tab service'>6. Paiement</div>
+                <div class='nav-one-tab service'>7. Confirmation</div>
+            </div>
+        </div>
+    </div>";
 }
-
 ?>
 
 
 <div class="container">
+	<?php
+
+	do_action('woocommerce_before_single_product');
+
+	if (post_password_required()) {
+		echo get_the_password_form(); // WPCS: XSS ok.
+		return;
+	}
+	?>
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 		<?php
 		/**
@@ -48,7 +68,7 @@ if (post_password_required()) {
 		?>
 
 		<div class="summary entry-summary">
-	
+
 			<?php
 			/**
 			 * Hook: woocommerce_single_product_summary.
@@ -64,7 +84,7 @@ if (post_password_required()) {
 			 */
 			do_action('woocommerce_single_product_summary');
 			?>
-			
+
 		</div>
 
 	</div>

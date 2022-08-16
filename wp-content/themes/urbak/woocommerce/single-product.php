@@ -21,10 +21,7 @@ if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
-
-
 get_header('shop'); ?>
-<div class="container">
 
 
 	<!-- <?php
@@ -63,7 +60,6 @@ get_header('shop'); ?>
 	// do_action('woocommerce_sidebar');
 	?>
 	
-</div>
 <?php
 get_footer('shop');
 
