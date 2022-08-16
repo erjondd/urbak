@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -28,7 +26,7 @@
 
 <body id="body" <?php body_class(); ?>>
     <header class="header <?= $header_color_class ?>">
-   
+
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo">
@@ -44,16 +42,28 @@
                     ?>
                 </div>
                 <div class="header-icons">
-                    <div class="search-icon"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></a></div>
+                    <div class="search-icon">
+                        <img class="search-menu-trigger-open" src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" />
+                        <img class="search-menu-trigger-close" src="<?php echo get_bloginfo('template_url') ?>/images/close-icon.svg" />
+                    </div>
                     <div class="cart-icon"><a href="<?php echo get_home_url() ?>/cart"><img src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" /></a></div>
                 </div>
             </div>
             <div class="header-extra-menu">
                 <div class="extra-menu">Menu</div>
             </div>
+            <div class="extra-search">
+                <form role="search" method="get" id="searchform" class="extra-search-content" action="http://localhost/urbak/">
+                    <input type="text" value="" placeholder="Search..." name="s" id="s">
+                    <button type="submit" class="search-input-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></button>
+                </form>
+            </div>
         </div>
-
     </header>
+    <div class="search-background">
+        <div class="search-background-container">
+        </div>
+    </div>
     <div id="fsmenu" class="fs-menu">
         <div class="fsmenu-list-wrapper">
             <div class="fsmenu-list">
@@ -63,7 +73,7 @@
                 ));
                 ?>
             </div>
-            <div class="fsmenu-close" id="fsmenuclose" ><span>Fermer</span></div>
+            <div class="fsmenu-close" id="fsmenuclose"><span>Fermer</span></div>
         </div>
         <div class="fsmenu-infos">
             <div class="fsmenu-languages">Fr / En</div>
@@ -76,27 +86,26 @@
                 <div class="fsmenu-fb"><img src="<?php echo get_bloginfo('template_url') ?>/images/fsmenu-fb.svg" /></div>
             </div>
         </div>
-        
-                    <div class="footer-onmenu" id="onmenu">
-                        <div class="onmenu-first-col">
-                            <div class="onmenu-logo">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/images/onmenu-logo.svg" />
-                            </div>
-                            <div class="onmenu-infos">
-                                <div class="onmenu-info">+41 22 314 56 06</div>
-                                <div class="onmenu-info">info@urbak.ch</div>
-                                <div class="onmenu-info">Rue des Deux-Ponts 29, </br>
-                                    1205 Genève, Suisse</div>
-                            </div>
-                        </div>
-                        <div class="onmenu-second-col">
-                            <div class="onmenu-languages">Fr/En</div>
-                            <div class="onmenu-socials">
-                                <div class="onemenu-insta"><img src="<?php echo get_bloginfo('template_url') ?>/images/insta.svg" /></div>
-                                <div class="onmenu-fb"><img src="<?php echo get_bloginfo('template_url') ?>/images/fb.svg" /></div>
-                            </div>
-                        </div>
-                    </div>
-               
+
+        <div class="footer-onmenu" id="onmenu">
+            <div class="onmenu-first-col">
+                <div class="onmenu-logo">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/images/onmenu-logo.svg" />
+                </div>
+                <div class="onmenu-infos">
+                    <div class="onmenu-info">+41 22 314 56 06</div>
+                    <div class="onmenu-info">info@urbak.ch</div>
+                    <div class="onmenu-info">Rue des Deux-Ponts 29, </br>
+                        1205 Genève, Suisse</div>
+                </div>
+            </div>
+            <div class="onmenu-second-col">
+                <div class="onmenu-languages">Fr/En</div>
+                <div class="onmenu-socials">
+                    <div class="onemenu-insta"><img src="<?php echo get_bloginfo('template_url') ?>/images/insta.svg" /></div>
+                    <div class="onmenu-fb"><img src="<?php echo get_bloginfo('template_url') ?>/images/fb.svg" /></div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  

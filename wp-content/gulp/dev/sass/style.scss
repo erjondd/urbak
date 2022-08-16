@@ -34,6 +34,9 @@ body {
 .footer-onmenu {
   display: none;
 }
+input {
+  outline: none;
+}
 img {
   max-width: 100%;
 }
@@ -52,7 +55,19 @@ ul {
   left: 50%;
   transform: translate(-50%, 0%);
   min-width: 100%;
-  z-index: 2;
+  z-index: 10;
+}
+.search-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 9;
+}
+.header-extra-menu {
+  display: flex;
 }
 .extra-menu {
   color: #fff;
@@ -333,7 +348,7 @@ section.about-us {
   background-color: white;
 }
 
-.main-half{
+.main-half {
   position: relative;
   display: flex;
   justify-content: center;
@@ -341,7 +356,7 @@ section.about-us {
   min-height: 50vh;
   padding: 50px 0;
   background-color: #000;
-  color:#fff;
+  color: #fff;
 }
 
 .nos-points-forts-image {
@@ -892,14 +907,13 @@ footer {
       vertical-align: sub;
     }
     &.flex-label {
-      display:flex;
+      display: flex;
     }
-    .checkmark{
+    .checkmark {
       cursor: pointer;
     }
     input:checked + .checkmark {
       background-image: url(../../../themes/urbak/images/input-checkbox.svg);
-     
     }
   }
 }
@@ -919,7 +933,6 @@ footer {
 }
 .form-inputs .form-input-row select {
   height: 100%;
- 
 }
 .form-inputs input,
 .form-inputs select,
@@ -975,12 +988,10 @@ footer {
   margin-bottom: 100px;
 }
 
-
-.acheter-smartphones-category{
+.acheter-smartphones-category {
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-
 
 @import "_responsive.scss";

@@ -100,6 +100,6 @@ if(in_array(24, $category_ids)){
 	do_action('woocommerce_after_single_product_summary');
 	?>
 
-</div>
 
 <?php do_action('woocommerce_after_single_product'); ?>
+</div>

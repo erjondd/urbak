@@ -115,7 +115,6 @@ h1.entry-title {
 }
 .woocommerce-cart {
     .woocommerce {
-        margin-top: 220px;
         font-family: satoshi;
         thead,
         tbody {
@@ -137,17 +136,6 @@ h1.entry-title {
     border-right: none;
     border-top: none;
     border-radius: 0px;
-}
-.woocommerce ul.products li.product a img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 0 1em;
-    box-shadow: none;
-    display: flex;
-    justify-content: center;
-    background-color: #f7f7f7;
-    padding: 20px;
 }
 .woocommerce .products ul,
 .woocommerce ul.products {
@@ -202,6 +190,41 @@ button.single_add_to_cart_button.button.alt {
 .woocommerce ul.products li.product .button {
     display: none;
 }
+
+.woocommerce-Price-currencySymbol{
+    margin-right: 15px;
+}
+
+//loop of woocommerce products
+.woocommerce{
+    ul.products{
+        li.product{
+            a{
+                display:block;
+                width: 100%;
+                overflow: hidde;
+                img{
+                    width: calc(100% - 60px);
+                    height: calc(100% - 160px);
+                    max-height: 300px;
+                    padding: 30px;
+                    display: block;
+                    box-shadow: none;
+                    display: flex;
+                    justify-content: center;
+                    object-fit: contain;
+                    object-position: center;
+                    background-color: #f7f7f7;
+                }
+                &:hover{
+                    img{
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+        }   
+    } 
+} 
 //accessoires product page
 .product_cat-accessoires {
     .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
