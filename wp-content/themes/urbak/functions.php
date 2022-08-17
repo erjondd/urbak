@@ -18,6 +18,40 @@ function add_svg_to_upload_mimes($upload_mimes)
 
 add_filter('upload_mimes', 'add_svg_to_upload_mimes', 10, 1);
 
+add_filter('woocommerce_checkout_fields', 'njengah_override_checkout_fields');
+
+function njengah_override_checkout_fields($fields)
+
+ {
+
+
+
+//  $fields['billing']['billing_company']['placeholder'] = 'Business Name';
+
+//  $fields['billing']['billing_company']['label'] = 'Business Name';
+
+ $fields['billing']['billing_first_name']['placeholder'] = 'Nom';
+ $fields['billing']['billing_city']['placeholder'] = 'Ville';
+ $fields['billing']['billing_address_1']['placeholder'] = 'Addresse';
+
+ $fields['shipping']['shipping_first_name']['placeholder'] = 'Nom';
+
+ $fields['shipping']['shipping_last_name']['placeholder'] = 'Prénom';
+
+ $fields['shipping']['shipping_company']['placeholder'] = 'Company Name';
+
+ $fields['billing']['billing_last_name']['placeholder'] = 'Prénom';
+
+ $fields['billing']['billing_email']['placeholder'] = 'E-mail ';
+
+ $fields['billing']['billing_phone']['placeholder'] = 'Téléphone ';
+
+
+
+ return $fields;
+
+ }
+
 
 //Menu
 

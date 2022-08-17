@@ -1,0 +1,11 @@
+2022-08-17T16:37:45+00:00 CRITICAL Uncaught Error: Call to undefined function set() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\functions.php:27
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): njengah_override_checkout_fields(Array)
+#1 C:\xampp\htdocs\urbak\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(267): apply_filters('woocommerce_che...', Array)
+#3 C:\xampp\htdocs\urbak\wp-content\themes\urbak\woocommerce\checkout\form-checkout.php(39): WC_Checkout->get_checkout_fields()
+#4 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(313): wc_get_template('checkout/form-c...', Array)
+#6 C:\xampp\htdocs\urbak\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#7 C:\xam in C:\xampp\htdocs\urbak\wp-content\themes\urbak\functions.php on line 27
+
