@@ -1,4 +1,11 @@
 jQuery(document).ready(function () {
+
+
+  jQuery("#cart-trigger").on('click', function () {
+    jQuery(".cart-dropdown").addClass("cart-open");
+  });
+
+
   jQuery(".extra-menu").on("click", function () {
     const _fsmenu = document.getElementById("fsmenu");
     const _body = document.getElementById("body");
@@ -31,13 +38,13 @@ jQuery(document).ready(function () {
     }
   });
 
-  jQuery( document ).ready(function() {
-    jQuery(".title-desc").click(function(){
+  jQuery(document).ready(function () {
+    jQuery(".title-desc").click(function () {
       var tabId = jQuery(this).attr("tab-id")
       jQuery(".info-desc").removeClass("show");
-      jQuery(".info_desc_"+tabId).addClass("show");
-      });
-});
+      jQuery(".info_desc_" + tabId).addClass("show");
+    });
+  });
 
 
 
@@ -108,8 +115,8 @@ jQuery("#scroll-down-repetation").click(function () {
 jQuery(document).ready(function () {
   jQuery(".fsmenu-list .color-FDCE2C a").mouseenter(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "#FDCE2C");
-    jQuery(".fsmenu-list ul").addClass("is-hover"); 
-    jQuery(".color-FDCE2C a").css("color", "white");
+    jQuery(".fsmenu-list ul").addClass("is-hover");
+    jQuery(".fsmenu-list .color-FDCE2C a").css("color", "white");
   });
   jQuery(".fsmenu-list .color-FDCE2C a").mouseleave(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
@@ -117,7 +124,7 @@ jQuery(document).ready(function () {
   });
   jQuery(".fsmenu-list .color-2562EF a").mouseenter(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "#2562EF ");
-    jQuery(".color-2562EF a").css("color", "white");
+    jQuery(".fsmenu-list .color-2562EF a").css("color", "white");
   });
   jQuery(".fsmenu-list .color-2562EF a").mouseleave(function () {
     jQuery(".fsmenu-list-wrapper").css("background-color", "black");
@@ -174,9 +181,9 @@ function genColumn(type, title) {
   var wrapper = document.getElementById("vendre-content");
   var elementString = jQuery.parseHTML(
     `<div class="vendre-content-form-output">` +
-      `<span class="vendre-title">${type}</span>` +
-      `<span class="vendre-value">${title}</span>` +
-      `</div>`
+    `<span class="vendre-title">${type}</span>` +
+    `<span class="vendre-value">${title}</span>` +
+    `</div>`
   );
   jQuery(wrapper).append(elementString);
 }
@@ -204,7 +211,7 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
       var votre = document.querySelectorAll(
         "#wpforms-226-field_12 input:checked"
       );
-      if(typeof votre !== "undefined"){
+      if (typeof votre !== "undefined") {
         var votreSelected = votre[0].labels[0].innerHTML;
         genColumn("Votre", votreSelected);
       }
@@ -213,30 +220,30 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
       var ekran = document.querySelectorAll(
         "#wpforms-226-field_14 input:checked"
       );
-    if(typeof ekran !== "undefined"){
-      var ekran = ekran[0].labels[0].innerHTML;
-      genColumn("Ekran", ekran);
-    }
-  
+      if (typeof ekran !== "undefined") {
+        var ekran = ekran[0].labels[0].innerHTML;
+        genColumn("Ekran", ekran);
+      }
+
 
       break;
     case "4":
       var coque = document.querySelectorAll(
         "#wpforms-226-field_17 input:checked"
       );
-    if(typeof coque !== "undefined"){
-      var coque = coque[0].labels[0].innerHTML;
-      genColumn("Coque", coque);
-    }
+      if (typeof coque !== "undefined") {
+        var coque = coque[0].labels[0].innerHTML;
+        genColumn("Coque", coque);
+      }
       break;
     case "5":
       var fonctionnel = document.querySelectorAll(
         "#wpforms-226-field_19 input:checked"
       );
-    if(typeof fonctionnel !== "undefined"){
-      var fonctionnel = fonctionnel[0].labels[0].innerHTML;
-      genColumn("Fonctionnel", fonctionnel);
-    }
+      if (typeof fonctionnel !== "undefined") {
+        var fonctionnel = fonctionnel[0].labels[0].innerHTML;
+        genColumn("Fonctionnel", fonctionnel);
+      }
       break;
     case "6":
       break;
@@ -244,4 +251,18 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
     default:
       break;
   }
+
+
+});
+
+
+jQuery(document).mouseup(function(e) 
+{
+    var container = jQuery(".cart-dropdown");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.removeClass('cart-open');
+    }
 });
