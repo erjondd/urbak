@@ -68,9 +68,22 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+add_filter( 'body_class', 'wc_product_cats_css_body_class' );
+  
+function wc_product_cats_css_body_class( $classes ){
+  if ( is_singular( 'product' ) ) {
+    $current_product = wc_get_product();
+    $custom_terms = get_the_terms( $current_product->get_id(), 'product_cat' );
+    if ( $custom_terms ) {
+      foreach ( $custom_terms as $custom_term ) {
+        $classes[] = 'product_cat_' . $custom_term->slug;
+      }
+    }
+  }
+  return $classes;
+}
+
 function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-
-
