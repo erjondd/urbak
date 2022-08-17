@@ -40,6 +40,8 @@
     form {
         display: flex;
         justify-content: flex-end;
+        height: 100%;
+    align-content: flex-end;
     }
 }
 .woocommerce #content div.product div.summary,
@@ -300,3 +302,8 @@ button.single_add_to_cart_button.button.alt {
     }
 }
 
+.woocommerce div.product div.summary{
+    display: flex;
+    flex-direction: column;
+    min-height: 548px;
+}
