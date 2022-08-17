@@ -162,8 +162,11 @@ body {
         &.is-hover {
             li.current_page_item {
                 a {
-                    &:not(:hover) {
-                        opacity: 0.2;
+                    // &:not(:hover) {
+                    //     opacity: 0.2;
+                    // }
+                    &::before{
+                        content: none;
                     }
                 }
             }
@@ -420,6 +423,38 @@ body {
             &:hover {
                 color: #333;
                 opacity: 1;
+            }
+        }
+    }
+    &.woocommerce {
+        &.product_cat_repair {
+            margin-top: 0;
+            padding-top: 0;
+            &:not(.search-menu-open) {
+                .header-wrapper {
+                    .header-logo,
+                    .header-icons {
+                        img {
+                            filter: invert(0);
+                        }
+                    }
+                    .header-menu {
+                        ul li a {
+                            color: #fff;
+                            &:hover {
+                                color: #fff;
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+                .header-extra-menu .extra-menu {
+                    color: #fff;
+                    &:hover {
+                        color: #fff;
+                        opacity: 0.6;
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,51 @@
+.search-section {
+    margin-bottom: 30px;
+}
+
+.search-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.search-product {
+    margin-bottom: 30px;
+    a {
+        text-decoration: none;
+        &:hover {
+            .search-product-image {
+                background-color: #f3f3f3;
+            }
+            .search-found-content {
+                span {
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}
+
+.search-product-image {
+    padding: 30px;
+    background-color: #f7f7f7;
+}
+
+.search-found-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    span {
+        text-decoration: none;
+        font-size: 25px;
+        font-family: satoshi;
+        font-weight: medium;
+        line-height: 33px;
+        color: #000;
+    }
+    img {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
