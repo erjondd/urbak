@@ -7,23 +7,7 @@ get_header();
 Template Name: Smartphone Categories Template
 
 */
-$category_ids =  $product->category_tagID;
-if(in_array(28, $category_ids)){
-	echo "  <div class='woocommerce-navigation'>
-        <div class='container'>
-            <div class='bck-btn'>< Retour</div>
-            <div class='navigation-bar'>
-                <div class='nav-one-tab service'>1 .Service</div>
-                <div class='nav-one-tab service'>2. Prise de rendez-vous</div>
-                <div class='nav-one-tab service'>3. Horaires</div>
-                <div class='nav-one-tab service'>4. Panier</div>
-                <div class='nav-one-tab service'>5. Informations</div>
-                <div class='nav-one-tab service'>6. Paiement</div>
-                <div class='nav-one-tab service'>7. Confirmation</div>
-            </div>
-        </div>
-    </div>";
-}
+
 
 ?>
 <section class="reparation-smartphones-category">

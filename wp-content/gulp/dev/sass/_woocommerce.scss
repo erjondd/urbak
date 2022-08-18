@@ -413,3 +413,12 @@ body {
         }
     }
 }
+div.wpforms-container-full .wpforms-form .wpforms-pagebreak-right .wpforms-page-button {
+    margin: 0 0 0 0px;
+    background: transparent;
+    border: 1px solid transparent;
+    &:hover{
+        background: transparent;
+        border: 1px solid transparent;
+    }
+}
