@@ -27,6 +27,7 @@ global $product;
  */
 
 $category_ids =  $product->category_ids;
+
 if(in_array(24, $category_ids)){
 	echo "  <div class='woocommerce-navigation'>
         <div class='container'>

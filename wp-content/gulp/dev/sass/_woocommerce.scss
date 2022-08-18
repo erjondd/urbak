@@ -41,7 +41,7 @@
         display: flex;
         justify-content: flex-end;
         height: 100%;
-    align-content: flex-end;
+        align-content: flex-end;
     }
 }
 .woocommerce #content div.product div.summary,
@@ -168,9 +168,6 @@ button.single_add_to_cart_button.button.alt {
     border-radius: 10px;
     height: 50px;
 }
-.quantity {
-    display: none;
-}
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
     font-family: satoshi;
     font-size: 25px;
@@ -258,7 +255,7 @@ button.single_add_to_cart_button.button.alt {
     cursor: pointer;
 }
 
-.woocommerce form .form-row input.input-text{
+.woocommerce form .form-row input.input-text {
     width: 100%;
     background: 0 0;
     height: 40px;
@@ -272,7 +269,13 @@ button.single_add_to_cart_button.button.alt {
     border-top: none;
 }
 
-.select2-container--default .select2-selection--single{
+.product {
+    .quantity {
+        display: none;
+    }
+}
+
+.select2-container--default .select2-selection--single {
     background: 0 0;
     height: 40px;
     border: 1px solid black;
@@ -280,30 +283,61 @@ button.single_add_to_cart_button.button.alt {
     outline: 0;
     font-family: satoshi;
     font-size: 18px;
-    display:flex;
+    display: flex;
     align-items: center;
-    color:#000;
-    .select2-selection__rendered{
-        color:#000;
+    color: #000;
+    .select2-selection__rendered {
+        color: #000;
     }
-
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow{
+.select2-container--default .select2-selection--single .select2-selection__arrow {
     display: flex;
     align-self: center;
     height: 100%;
 }
-#billing_company_field{
-    display:none;
+#billing_company_field {
+    display: none;
 }
-.woocommerce form .form-row{
-    label{
-        display:none;
+.woocommerce form .form-row {
+    label {
+        display: none;
     }
 }
 
-.woocommerce div.product div.summary{
+.woocommerce div.product div.summary {
     display: flex;
     flex-direction: column;
     min-height: 548px;
+}
+.woocommerce-mini-cart {
+}
+.woocommerce-mini-cart-item {
+    display: flex;
+    a {
+        display: block;
+    }
+    img {
+        max-height: 100px;
+    }
+}
+.cart-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -9999;
+    pointer-events: none;
+    overflow: hidden;
+    &.cart-open {
+        min-height: 500px;
+        width: 500px;
+        height: 500px;
+        z-index: 999;
+        pointer-events: all;
+    }
 }

@@ -117,9 +117,12 @@ body {
             }
         }
         .cart-icon {
+            position: relative;
             cursor: pointer;
-            &:hover {
-                opacity: 0.7;
+            .cart-icon-img {
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
     }
@@ -165,7 +168,7 @@ body {
                     // &:not(:hover) {
                     //     opacity: 0.2;
                     // }
-                    &::before{
+                    &::before {
                         content: none;
                     }
                 }
