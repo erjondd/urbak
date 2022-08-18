@@ -37,66 +37,76 @@
     //     z-index: -1;
     //     width: 100%;
     // }
-    .partner-inputs-wrapper .form-textarea textarea{
+    .woocommerce ul.products[class*="columns-"] li.product,
+    .woocommerce-page ul.products[class*="columns-"] li.product {
+        margin-right: 5px;
+    }
+    .category-smartphone {
+        width: calc(100% / 3 - 45px);
+    }
+    .reparation-smartphones-category {
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .partner-inputs-wrapper .form-textarea textarea {
         width: 100%;
         height: 100%;
     }
-    .contact-form-picture{
+    .contact-form-picture {
         position: relative;
         width: calc(100% + 30px);
         margin-left: -15px;
     }
-    .contact-form-content{
+    .contact-form-content {
         width: 100%;
     }
-    .contact-form-wrapper{
+    .contact-form-wrapper {
         padding-right: 0px;
     }
-    body section.contact .contact-big-text{
-        font-size:100px;
+    body section.contact .contact-big-text {
+        font-size: 100px;
     }
     body section.contact .contact-infos {
         font-size: 14px;
         min-width: 430px;
     }
     body section.reperation-main .reperation-tittle,
-    section.assurance-page .assurance-center-text{
-        font-size:90px;
+    section.assurance-page .assurance-center-text {
+        font-size: 90px;
     }
-    section.reperation-phone{
+    section.reperation-phone {
         height: 100%;
     }
-    section.reperation-phone .reperation-phone-content{
+    section.reperation-phone .reperation-phone-content {
         flex-direction: column;
     }
-    .reperation-phone-infos{
+    .reperation-phone-infos {
         padding-bottom: 50px;
     }
-    section.reperation-type{
-        height:100%;
+    section.reperation-type {
+        height: 100%;
     }
-    section.reperation-type .reperation-types{
+    section.reperation-type .reperation-types {
         flex-direction: column;
     }
-    section.reperation-type .reperation-smartphones{
+    section.reperation-type .reperation-smartphones {
         flex: 0 0 33%;
-        margin-right:0px;
-        
+        margin-right: 0px;
     }
-    .reperation-smartphones{
+    .reperation-smartphones {
         padding-bottom: 50px;
     }
-    .reperation-laptops{
+    .reperation-laptops {
         padding-bottom: 50px;
     }
-    .reperation-tablets{
+    .reperation-tablets {
         padding-bottom: 50px;
     }
-    section.reperation-type .reperation-tablets{
-        flex:0 0 33%;
+    section.reperation-type .reperation-tablets {
+        flex: 0 0 33%;
         margin-left: 0px;
     }
-    section.reperation-phone .reperation-phone-pieces{
+    section.reperation-phone .reperation-phone-pieces {
         flex-direction: column-reverse;
     }
     .n-p-f-bottom-slide ul li {
@@ -553,7 +563,7 @@
     .footer-all-content .rs-mid-mobile {
         display: inline-grid;
         padding-top: 40px;
-        
+
         img {
             padding-bottom: 25px;
         }
@@ -591,7 +601,6 @@
 }
 
 @media screen and (min-width: 992px) {
-   
     //For Large Laptops
     .container {
         max-width: 892px;
@@ -601,8 +610,8 @@
 
 @media screen and (max-width: 1280px) {
     section.reperation-main .reperation-tittle,
-    section.assurance-page .assurance-center-text{
-        font-size:150px;
+    section.assurance-page .assurance-center-text {
+        font-size: 150px;
     }
     .form-textarea {
         padding-bottom: 35px;
@@ -639,9 +648,9 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1580px) {
-    .form-textarea textarea{
+    .form-textarea textarea {
         width: 587px;
-    height: 438px;
+        height: 438px;
     }
     section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
         top: 26%;
@@ -666,11 +675,11 @@
         top: 20%;
         left: 30%;
     }
-    section.reperation-phone .reperation-phone-pieces-picture .circle-3{
-        bottom:18%;
+    section.reperation-phone .reperation-phone-pieces-picture .circle-3 {
+        bottom: 18%;
     }
 }
-    @media screen and (max-width: 1580px) {
+@media screen and (max-width: 1580px) {
     //For Big TV's (HD Screens)
     .acceuil-center-text {
         font-size: 150px;
@@ -706,9 +715,9 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
-    .footer-righside{
-        display:none;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer-righside {
+        display: none;
     }
     section.reperation-phone .reperation-phone-pieces-picture .circle-5 {
         left: 8%;
@@ -749,17 +758,17 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .form-textarea textarea{
+    .form-textarea textarea {
         width: 459px;
-    height: 398px;
+        height: 398px;
     }
-    section.reperation-phone .reperation-phone-content{
+    section.reperation-phone .reperation-phone-content {
         flex-direction: column;
     }
-    section.reperation-phone{
+    section.reperation-phone {
         height: 100%;
     }
-    section.reperation-phone .reperation-phone-infos{
+    section.reperation-phone .reperation-phone-infos {
         padding-bottom: 100px;
     }
 }
@@ -772,19 +781,39 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    section.contact .contact-big-text{
-        font-size:150px;
+    .woocommerce-page div.product div.summary{
+        width: 100%;
+        float:left;
+        padding-left: 0px;
     }
-    section.contact .contact-infos{
-        font-size:20px;
+    .woocommerce .product .woocommerce-product-gallery--with-images{
+        width: 100% !important;
+    }
+    .woocommerce div.product{
+        display:flex;
+        flex-direction: column;
+    }
+    .category-smartphone{
+        min-height: 95px;
+    }
+    .reparation-smartphones-category-title {
+        font-size: 50px;
+    }
+    section.contact .contact-big-text {
+        font-size: 150px;
+    }
+    section.contact .contact-infos {
+        font-size: 20px;
         min-width: 645px;
     }
-    .assurance-form-rows, .assurance-form-top, .assurance-page-bottom{
+    .assurance-form-rows,
+    .assurance-form-top,
+    .assurance-page-bottom {
         width: 100%;
     }
     section.reperation-main .reperation-tittle,
-    section.assurance-page .assurance-center-text{
-        font-size:120px;
+    section.assurance-page .assurance-center-text {
+        font-size: 120px;
     }
     .a-m-text {
         font-size: 70px;
@@ -849,9 +878,23 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .product_cat-repair .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row{
+        width: 50%;
+    }
+    .category-smartphone {
+        min-height:60px;
+        img {
+            max-width: 60px;
+            max-height: 60px;
+        }
+    }
+    
+    .category-smartphone {
+        width: calc(100% / 2 - 45px);
+    }
     body section.reperation-main .reperation-tittle,
-    section.assurance-page .assurance-center-text{
-        font-size:50px;
+    section.assurance-page .assurance-center-text {
+        font-size: 50px;
     }
     section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
         top: 15%;
@@ -873,5 +916,4 @@
         left: 35%;
         bottom: 20%;
     }
-    
 }
