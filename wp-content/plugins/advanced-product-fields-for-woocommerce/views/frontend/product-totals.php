@@ -10,7 +10,7 @@
             <span class="wapf-product-total price amount"></span>
         </div>
         <div>
-            <span><?php _e('Options total','advanced-product-fields-for-woocommerce'); ?></span>
+            <span><?php _e('Total','advanced-product-fields-for-woocommerce'); ?></span>
             <span class="wapf-options-total price amount"></span>
         </div>
         <div>
