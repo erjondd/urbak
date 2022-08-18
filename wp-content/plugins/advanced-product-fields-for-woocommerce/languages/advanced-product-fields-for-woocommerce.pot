@@ -642,7 +642,7 @@ msgid "Product total"
 msgstr ""
 
 #: dist/views/frontend/product-totals.php:13
-msgid "Options total"
+msgid "Total"
 msgstr ""
 
 #: dist/views/frontend/product-totals.php:17
