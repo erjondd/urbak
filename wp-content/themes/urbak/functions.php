@@ -109,3 +109,32 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 //    }
 //    echo '</table></div>';
 // }
+
+add_action('wp_head', 'custom_ajax_spinner', 1000 );
+function custom_ajax_spinner() {
+    ?>
+    <style>
+    .woocommerce .blockUI.blockOverlay:before,
+    .woocommerce .loader:before {
+        height: 3em;
+        width: 3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -.5em;
+        margin-top: -.5em;
+        display: block;
+        content: "";
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+        background-image:url('<?php echo get_stylesheet_directory_uri() . "/images/circle_loading.gif"; ?>') !important;
+        background-position: center center;
+        background-size: cover;
+        line-height: 1;
+        text-align: center;
+        font-size: 2em;
+    }
+    </style>
+    <?php
+}

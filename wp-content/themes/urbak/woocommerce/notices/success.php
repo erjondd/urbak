@@ -22,7 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! $notices ) {
 	return;
 }
-
 ?>
 
 <?php foreach ( $notices as $notice ) : ?>
