@@ -1,0 +1,26 @@
+2022-08-18T22:00:47+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in C:\xampp\htdocs\urbak\wp-content\themes\urbak\woocommerce\archive-product.php on line 26
+
+2022-08-18T22:26:33+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_category() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\header.php:64
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\urbak\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\urbak\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\urbak\wp-content\themes\urbak\woocommerce\single-product.php(24): get_header('shop')
+#4 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\header.php on line 64
+
+2022-08-18T22:26:36+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_category() in C:\xampp\htdocs\urbak\wp-content\themes\urbak\header.php:64
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\urbak\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\urbak\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\urbak\wp-content\themes\urbak\woocommerce\single-product.php(24): get_header('shop')
+#4 C:\xampp\htdocs\urbak\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\urbak\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\urbak\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\urbak\wp-content\themes\urbak\header.php on line 64
+

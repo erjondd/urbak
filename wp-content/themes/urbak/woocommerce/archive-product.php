@@ -15,11 +15,15 @@
  * @package WooCommerce\Templates
  * @version 3.4.0
  */
-
+$query_object = get_queried_object();
+$parent_id = $query_object->parent;
 defined('ABSPATH') || exit;
 
 get_header('shop');
 
+if($parent_id === 25){
+	echo "<h1>Is repair</h1>";
+}
 /**
  * Hook: woocommerce_before_main_content.
  *

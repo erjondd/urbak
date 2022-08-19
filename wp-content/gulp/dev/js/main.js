@@ -1,8 +1,11 @@
 jQuery(document).ready(function () {
 
 
-  jQuery("#cart-trigger").on('click', function () {
-    jQuery(".cart-dropdown").addClass("cart-open");
+  jQuery("#cart-trigger .cart-icon-img").on('click', function () {
+    const _this = jQuery(this);
+    const elm = jQuery(".cart-dropdown");
+    elm.toggleClass("cart-open");
+    _this.toggleClass("cart-icon-img-filter")
   });
 
 
@@ -256,13 +259,12 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
 });
 
 
-jQuery(document).mouseup(function(e) 
-{
-    var container = jQuery(".cart-dropdown");
+jQuery(document).mouseup(function (e) {
+  var container = jQuery(".cart-dropdown");
 
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
-    {
-        container.removeClass('cart-open');
-    }
+  // if the target of the click isn't the container nor a descendant of the container
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container.removeClass('cart-open');
+    jQuery(".cart-icon-img").removeClass("cart-icon-img-filter")
+  }
 });

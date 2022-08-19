@@ -46,8 +46,12 @@
                         <img class="search-menu-trigger-open" src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" />
                         <img class="search-menu-trigger-close" src="<?php echo get_bloginfo('template_url') ?>/images/close-icon.svg" />
                     </div>
-                    <div class="cart-icon" id="cart-trigger"><img class="cart-icon-img" src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" />
-                        <div class="cart-dropdown">
+                    <div class="cart-icon" id="cart-trigger">
+                        <img class="cart-icon-img" src="<?php echo get_bloginfo('template_url') ?>/images/cart-icon.svg" />
+                        <?php if (WC()->cart->get_cart_contents_count() > 0) { ?>
+                            <span class="cart-icon-img-count"><?= WC()->cart->get_cart_contents_count(); ?></span>
+                        <?php } ?>
+                        <div class="cart-dropdown <?= WC()->cart->get_cart_contents_count() === 0 ? 'cart-dropdown-no-items' : '' ?>">
 
                             <?php if (!WC()->cart->is_empty()) : ?>
 
@@ -57,6 +61,9 @@
 
                                     foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
                                         $_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
+                                        $category_id_last = $_product->category_ids[0];
+                                        $category_term = get_term_by('id', $category_id_last, 'product_cat', 'ARRAY_A');
+                                        $category_name = $category_term["name"];
                                         $product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
 
                                         if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key)) {
@@ -69,20 +76,27 @@
 
                                                 <?php if (empty($product_permalink)) : ?>
                                                     <?php echo $thumbnail;
-                                                    echo "<div class='mini-cart-product-name'>" . wp_kses_post($product_name) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                    echo "<div class='mini-cart-product-label'><span>" . $category_name . "</span>" . wp_kses_post($product_name) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                                                     ?>
                                                 <?php else : ?>
                                                     <a href="<?php echo esc_url($product_permalink); ?>">
                                                         <?php echo $thumbnail;
-                                                        echo "<div class='mini-cart-product-name'>" . wp_kses_post($product_name) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                        echo "<div class='mini-cart-product-label'>";
+                                                        echo "<div class='mini-cart-row'>";
+                                                        echo "<span class='mini-cart-product-cat'>" . $category_name . "</span>";
+                                                        echo "<span class='mini-cart-product-name'>" . wp_kses_post($product_name) . "</span>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                        echo "</div>";
+                                                        echo "<div class='mini-cart-row'>";
+                                                        echo "<div class='mini-cart-qty'>x" . $cart_item['quantity'] . " </div>";
+                                                        echo "</div>";
+                                                        echo "</div>";
                                                         ?>
                                                     </a>
                                                 <?php endif; ?>
-                                                <?php echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                                ?>
-                                                <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s &times; %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                                ?>
                                                 <?php
+                                                //  echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                echo "<span class='mini-cart-price'>CHF " . $cart_item["line_total"] . "</span>";
+
                                                 echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                                     'woocommerce_cart_item_remove_link',
                                                     sprintf(
