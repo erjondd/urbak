@@ -28,7 +28,7 @@ global $product;
 
 $category_ids =  $product->category_ids;
 
-if(in_array(24, $category_ids)){
+if (in_array(24, $category_ids)) {
 	echo "  <div class='woocommerce-navigation'>
         <div class='container'>
             <div class='bck-btn'>< Retour</div>
@@ -48,8 +48,9 @@ if(in_array(24, $category_ids)){
 
 
 <div class="container">
-	<?php
+	<?= "<h1>Here</h1>" ?>
 
+	<?php
 	do_action('woocommerce_before_single_product');
 
 	if (post_password_required()) {
@@ -102,5 +103,5 @@ if(in_array(24, $category_ids)){
 	?>
 
 
-<?php do_action('woocommerce_after_single_product'); ?>
+	<?php do_action('woocommerce_after_single_product'); ?>
 </div>

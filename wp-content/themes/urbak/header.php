@@ -76,7 +76,15 @@
 
                                                 <?php if (empty($product_permalink)) : ?>
                                                     <?php echo $thumbnail;
-                                                    echo "<div class='mini-cart-product-label'><span>" . $category_name . "</span>" . wp_kses_post($product_name) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                    echo "<div class='mini-cart-product-label'>";
+                                                    echo "<div class='mini-cart-row'>";
+                                                    echo "<span class='mini-cart-product-cat'>" . $category_name . "</span>";
+                                                    echo "<span class='mini-cart-product-name'>" . wp_kses_post($product_name) . "</span>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                    echo "</div>";
+                                                    echo "<div class='mini-cart-row'>";
+                                                    echo "<div class='mini-cart-qty'>x" . $cart_item['quantity'] . " </div>";
+                                                    echo "</div>";
+                                                    echo "</div>";
                                                     ?>
                                                 <?php else : ?>
                                                     <a href="<?php echo esc_url($product_permalink); ?>">
@@ -95,7 +103,7 @@
                                                 <?php endif; ?>
                                                 <?php
                                                 //  echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                                echo "<span class='mini-cart-price'>CHF " . $cart_item["line_total"] . "</span>";
+                                                echo "<span class='mini-cart-price'>" . wc_price($cart_item["line_subtotal"]) . "</span>";
 
                                                 echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                                     'woocommerce_cart_item_remove_link',
