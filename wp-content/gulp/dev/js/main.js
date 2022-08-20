@@ -49,6 +49,18 @@ jQuery(document).ready(function () {
     });
   });
 
+  //Homepage Slider
+  var accessoriesSwiper = new Swiper(".swiper-container-accessories", {
+    slidesPerView: 3,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+  });
 
 
   //Homepage Slider

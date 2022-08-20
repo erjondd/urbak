@@ -20,14 +20,13 @@ $parent_id = $query_object->parent;
 defined('ABSPATH') || exit;
 
 get_header('shop');
-$previous = "javascript:history.go(-1)";
-if(isset($_SERVER['HTTP_REFERER'])) {
-    $previous = $_SERVER['HTTP_REFERER'];
-}
+
 if($parent_id === 25){
 	echo "  <div class='woocommerce-navigation'>
 	<div class='container'>
-		<a href='<?= $previous ?>' class='bck-btn'>< Retour</a>
+	<div class='bck-btn'>
+	<a href='#' >< Retour</a>
+</div>
 		<div class='navigation-bar'>
 			<div class='nav-one-tab service'>1 .Service</div>
 			<div class='nav-one-tab service'>2. De rendez-vous</div>
@@ -39,7 +38,6 @@ if($parent_id === 25){
 		</div>
 	</div>
 </div>";
-echo "<a href='<?= $previous ?>'>Back</a>";
 }
 /**
  * Hook: woocommerce_before_main_content.

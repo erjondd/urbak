@@ -23,11 +23,7 @@ add_filter('woocommerce_checkout_fields', 'njengah_override_checkout_fields');
 function njengah_override_checkout_fields($fields)
 
 {
-
-
-
   //  $fields['billing']['billing_company']['placeholder'] = 'Business Name';
-
   //  $fields['billing']['billing_company']['label'] = 'Business Name';
 
   $fields['billing']['billing_first_name']['placeholder'] = 'Nom';
@@ -99,28 +95,6 @@ function mytheme_add_woocommerce_support()
   add_theme_support('woocommerce');
 }
 add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
-
-// add_action( 'woocommerce_after_add_to_cart_form', 'shipping_rates_single_product' );
-
-// function shipping_rates_single_product() {
-//    global $product;
-//    if ( ! $product->needs_shipping() ) return;
-//    $zones = WC_Shipping_Zones::get_zones();
-//    echo '<div><i class="fas fa-truck"></i> ' . __( 'Shipping', 'woocommerce' );
-//    echo '<table>';
-//    foreach ( $zones as $zone_id => $zone ) {
-//       echo '<tr><td>';
-//       echo $zone['zone_name'] . '</td><td>';
-//       $zone_shipping_methods = $zone['shipping_methods'];
-//       foreach ( $zone_shipping_methods as $index => $method ) {
-//          $instance = $method->instance_settings;
-//          $cost = $instance['cost'] ? $instance['cost'] : $instance['min_amount'];
-//          echo $instance['title'] . ' ' . wc_price( $cost ) . '<br>';
-//       }
-//       echo '</td></tr>';
-//    }
-//    echo '</table></div>';
-// }
 
 add_action('wp_head', 'custom_ajax_spinner', 1000);
 function custom_ajax_spinner()

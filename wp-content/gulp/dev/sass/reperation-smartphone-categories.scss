@@ -25,6 +25,9 @@
 .r-s-c-content {
     display: flex;
     flex-wrap: wrap;
+    .swiper-container {
+        padding: 0 50px;
+    }
 }
 .reparation-smartphones-category-title {
     font-family: mont-heavy;

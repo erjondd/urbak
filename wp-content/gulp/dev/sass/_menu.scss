@@ -366,8 +366,15 @@ body {
     font-size: 20px;
     padding-top: 270px;
     padding-bottom: 50px;
-    .bck-btn{
+    .bck-btn {
         padding-bottom: 30px;
+        a {
+            color: #fff;
+            font-family: satoshi;
+            font-size: 20px;
+            text-decoration: none;
+            padding-bottom: 30px;
+        }
     }
 }
 .navigation-bar {
@@ -450,8 +457,7 @@ body {
             }
         }
     }
-    
-   
+
     &.page-id-185,
     &.page-id-201,
     &.page-id-210,
@@ -462,7 +468,6 @@ body {
     &.category_parent_laptops,
     &.category_parent_tablets {
         .header {
-        
             background-color: black;
         }
         .header-wrapper {
