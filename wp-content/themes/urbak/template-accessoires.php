@@ -38,57 +38,55 @@ Template Name: Accessoires Template
             Accessoires smartphone
         </div>
         <div class="r-s-c-content">
-            <?php
+            <div class="swiper-container swiper-container-accessories">
+                <div class="swiper-wrapper">
+
+                    <?php
 
 
-            $args = array(
-                'number'     => $number,
-                'orderby'    => 'title',
-                'order'      => 'ASC',
-                'hide_empty' => $hide_empty,
-                'include'    => $ids
-            );
-            $product_categories = get_terms('product_cat', $args);
-            $count = count($product_categories);
-            if ($count > 0) {
-                foreach ($product_categories as $product_category) {
-                    if ($product_category->parent == 55) {
-                        // echo '<h4><a href="' . get_term_link($product_category) . '">' . $product_category->name . '</a></h4>';
-                        $cat_thumb_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
-                        $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
+                    $args = array(
+                        'number'     => $number,
+                        'orderby'    => 'title',
+                        'order'      => 'ASC',
+                        'hide_empty' => $hide_empty,
+                        'include'    => $ids
+                    );
+                    $product_categories = get_terms('product_cat', $args);
+                    $count = count($product_categories);
+                    if ($count > 0) {
+                        foreach ($product_categories as $product_category) {
+                            if ($product_category->parent == 55) {
+                                // echo '<h4><a href="' . get_term_link($product_category) . '">' . $product_category->name . '</a></h4>';
+                                $cat_thumb_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
+                                $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
+                    ?>
+                                <div class="slide-product swiper-slide">
+                                    <a href="<?= get_home_url()  ?>/product-category/<?php $product_category->slug ?>">
+                                        <div class="slide-product-box">
+                                            <img src="<?= $cat_thumb_url ?>">
+                                            <span class="slide-product-label">
+                                                <?= $product_category->slug ?>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php
+                            }
+                            ?>
 
-                        echo "<div class='slide-product'><a href='" . get_home_url()   . "/product-category/" .  $product_category->slug . "'><img src=" . $cat_thumb_url . "></a></div>";
+                    <?php
+                            // }
+                            // echo "</ul>";
+                        }
                     }
 
+                    ?>
 
-                    // $args = array(
-                    //     'posts_per_page' => -1,
-                    //     'tax_query' => array(
-                    //         'relation' => 'AND',
-                    //         array(
-                    //             'taxonomy' => 'product_cat',
-                    //             'field' => 'slug',
-                    //             // 'terms' => 'white-wines'
-                    //             'terms' => $product_category->slug
-                    //         )
-                    //     ),
-                    //     'post_type' => 'product',
-                    //     'orderby' => 'title,'
-                    // );
-                    // $products = new WP_Query( $args );
-                    // echo "<ul>";
-                    // while ( $products->have_posts() ) {
-                    //     $products->the_post();
-                    //     
-            ?>
 
-            <?php
-                    // }
-                    // echo "</ul>";
-                }
-            }
-
-            ?>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </div>
 </section>
