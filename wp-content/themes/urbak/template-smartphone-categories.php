@@ -10,6 +10,12 @@ Template Name: Smartphone Categories Template
 
 
 ?>
+<?php 
+if ($product_category->parent == 27){
+    echo "asdsad";
+}
+
+?>
 <section class="reparation-smartphones-category">
     <div class="container">
         <div class="reparation-smartphones-category-title">

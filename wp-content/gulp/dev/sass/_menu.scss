@@ -366,6 +366,9 @@ body {
     font-size: 20px;
     padding-top: 270px;
     padding-bottom: 50px;
+    .bck-btn{
+        padding-bottom: 30px;
+    }
 }
 .navigation-bar {
     display: flex;
@@ -447,7 +450,8 @@ body {
             }
         }
     }
-
+    
+   
     &.page-id-185,
     &.page-id-201,
     &.page-id-210,
@@ -458,7 +462,7 @@ body {
     &.category_parent_laptops,
     &.category_parent_tablets {
         .header {
-            height: 180px;
+        
             background-color: black;
         }
         .header-wrapper {

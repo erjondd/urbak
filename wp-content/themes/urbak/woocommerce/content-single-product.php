@@ -34,7 +34,7 @@ if(in_array(24, $category_ids)){
             <div class='bck-btn'>< Retour</div>
             <div class='navigation-bar'>
                 <div class='nav-one-tab service'>1 .Service</div>
-                <div class='nav-one-tab service'>2. Prise de rendez-vous</div>
+                <div class='nav-one-tab service'>2. De rendez-vous</div>
                 <div class='nav-one-tab service'>3. Horaires</div>
                 <div class='nav-one-tab service'>4. Panier</div>
                 <div class='nav-one-tab service'>5. Informations</div>

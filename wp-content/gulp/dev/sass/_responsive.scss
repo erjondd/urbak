@@ -609,6 +609,9 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .navigation-bar{
+        font-size:18px;
+    }
     section.reperation-main .reperation-tittle,
     section.assurance-page .assurance-center-text {
         font-size: 150px;
@@ -781,19 +784,22 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    .woocommerce-page div.product div.summary{
+    .navigation-bar{
+        font-size:15px;
+    }
+    .woocommerce-page div.product div.summary {
         width: 100%;
-        float:left;
+        float: left;
         padding-left: 0px;
     }
-    .woocommerce .product .woocommerce-product-gallery--with-images{
+    .woocommerce .product .woocommerce-product-gallery--with-images {
         width: 100% !important;
     }
-    .woocommerce div.product{
-        display:flex;
+    .woocommerce div.product {
+        display: flex;
         flex-direction: column;
     }
-    .category-smartphone{
+    .category-smartphone {
         min-height: 95px;
     }
     .reparation-smartphones-category-title {
@@ -878,17 +884,16 @@
     }
 }
 @media screen and (max-width: 450px) {
-    .product_cat-repair .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row{
+    .product_cat-repair .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
         width: 50%;
     }
     .category-smartphone {
-        min-height:60px;
+        min-height: 60px;
         img {
             max-width: 60px;
             max-height: 60px;
         }
     }
-    
     .category-smartphone {
         width: calc(100% / 2 - 45px);
     }
