@@ -28,7 +28,7 @@ get_header();
             </div>
         </div>
         <div class="assurance-form-rows" >
-            <div class="assurance-form-info">
+            <!-- <div class="assurance-form-info">
                 <div class="form-input-row ">
                     <div class="form-input form-input-half">
                         <input type="text" placeholder="Nom" name="Nom">
@@ -115,9 +115,12 @@ get_header();
         </div>
         <div class="assurance-page-bottom">
         Envoyer<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/partner-arrow.svg" /></span>
-        </div>
+        </div> -->
+        <?php echo apply_shortcodes( '[contact-form-7 id="473" title="Assurance Contact Form"]' ); ?>
     </div>
 </section>
+
+
 
 <?php
 get_footer();
