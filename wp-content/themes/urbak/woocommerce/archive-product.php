@@ -22,22 +22,22 @@ defined('ABSPATH') || exit;
 get_header('shop');
 
 if($parent_id === 25){
-	echo "  <div class='woocommerce-navigation'>
-	<div class='container'>
-	<div class='bck-btn'>
-	<a href='#' >< Retour</a>
-</div>
-		<div class='navigation-bar'>
-			<div class='nav-one-tab service'>1 .Service</div>
-			<div class='nav-one-tab service'>2. De rendez-vous</div>
-			<div class='nav-one-tab service'>3. Horaires</div>
-			<div class='nav-one-tab service'>4. Panier</div>
-			<div class='nav-one-tab service'>5. Informations</div>
-			<div class='nav-one-tab service'>6. Paiement</div>
-			<div class='nav-one-tab service'>7. Confirmation</div>
-		</div>
-	</div>
-</div>";
+// 	echo "  <div class='woocommerce-navigation'>
+// 	<div class='container'>
+// 	<div class='bck-btn'>
+// 	<a href='#' >< Retour</a>
+// </div>
+// 		<div class='navigation-bar'>
+// 			<div class='nav-one-tab service'>1 .Service</div>
+// 			<div class='nav-one-tab service'>2. De rendez-vous</div>
+// 			<div class='nav-one-tab service'>3. Horaires</div>
+// 			<div class='nav-one-tab service'>4. Panier</div>
+// 			<div class='nav-one-tab service'>5. Informations</div>
+// 			<div class='nav-one-tab service'>6. Paiement</div>
+// 			<div class='nav-one-tab service'>7. Confirmation</div>
+// 		</div>
+// 	</div>
+// </div>";
 }
 /**
  * Hook: woocommerce_before_main_content.

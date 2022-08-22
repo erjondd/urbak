@@ -22,6 +22,14 @@ echo "Cart page";
  */
 
 defined( 'ABSPATH' ) || exit;
+	$category_ids = [];
+    $items = WC()->cart->get_cart();
+        foreach($items as $item => $values) { 
+            $_product =  wc_get_product( $values['data']->get_id()); 
+			array_push($category_ids, $_product->category_ids);
+        } 
+
+		print_r($category_ids);
 
 ?>
 

@@ -370,6 +370,38 @@ body {
             height: auto;
         }
     }
+    .woocommerce-mini-cart__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        a {
+            font-family: satoshi;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #000;
+            text-decoration: none;
+            background-color: transparent;
+            &:hover {
+                color: #333;
+                background-color: transparent;
+            }
+            &.checkout {
+                font-family: satoshi;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 10px 50px;
+                line-height: 30px;
+                color: #fff;
+                background-color: #000;
+                border-radius: 8px;
+                &:hover {
+                    color: #fff;
+                    background-color: #333;
+                }
+            }
+        }
+    }
     ul.cart_list,
     ul.product_list_widget {
         flex-grow: 1;
@@ -678,6 +710,47 @@ div.wpforms-container-full .wpforms-form .wpforms-pagebreak-right .wpforms-page-
     font-family: satoshi;
     font-size: 24px;
 }
-.page-template-template-accessoires-php section.accessoires-smartphones-category:last-child{
+.page-template-template-accessoires-php section.accessoires-smartphones-category:last-child {
     padding-bottom: 100px;
 }
+.product-calendar {
+    display: none;
+}
+
+.gotocalendar {
+    min-width: 200px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 11px 100px;
+    float: right;
+    font-family: satoshi;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #333;
+    }
+}
+
+// .woocommerce {
+//     .product {
+//         &.product-calendar-view {
+//             .woocommerce-product-gallery,
+//             .product-tittle-price,
+//             .fieldCalendarService.fieldCalendarServicefieldname1_1,
+//             .gotocalendar {
+//                 display: none;
+//             }
+//             .cart {
+//                 .wapf {
+//                     display: none;
+//                 }
+//             }
+//             .product-calendar {
+//                 display: block;
+//             }
+//         }
+//     }
+// }

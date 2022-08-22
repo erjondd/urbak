@@ -467,37 +467,39 @@ body {
     &.category_parent_smartphone,
     &.category_parent_laptops,
     &.category_parent_tablets {
-        .header {
-            background-color: black;
-        }
-        .header-wrapper {
-            .header-logo {
-                img {
-                    filter: invert(0);
-                }
+        &:not(.search-menu-open) {
+            .header {
+                background-color: black;
             }
-            .header-icons {
-                .search-menu-trigger-open,
-                .search-menu-trigger-close,
-                .cart-icon-img {
-                    filter: invert(0);
+            .header-wrapper {
+                .header-logo {
+                    img {
+                        filter: invert(0);
+                    }
                 }
-            }
-            .header-menu {
-                ul li a {
-                    color: #fff;
-                    &:hover {
+                .header-icons {
+                    .search-menu-trigger-open,
+                    .search-menu-trigger-close,
+                    .cart-icon-img {
+                        filter: invert(0);
+                    }
+                }
+                .header-menu {
+                    ul li a {
                         color: #fff;
-                        opacity: 0.6;
+                        &:hover {
+                            color: #fff;
+                            opacity: 0.6;
+                        }
                     }
                 }
             }
-        }
-        .header-extra-menu .extra-menu {
-            color: #fff;
-            &:hover {
+            .header-extra-menu .extra-menu {
                 color: #fff;
-                opacity: 0.6;
+                &:hover {
+                    color: #fff;
+                    opacity: 0.6;
+                }
             }
         }
     }

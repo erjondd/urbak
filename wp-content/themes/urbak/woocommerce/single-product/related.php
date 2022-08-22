@@ -1,4 +1,5 @@
 <?php
+global $product;
 /**
  * Related Products
  *
@@ -18,8 +19,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+$category_ids =  $product->category_ids;
 
-if ( $related_products ) : ?>
+if ( $related_products && !in_array(24, $category_ids) ) : ?>
 
 	<section class="related products">
 

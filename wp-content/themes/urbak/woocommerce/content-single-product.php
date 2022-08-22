@@ -91,6 +91,18 @@ if (in_array(24, $category_ids)) {
 
 		</div>
 
+		<?php
+		if (in_array(24, $category_ids)) {
+		?>
+			<div class="product-calendar">
+				<?php
+				echo do_shortcode('[CP_APP_HOUR_BOOKING id="1"]');
+				?>
+			</div>
+		<?php
+		}
+		?>
+
 	</div>
 	<?php
 
