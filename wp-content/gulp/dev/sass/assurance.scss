@@ -162,3 +162,22 @@ section.assurance-form {
 .wpcf7-form-control-wrap{
   width: 100%;
 }
+.form-input-row{
+  .form-input{
+    width: 100%;
+  }
+}
+.page-template-template-assurance{
+  form{
+    margin-bottom: 100px;
+    input.wpcf7-form-control.wpcf7-submit{
+      background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: satoshi;
+    cursor: pointer;
+    }
+  }
+}
+

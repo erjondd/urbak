@@ -31,7 +31,7 @@ Template Name: Contact Template
             <div class="contact-form-content">
                 <div class="contact-form-wrapper">
                     <div class="contact-wrapper-title">Contactez nous</div>
-                <div class="form-input-row ">
+                <!-- <div class="form-input-row ">
                     <div class="form-input form-input-half">
                         <input type="text" placeholder="Nom*" name="nom">
                     </div>
@@ -49,11 +49,12 @@ Template Name: Contact Template
                 </div>
                 <div class="form-input-row ">
                 <textarea name="message" placeholder="Message" rows="10" cols="30"></textarea>
+                </div> -->
+                <?php echo apply_shortcodes( '[contact-form-7 id="474" title="Contact Form"]' ); ?>
                 </div>
-                </div>
-                <div class="partner-foot">
+                <!-- <div class="partner-foot">
                     Envoyer<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/partner-arrow.svg" /></span>
-                </div>
+                </div> -->
             </div>
             <div class="contact-form-picture"><img src="<?php echo get_bloginfo('template_url') ?>/images/contact-pic.jpg" /></div>
         </div>

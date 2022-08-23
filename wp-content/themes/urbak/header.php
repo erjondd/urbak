@@ -61,7 +61,7 @@
 
                                     foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
                                         $_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
-                                        $category_id_last = $_product->category_ids[count($_product->category_ids)-2];
+                                        $category_id_last = $_product->category_ids[count($_product->category_ids) - 2];
                                         $category_term = get_term_by('id', $category_id_last, 'product_cat', 'ARRAY_A');
                                         $category_name = $category_term["name"];
                                         $product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
