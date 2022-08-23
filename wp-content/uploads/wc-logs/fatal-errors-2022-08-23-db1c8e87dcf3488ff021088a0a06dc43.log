@@ -1,0 +1,36 @@
+2022-08-23T13:49:15+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T13:49:16+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T13:49:17+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T13:51:15+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T13:51:16+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T13:51:16+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\xampp\htdocs\urbak\wp-content\plugins\booknetic\vendor\guzzlehttp\psr7\src\functions.php on line 2
+
+2022-08-23T21:04:30+00:00 CRITICAL Uncaught Error: Call to undefined method Revy_DB_Devices::get_brands() in C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\partials\devices.php:7
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\flow.php(15): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\revy\shortcodes\class-revy-shortcodes.php(26): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\wp-includes\shortcodes.php(356): Revy_Shortcodes->revy_shortcode('', '', 'rp')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(rp)(?!...', 'do_shortcode_ta...', '[rp]\n')
+#5 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): do_shortcode('[rp]\n')
+#6 C:\xampp\htdocs\urbak\wp-includes\plugin.php(191): WP_Hook->apply_filters('[rp]\n', Array)
+#7 C:\xampp\htdocs\urbak\wp-includes\post-template.php(253): apply_filters('the_content', '[rp]')
+#8 C:\xampp\htdocs\urbak\wp-content\themes\urbak\page.php(11): the in C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\partials\devices.php on line 7
+
+2022-08-23T21:04:35+00:00 CRITICAL Uncaught Error: Call to undefined method Revy_DB_Devices::get_brands() in C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\partials\devices.php:7
+Stack trace:
+#0 C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\flow.php(15): include()
+#1 C:\xampp\htdocs\urbak\wp-content\plugins\revy\shortcodes\class-revy-shortcodes.php(26): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\urbak\wp-includes\shortcodes.php(356): Revy_Shortcodes->revy_shortcode('', '', 'rp')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 C:\xampp\htdocs\urbak\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(rp)(?!...', 'do_shortcode_ta...', '[rp]\n')
+#5 C:\xampp\htdocs\urbak\wp-includes\class-wp-hook.php(307): do_shortcode('[rp]\n')
+#6 C:\xampp\htdocs\urbak\wp-includes\plugin.php(191): WP_Hook->apply_filters('[rp]\n', Array)
+#7 C:\xampp\htdocs\urbak\wp-includes\post-template.php(253): apply_filters('the_content', '[rp]')
+#8 C:\xampp\htdocs\urbak\wp-content\themes\urbak\page.php(11): the in C:\xampp\htdocs\urbak\wp-content\plugins\revy\templates\shortcodes\partials\devices.php on line 7
+

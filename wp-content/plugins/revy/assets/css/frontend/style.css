@@ -1,0 +1,1393 @@
+.fat-sb-hidden{
+    display: none;
+}
+.fat-sb-step-layout .fat-sb-tab-content-wrap div{
+    box-sizing: border-box;
+}
+.fat-sb-step-layout .ui.steps{
+    width: 100%;
+}
+.fat-sb-step-layout .ui.steps .step:not(.disabled):not(.active){
+    cursor: pointer;
+}
+.fat-on-click{
+    cursor: pointer;
+}
+.fat-mg-top-90{
+    margin-top: 90px;
+}
+.fat-mg-top-30{
+    margin-top: 30px;
+}
+.fat-mg-top-15{
+    margin-top: 15px;
+}
+.fat-mg-top-60{
+    margin-top: 60px;
+}
+.fat-mg-bottom-10{
+    margin-bottom: 10px;
+}
+.fat-mg-bottom-15{
+    margin-bottom: 15px;
+}
+.fat-mg-bottom-30{
+    margin-bottom: 30px;
+}
+
+.fat-section-shadow{
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+
+.fat-fw-bold{
+    font-weight: 600;
+}
+.fat-sb-tab-content-wrap .fat-sb-item-inner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fat-sb-tab-content-wrap .fat-sb-tab-content.device .fat-sb-item-inner-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fat-sb-item-wrap .fat-sb-item-inner-wrap,
+.fat-sb-list-model .fat-sb-item-inner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fat-sb-tab-content:not(.active){
+    display: none;
+}
+
+.fat-sb-item-wrap .fat-sb-item{
+    text-align: center;
+}
+.fat-sb-list-devices .fat-sb-item-wrap .fat-sb-item img:not(.img-default){
+    margin: 0 auto;
+}
+.fat-sb-item-inner-wrap.device-step .fat-sb-item img:not(.img-default){
+    margin: 0 auto;
+    width: auto;
+    object-fit: contain;
+    background-color: #F7F7F7;
+    padding: 30px;
+}
+
+.fat-sb-item-inner-wrap.device-step  .fat-sb-item:hover img:not(.img-default){
+    background-color: #f3f3f3;
+}
+.fat-sb-item-inner-wrap.device-step  .fat-sb-item:hover  .item-title{
+    color: #333;
+}
+.fat-sb-item-wrap .fat-sb-item img:not(.img-default){
+    margin: 0 auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.fat-sb-list-locations.fat-sb-item-wrap .fat-sb-item img:not(.img-default){
+    width: 80px;
+    top: 40%;
+}
+.fat-sb-list-locations.fat-sb-item-wrap .fat-sb-item .item-title{
+    top: 70%;
+}
+.fat-sb-list-locations.fat-sb-item-wrap .fat-sb-item .item-desc{
+    line-height: 1em;
+    font-size: 13px;
+    display: block;
+    padding-top: 5px;
+    color: #908f8f;
+    max-height: 32px;
+    overflow: hidden;
+}
+
+.fat-sb-list-service.fat-sb-item-wrap .fat-sb-item img{
+    top: 45%;
+}
+.fat-it-inner .price-attribute{
+    font-size: 14px;
+    font-weight: 400;
+}
+.fat-sb-item .item-title{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: satoshi;
+}
+
+.fat-sb-item-wrap.device-step .fat-sb-item .item-title{
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4em;
+    position: relative;
+    font-family: satoshi;
+    margin-top: 5px;
+}
+.fat-sb-item .ui.inline.dropdown > .text{
+    font-weight: 400;
+}
+.fat-sb-item-wrap .fat-sb-item .item-title span.price{
+    display: block;
+}
+.fat-sb-step-layout.hide-payment .payment-gateway{
+    display: none;
+}
+
+.repair-summary .time-meta{
+    display: none;
+}
+
+@media (min-width: 992px){
+    .fat-sb-item-wrap .fat-sb-item{
+        width: 30%;
+    }
+
+    .fat-sb-list-model.fat-sb-item-wrap .fat-sb-item,
+    .fat-sb-list-brand.fat-sb-item-wrap .fat-sb-item{
+        width: 30%;
+    }
+    .fat-sb-list-devices .fat-sb-item-wrap .fat-sb-item{
+        width: 25%;
+        float: left;
+    }
+
+    .fat-booking-container.medium-size .fat-sb-item-wrap .fat-sb-item,
+    .fat-booking-container.medium-size .fat-sb-list-model.fat-sb-item-wrap .fat-sb-item,
+    .fat-booking-container.medium-size .fat-sb-list-brand.fat-sb-item-wrap .fat-sb-item{
+        width: 25%;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .fat-sb-item-wrap .fat-sb-item{
+        width: 50%;
+        float: left;
+    }
+    .fat-sb-list-devices .fat-sb-item-wrap .fat-sb-item{
+        width: 25%;
+        float: left;
+    }
+}
+
+
+.fat-sb-item-wrap .fat-sb-item-inner-wrap{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.fat-sb-item-wrap .fat-sb-item{
+    padding: 15px;
+}
+.fat-sb-item-wrap .fat-sb-item .fat-it-inner{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/* .fat-sb-item-wrap .fat-sb-item.active .fat-it-inner,
+.fat-sb-item-wrap .fat-sb-item .fat-it-inner:not(.no-hover):hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+} */
+
+.fat-item-not-found{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.fat-sb-order-form{
+    display: none;
+}
+
+.fat-sb-date-time-wrap{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.fat-sb-date-time-wrap input.air-date-picker{
+    display: none;
+}
+
+.fat-sb-date-time-wrap .fat-sb-date,
+.fat-sb-date-time-wrap .datepicker-inline,
+.fat-sb-date-time-wrap .datepicker{
+    width: 100% !important;
+    border: none;
+}
+
+.fat-sb-date-time-wrap .datepicker--cell.datepicker--cell-day {
+    position: relative;
+}
+
+.fat-sb-date-time-wrap .fat-sb-date .datepicker--cell-day {
+    height: 55px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    background-clip: content-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fat-sb-date-time-wrap .datepicker--cell.datepicker--cell-day.none-time-slot:not(.-disabled-):not(.-other-month-):before,
+.fat-sb-date-time-wrap .datepicker--cell.datepicker--cell-day.has-time-slot:not(.-other-month-):before{
+    content: "";
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    height: 3px;
+    bottom: 0px;
+    padding-left: 5px;
+    background-clip: content-box;
+    padding-right: 5px;
+    bottom: 5px;
+}
+
+.fat-sb-date-time-wrap  .datepicker--cell.datepicker--cell-day.has-time-slot:not(.-other-month-):before {
+    background-color: #21ba45;
+}
+
+.fat-sb-date-time-wrap .fat-sb-date .datepicker--cell:not(.-disabled-).-focus-,
+.fat-sb-date-time-wrap .fat-sb-date .datepicker--cell:not(.-disabled-).-selected- {
+    background-color: #d6d0d0 !important;
+    background-clip: content-box;
+    color: #343434;
+}
+
+.fat-sb-date-time-wrap .fat-sb-date .datepicker--nav-title,
+.fat-sb-date-time-wrap .fat-sb-date .datepicker--nav-title i {
+    pointer-events: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #343434;
+}
+.fat-sb-date-time-wrap  .fat-sb-date .datepicker--day-name {
+    font-weight: 600;
+}
+
+.fat-sb-time h4,
+.fat-sb-time-message{
+    text-align: center;
+}
+
+.fat-sb-date-time-wrap .fat-sb-time-slot {
+    display: inline-block;
+    width: 100%;
+}
+.fat-sb-date-time-wrap .fat-sb-time-slot .fat-sb-time-slot-item {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.fat-sb-date-time-wrap .fat-sb-time-slot .fat-sb-time-slot-item .slot-item-inner {
+    padding: 10px 5px;
+    line-height: 1.2em;
+    background-color: #f1f1f1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fat-sb-date-time-wrap  .fat-sb-time-slot .fat-sb-time-slot-item .slot-item-inner.active,
+.fat-sb-date-time-wrap  .fat-sb-time-slot .fat-sb-time-slot-item .slot-item-inner:hover {
+    background-color: #d6d0d0 !important;
+}
+.fat-sb-date-time-wrap  .fat-sb-time-slot .fat-sb-time-slot-item .slot-item-inner:hover {
+    cursor: pointer;
+}
+.fat-sb-order-form-inner{
+    display: inline-block;
+    width: 100%;
+}
+
+.fat-sb-order-form .fat-sb-order-form-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fat-sb-order-form .fat-sb-order-form-inner h3,
+.fat-sb-order-form .fat-sb-order-form-inner .fat-bt-groups{
+    width: 100%;
+}
+.fat-sb-order-form .fat-sb-order-form-inner .fat-sb-col-right{
+    position: relative;
+}
+.fat-sb-order-form  .fat-sb-term-condition.fat-sb-checkbox-group{
+    margin-top: 30px;
+}
+
+@media (min-width: 991px) {
+    .fat-sb-order-form .fat-sb-col-left,
+    .fat-sb-order-form .fat-sb-col-right{
+        float: left;
+        width: 50%;
+        padding-right: 30px;
+    }
+}
+.fat-sb-order-form  .ui.form .field{
+    width: 100%;
+}
+
+.fat-sb-order-form  ul{
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.fat-sb-order-form .fat-sb-label{
+    width: 20%;
+    min-width: 100px;
+}
+.fat-sb-order-form .fat-sb-value{
+    width: 70%;
+    font-weight: 600;
+}
+
+.fat-sb-order-info li,
+.fat-sb-total-info li{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #343434;
+
+}
+.fat-sb-order-info li,
+.fat-sb-order-tax,
+.total-order-item,
+.fat-sb-order-subtotal,
+.fat-sb-order-discount,
+.order-service-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-service-item{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.fat-sb-order-info li.fat-sb-order-service{
+    margin-bottom: 0px;
+}
+.fat-sb-coupon-wrap{
+    position: relative;
+    margin-top: 5px;
+}
+.fat-sb-coupon-wrap .ui.input{
+    width: 100%;
+}
+.fat-sb-coupon-wrap input
+{
+    font-size: 14px;
+    padding: 8px 10px;
+    width: 100%;
+}
+.fat-sb-coupon-wrap button{
+    position: absolute !important;
+    right: 0px;
+    top: 1px;
+    margin:0px !important;
+}
+
+.phone-code-wrap{
+    display: flex;
+}
+.phone-code-wrap .phone-code{
+    width: 40% !important;
+}
+.phone-code-wrap .phone-code .ui.selection.dropdown .menu > .item{
+    font-size: 13px;
+}
+
+.field-error-message{
+    display: none;
+    color: red;
+}
+.field.field-error .field-error-message{
+    display: block;
+    font-size: 14px;
+}
+
+span.required{
+    color: red;
+}
+.fat-coupon-error{
+    margin-top: 5px;
+    color: red;
+}
+.fat-bt-groups{
+    text-align: right;
+    margin-top: 30px;
+    clear: both;
+}
+.fat-sb-order-form .ui.form .field > label,
+.fat-sb-order-form label{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #343434;
+}
+.fat-sb-order-form select{
+    width: 100%;
+    border: solid 1px #ddd;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.fat-appointment-wrap .fat-sb-time{
+    color: #343434;
+}
+
+.fat-sb-order-form input:focus,
+.fat-sb-order-form input:active,
+.fat-sb-order-form select:focus,
+.fat-sb-order-form select:active,
+.fat-sb-step-layout button:focus,
+.fat-sb-step-layout button:active{
+    outline: none !important;
+}
+
+.stripe-form button{
+    display: none;
+}
+.stripe-form .card-element{
+    margin-top: 15px;
+    border-bottom: dotted 1px #ddd;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.fat-sb-tab-content.calendar{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.fat-sb-tab-content.calendar h3{
+    font-size: 20px;
+}
+
+.fat-sb-step-layout button{
+    background-color: #ddd !important;
+}
+.fat-sb-step-layout button.blue{
+    background-color: #2185D0 !important;
+}
+
+.fat-sb-delivery-options{
+    display: none;
+    text-align: center;
+}
+.fat-sb-delivery-options h4{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.fat-sb-delivery-options button.fat-bt{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #2185D0 !important;
+    min-width: 300px;
+    max-width: 40%;
+}
+
+.fat-sb-tab-content .ui.primary.buttons .button,
+.fat-sb-tab-content .ui.primary.button{
+    background-color: #2185D0 !important;
+}
+
+
+.fat-sb-step-layout .ui.steps{
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .fat-sb-step-layout .ui.steps .step{
+        padding: 5px;
+    }
+    .fat-sb-step-layout .ui.steps .step i,
+    .fat-sb-time-layout .ui.steps .step i{
+        display: none !important;
+    }
+
+    .fat-sb-step-layout{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .fat-sb-item-wrap .fat-sb-item-inner-wrap{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .fat-sb-date-time-wrap{
+        width: 90%;
+    }
+
+    .fat-sb-col-left,
+    .fat-sb-col-right{
+        width: 100%;
+    }
+    .fat-sb-order-form .fat-sb-term-condition.fat-sb-checkbox-group{
+        position: relative;
+        bottom: auto;
+    }
+    .fat-sb-item-wrap .fat-sb-item-inner-wrap .fat-sb-item{
+        width: 50%;
+    }
+    .fat-sb-step-layout .ui.steps .step{
+        border-bottom: solid 1px #ddd !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .fat-sb-date-time-wrap{
+        width: 100%;
+    }
+    .fat-sb-date-time-wrap .fat-sb-time-slot .fat-sb-time-slot-item{
+        width: 50%;
+    }
+    .fat-sb-item-wrap .fat-sb-item-inner-wrap .fat-sb-item{
+        width: 100%;
+    }
+}
+
+.fat-sb-device-group-layout .fat-model-group-list .ui.segment{
+    height: 150px;
+    font-size: 16px;
+}
+
+.fat-sb-device-group-layout .fat-model-group-list,
+.fat-sb-device-group-layout .fat-sb-content-service {
+    clear: both;
+}
+
+.fat-sb-device-group-layout .fat-sb-content-location,
+.fat-sb-device-group-layout .fat-sb-content-appointment,
+.fat-sb-device-group-layout .fat-sb-content-calendar,
+.fat-sb-device-group-layout .fat-sb-content-service{
+    display: none;
+}
+
+.fat-sb-device-group-layout .fat-sb-content-calendar{
+    text-align: center;
+}
+
+.fat-sb-content-calendar .ui.primary.buttons .button,
+.fat-sb-content-calendar .ui.primary.button{
+    background-color: #2185D0 !important;
+}
+
+.fat-sb-device-group-layout .fat-sb-group{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.fat-it-inner .fat-min-price{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fat-sb-go-back{
+    margin-bottom: 15px;
+}
+.fat-sb-go-back a{
+    color: #0d71bb;
+    font-size: 14px;
+}
+
+.fat-sb-search-wrap .ui.transparent.input{
+    position: relative;
+    width: 100%;
+}
+.fat-sb-search-wrap .ui.transparent.input > input{
+    padding: 10px 30px !important;
+    line-height: 1em;
+    height: 40px;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    border: solid 1px #ddd !important;
+    min-width: 300px;
+    font-size: 14px;
+    width: 100%;
+}
+.fat-sb-search-wrap .ui.transparent.input > i.icon{
+    left: 10px;
+    font-size: 14px;
+}
+
+.fat-sb-search-wrap .fat-close{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #908f8f;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+}
+.fat-sb-search-wrap .fat-close:hover{
+    color: #343434;
+}
+.fat-sb-search-wrap .ui.active-search .fat-close{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fat-sb-model-load-more{
+    width: 100%;
+    height: 30px;
+}
+
+.fat-sb-device-group-layout.hide-model-tab .fat-model-group-list .fat-sb-group{
+    display: none;
+}
+.fat-semantic-container .ui.segment{
+    box-shadow: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.fat-sb-term-condition {
+    font-size: 14px;
+}
+.fat-sb-term-condition span{
+    position: relative;
+    top: -2px;
+    padding-left: 5px;
+}
+.fat-sb-term-condition.field-error .field-error-message{
+    display: block;
+}
+.fat-sb-term-condition input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    border: solid 1px #343434;
+}
+.fat-sb-term-condition input[type="checkbox"]:after{
+    left: 3px;
+    top: -2px;
+}
+.phone-code-wrap .text{
+    font-size: 12px;
+}
+
+.fat-sb-booking-history .history-tool-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.fat-sb-booking-history label,
+.fat-sb-popup-modal label{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.fat-sb-booking-history .history-tool-box .fat-sb-customer-code,
+.fat-sb-booking-history .history-tool-box .fat-sb-status,
+.fat-sb-booking-history .history-tool-box .fat-sb-datetime{
+    width: 33.3333%;
+}
+.fat-sb-booking-history .history-tool-box .fat-sb-customer-code,
+.fat-sb-booking-history .history-tool-box .fat-sb-datetime{
+    padding-right: 15px;
+}
+.fat-sb-booking-history .history-tool-box .fat-sb-history-button-group{
+    width: 100%;
+}
+
+.fat-sb-popup-modal input[type="email"],
+.fat-sb-popup-modal input[type="text"],
+.fat-sb-booking-history .fat-sb-customer-code input[type="text"]{
+    border: solid 1px #ddd;
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+.fat-sb-popup-modal input[type="text"]:focus,
+.fat-sb-popup-modal input[type="text"]:active,
+.fat-sb-popup-modal input[type="email"]:focus,
+.fat-sb-popup-modal input[type="email"]:active,
+.fat-sb-booking-history .fat-sb-customer-code input[type="text"]:active,
+.fat-sb-booking-history .fat-sb-customer-code input[type="text"]:focus,
+.fat-sb-history-button-group button:active,
+.fat-sb-history-button-group button:focus{
+    outline: none !important;
+}
+
+.fat-sb-booking-history .fat-sb-datetime .ui.date-input{
+    width: 100%;
+    border: solid 1px #ddd;
+    padding: 8px 10px;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td{
+    padding: 2px !important;
+
+}
+
+.fat-sb-booking-history table{
+    font-size: 14px;
+}
+.fat-sb-booking-history table thead th{
+    font-weight: 500;
+}
+.fat-sb-booking-history table thead th,
+.fat-sb-booking-history table  td{
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.fat-sb-booking-history table{
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.fat-sb-booking-history table thead th{
+    background-color: #F9FAFB;
+    font-weight: 400;
+    color: #343434;
+}
+
+.fat-sb-booking-history table tbody tr{
+    border-top: solid 1px rgba(34, 36, 38, 0.15);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.fat-sb-booking-history table tbody tr:hover{
+    background-color: rgba(221, 221, 221, 0.5);
+}
+
+.fat-sb-not-found{
+    text-align: center;
+}
+.fat-sb-history-button-group{
+    padding-top: 10px;
+    text-align: right;
+}
+.fat-sb-booking-history .fat-sb-status .ui.dropdown{
+    width: 100%;
+}
+
+.fat-sb-popup-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fat-sb-popup-modal-content{
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.fat-sb-popup-bt-group{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.fat-sb-message{
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    padding: 15px 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #099be0;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transform: translateX(150%);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+    text-align: center;
+    z-index: 99999999;
+
+}
+
+.fat-sb-message i.icon {
+    margin-right: 15px;
+}
+
+.fat-sb-message.red {
+    background-color: #db2828;
+}
+
+.fat-sb-message.orange {
+    background-color: #dbb940;
+}
+
+.fat-sb-message.show-up {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.fat-sb-content-appointment.loading .fat-appointment-wrap,
+.fat-sb-tab-content.appointment.loading .fat-appointment-wrap{
+    opacity: 0;
+}
+
+.fat-sb-content-appointment,
+.fat-sb-tab-content.appointment{
+    position: relative;
+}
+.fat-sb-content-appointment .fat-loading,
+.fat-sb-tab-content.appointment .fat-loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.fat-sb-content-appointment.loading .fat-loading,
+.fat-sb-tab-content.appointment.loading .fat-loading{
+    display: block;
+}
+
+.fat-sb-content-appointment.loading .fat-loading-inner,
+.fat-sb-tab-content.appointment .fat-loading-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+}
+
+.fat-booking-container.fat-sb-time-layout{
+    font-size: 14px;
+}
+.fat-sb-time-layout .ui.steps{
+    width: 100%;
+}
+
+.fat-sb-time-layout .ui.steps .step:not(.disabled):not(.active){
+    cursor: pointer;
+}
+
+.fat-sb-time-layout .fat-sb-tab-content.service{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fat-sb-time-layout .field{
+    font-size: 1em;
+}
+.fat-sb-time-layout .field label{
+    font-size: 1.142857142857143em; /* 16px */
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+    color: #343434;
+}
+
+.fat-sb-time-layout .fields{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.fat-sb-time-layout .fields .field{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fat-sb-time-layout .two.fields .field{
+    width: 50%;
+}
+
+.fat-sb-time-layout .three.fields .field{
+    width: 33.333%;
+}
+
+.fat-sb-time-layout .ui.fat-loading{
+    pointer-events: none;
+}
+.fat-sb-time-layout .ui.fat-loading i.dropdown.icon{
+    display: none;
+}
+.fat-sb-time-layout .ui.fat-loading .ui.loading.loading.loading.loading.loading.loading.button{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    background-color: transparent;
+}
+
+.fat-sb-time-layout .ui.date-input{
+    width: 100%;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 8px 15px;
+}
+.fat-sb-time-layout .ui.date-input input{
+    width: 100%;
+}
+.fat-sb-time-layout .fat-sb-button-group{
+    margin-top: 30px;
+    text-align: right;
+}
+
+button.ui.button:active,
+button.ui.button:focus{
+    outline: none;
+}
+
+.date-time-slots{
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    overflow-x: auto;
+}
+
+.date-time-slots .date-item{
+    width: 16.66666666667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 147px;
+
+}
+
+.date-time-slots .date-title,
+.date-time-slots .slot-item{
+    font-size: 1em;
+    padding: 8px 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 1.4em;
+}
+.date-time-slots .slot-item{
+    border: solid 1px #ddd;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.date-time-slots .date-title{
+    background-color: #4183C4;
+    border: solid 1px #4183C4;
+    color: #fff;
+    font-weight: 600;
+}
+.date-time-slots .slot-item:hover{
+    background-color: #4183C4;
+    border-color: #4183C4;
+    color: #fff;
+    cursor: pointer;
+}
+.fat-sb-tab-content.date-time .service-info{
+    margin-bottom: 15px;
+    font-size: 1.142857142857143em; /* 16px */
+    color: #343434;
+}
+.fat-sb-time-layout .fat-sb-tab-content.calendar,
+.fat-sb-time-layout .fat-sb-tab-content.appointment{
+    color: #343434;
+}
+
+.fat-sb-tab-content.date-time .service-name{
+    font-weight: 600;
+}
+
+.fat-sb-time-layout .fat-sb-tab-content.appointment .fat-sb-order-form{
+    display: block;
+    margin-top: 30px;
+}
+
+.fat-sb-order-form .field  .ui.input,
+.fat-sb-order-form .field  .ui.input input{
+    width: 100%;
+}
+
+.fat-booking-container .phone-code-wrap .ui.phone-code{
+    width: 80px !important;
+    border-right: none;
+    border-top-right-radius: 0px;
+    -webkit-border-top-right-radius: 0px ;
+    -moz-border-radius-topright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px ;
+    -moz-border-radius-bottomright: 0px;
+}
+.fat-booking-container .phone-code-wrap .ui.phone-code.focus,
+.fat-booking-container .phone-code-wrap input[type="text"].focus{
+    border-color: #85B7D9;
+}
+.fat-booking-container .phone-code-wrap input[type="text"],
+.fat-booking-container .phone-code-wrap input[type="text"]:focus{
+    border-left: none;
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px ;
+    -moz-border-radius-topleft: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px ;
+    -moz-border-radius-bottomleft: 0px;
+}
+.fat-booking-container .phone-code-wrap .ui.phone-code .text{
+    font-size: 0px;
+}
+.fat-booking-container .phone-code-wrap .ui.phone-code .menu{
+    min-width: 200px;
+}
+
+.fat-sb-time-layout .stripe-form .card-element{
+    margin-top: 20px;
+}
+.fat-sb-time-layout .stripe-form .__PrivateStripeElement{
+    min-height: 22px;
+}
+.fat-sb-time-layout .stripe-form a.bt-back{
+    float: right;
+    margin-top: 5px;
+}
+
+.fat-sb-time-layout .stripe-form .card-errors{
+    color: red;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .fat-sb-step-layout .ui.steps .step i,
+    .fat-sb-time-layout .ui.steps .step i{
+        display: none !important;
+    }
+
+    .fat-sb-time-layout .two.fields .field,
+    .fat-sb-time-layout .three.fields .field{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.fat-sb-error-message{
+    color: red;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+
+.fat-booking-container .ui.steps .step{
+    padding: 15px;
+}
+.fat-booking-container .ui.steps .step i{
+    font-size: 1.71em;
+}
+
+.fat-booking-container.small-layout .ui.steps .step{
+    padding: 8px 10px;
+}
+.fat-sb-time-layout.small-layout .fat-sb-tab-content.service{
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.fat-booking-container.small-layout .ui.steps .step i{
+    font-size: 1.428em;
+    margin-right: 10px;
+}
+.fat-booking-container.small-layout .ui.steps .step .title{
+    font-size: 1em;
+}
+
+.fat-booking-container.fat-sb-time-layout .step.calendar{
+    min-width: 150px;
+}
+
+
+.fat-sb-booking-mode .ui.form{
+    max-width: 80%;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ui.checkbox label{
+    cursor: pointer;
+}
+
+.fat-sb-service-wrap{
+    display: none;
+}
+.fat-sb-service-wrap h4{
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.fat-sb-item-action{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 14px;
+    margin-right: 0px;
+}
+.fat-sb-item-action a{
+    display: inline-block;
+    position: relative;
+}
+
+.fat-sb-item-action i.check.icon{
+    color: #4183C4;
+    margin-right: 0px;
+}
+
+.fat-sb-item-action i.close.icon{
+    color: #bd1b1b;
+    margin-right: 0px;
+}
+
+.fat-sb-service-wrap .fat-sb-item.active .fat-sb-item-action{
+    display: block;
+}
+
+.fat-sb-service-wrap a.fat-sb-next{
+    float: right;
+    font-size: 14px;
+}
+.fat-sb-service-wrap a.fat-sb-next.disabled{
+    color: #ddd;
+    pointer-events: none;
+}
+
+.fat-booking-container.group-mode .number-of-person-field{
+    display: none;
+}
+
+.fat-booking-container.hide-quantity .number-of-person-field,
+.fat-booking-container.hide-discount .fat-sb-order-discount,
+.fat-booking-container.hide-discount .fat-sb-order-coupon{
+    display: none;
+}
+
+
+.fat-sb-service-wrap h5,
+.fat-sb-booking-mode h5{
+    margin: 0px 0px 15px 0px;
+    color: #343434 !important;
+    padding: 0px;
+}
+a.fat-sb-next:not(.disabled),
+.fat-min-price{
+    color: #343434;
+}
+.fat-sb-booking-mode .grouped.fields .ui.checkbox{
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0px;
+}
+.fat-sb-order-form .ui.input input,
+.fat-sb-order-form select{
+    padding: 8px 10px;
+}
+.fat-loading .ui.segment{
+    font-size: 14px;
+}
+
+.fat-sb-time-layout .fat-sb-tab-content.service .fat-sb-not-found{
+    display: none;
+    color: #2185D0;
+}
+
+.daterangepicker .calendar-table td.available:not(.active){
+    color: #343434;
+}
+.daterangepicker .calendar-table td.available:hover,
+.daterangepicker .calendar-table th.available:hover{
+    color: #fff;
+    background-color: #357ebd;
+}
+
+.fat-model-group-list{
+    margin-top: 15px;
+}
+
+.ui.button i.close.icon{
+    float: left;
+}
+
+.fat-sb-time-layout.small-layout .date-time-slots .date-item{
+    min-width: 20%;
+    width: 20%;
+}
+
+@media (max-width: 767px){
+    .fat-sb-time-layout .date-time-slots .date-item{
+        min-width: 33.3333%;
+        width: 33.33333%;
+    }
+}
+@media (max-width: 400px){
+    .fat-sb-time-layout .date-time-slots .date-item{
+        min-width: 50%;
+        width: 50%;
+    }
+}
+
+.fat-booking-container.hide-location .step.location,
+.fat-booking-container.hide-location .fat-sb-tab-content.location{
+    display: none !important;
+}
+.fat-booking-container .fat-sb-tab-content-title{
+    display: none;
+}
+.fat-booking-container.medium-size .ui.steps .step .description{
+    display: none;
+}
+.fat-booking-container.medium-size .fat-sb-tab-content-title{
+    display: block;
+}
+
+.fat-booking-container.hide-location .fat-sb-location-item-label{
+    display: none;
+}
+.fat-sb-service-wrap a.fat-sb-next.disabled{
+    background-color: #ddd;
+    color: #8a8a8a;
+}
+.fat-sb-service-wrap a.fat-sb-next:not(.disabled){
+    background-color: #4183C4;
+    color: #fff;
+}
+.fat-sb-service-wrap a.fat-sb-next{
+    padding: 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    top: -10px;
+}
+.fat-sb-service-wrap a.fat-sb-next,
+.fat-sb-service-wrap a.fat-sb-next i{
+    font-weight: 400;
+}
+
+
+.ui.dropdown.fat-loading,
+.fat-loading {
+    position: relative;
+}
+
+.ui.dropdown .ui.button.loading,
+.ui.dropdown .ui.loading.loading.loading.loading.loading.loading.button,
+.fat-loading > .ui.button.loading,
+.fat-loading > .ui.loading.loading.loading.loading.loading.loading.button {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.ui.dropdown .ui.loading.button:before,
+.fat-loading > .ui.loading.button:before {
+    border-color: rgba(0, 0, 0, .3);
+}
+
+.ui.dropdown.fat-loading .dropdown.icon {
+    opacity: 0;
+}
+
+.fat-loading-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.fat-sb-booking-history input[name="c_code"]{
+    padding: 10px 15px !important;
+}
+
+.desc-tooltip{
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    color: #8b8a8a;
+}
+
+[data-tooltip]:after{
+    max-width: 400px;
+    width: 200px;
+    white-space: pre-wrap;
+}
+
+.fat-sb-item .item-title .meta{
+    overflow: inherit !important;
+}

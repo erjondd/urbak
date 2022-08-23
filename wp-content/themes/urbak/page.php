@@ -2,6 +2,9 @@
 
 get_header();
 ?>
+<section class="main-half">
+    <?= the_title() ?>
+</section>
 
 <?php while (have_posts()) : the_post(); ?>
 

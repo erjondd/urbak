@@ -178,10 +178,17 @@ section.reperation-phone {
     }
 }
 section.reperation-type {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    background-color: white;
+    background-color: #fff;
+    padding: 50px 0;
+    .container {
+        width: 100%;
+    }
     .reperation-type-subtittle {
         font-family: satoshi;
         font-size: 25px;
@@ -198,13 +205,13 @@ section.reperation-type {
     .reperation-types {
         display: flex;
         flex-direction: row;
-        a{
+        a {
             text-decoration: none;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
-            color:black;
+            color: black;
         }
     }
     .reperation-smartphones {

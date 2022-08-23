@@ -201,6 +201,14 @@ button.single_add_to_cart_button.button.alt {
     margin-right: 15px;
 }
 
+.woocommerce-cart-form {
+    .quantity {
+        .qty {
+            border: none;
+        }
+    }
+}
+
 //loop of woocommerce products
 .woocommerce {
     ul.products {

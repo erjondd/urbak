@@ -61,9 +61,12 @@ Template Name: Reperation Template
         </div>
     </div>
 </section>
+
 <section class="reperation-type">
     <div class="container">
-        <div class="reperation-type-content">
+
+        <?= do_shortcode("[rp]") ?>
+        <!-- <div class="reperation-type-content">
             <div class="reperation-type-subtittle">Reperation</div>
             <div class="reperation-type-tittle">Reparer mon appareil</div>
             <div class="reperation-types">
@@ -102,7 +105,7 @@ Template Name: Reperation Template
 
 
 
-        </div>
+        </div> -->
 
     </div>
 </section>
