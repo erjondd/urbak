@@ -61,7 +61,7 @@ Template Name: Accessoires Template
                                 $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
                     ?>
                                 <div class="slide-product swiper-slide">
-                                    <a href="<?= get_home_url()  ?>/product-category/<?php $product_category->slug ?>">
+                                    <a href="<?= get_home_url()  ?>/product-category/<?= $product_category->slug ?>">
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">
@@ -120,7 +120,7 @@ Template Name: Accessoires Template
                                 $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
                     ?>
                                 <div class="slide-product swiper-slide">
-                                    <a href="<?= get_home_url()  ?>/product-category/<?php $product_category->slug ?>">
+                                    <a href="<?= get_home_url()  ?>/product-category/<?= $product_category->slug ?>">
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">
@@ -179,7 +179,7 @@ Template Name: Accessoires Template
                                 $cat_thumb_url = wp_get_attachment_thumb_url($cat_thumb_id);
                     ?>
                                 <div class="slide-product swiper-slide">
-                                    <a href="<?= get_home_url()  ?>/product-category/<?php $product_category->slug ?>">
+                                    <a href="<?= get_home_url()  ?>/product-category/<?= $product_category->slug ?>">
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">

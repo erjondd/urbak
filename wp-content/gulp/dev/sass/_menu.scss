@@ -296,10 +296,44 @@ body {
     }
 }
 .fsmenu-languages {
-    display: none;
+    // display: none;
     flex-grow: 1;
     align-items: center;
+    a {
+        color: #000;
+        font-size: 25px;
+        margin: 0px 5px;
+        border-bottom: 1px solid transparent;
+    }
 }
+html {
+    &[lang="en"] {
+        .fsmenu-languages {
+            a {
+                &.en-translate {
+                    border-color: #000;
+                }
+                &.fr-translate {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    &[lang="auto"],
+    &[lang="fr-FR"] {
+        .fsmenu-languages {
+            a {
+                &.en-translate {
+                    border-color: transparent;
+                }
+                &.fr-translate {
+                    border-color: #000;
+                }
+            }
+        }
+    }
+}
+
 .fsmenu-logo {
     padding-top: 35px;
 }
@@ -424,8 +458,7 @@ body {
     &.wocommerce-checkout,
     &.search-menu-open,
     &.search {
-        margin-top: 220px;
-        padding-top: 30px;
+        padding-top: 260px;
         .header-wrapper {
             .header-logo {
                 img {

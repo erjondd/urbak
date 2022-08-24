@@ -41,6 +41,7 @@
                     ));
                     ?>
                 </div>
+          
                 <div class="header-icons">
                     <div class="search-icon">
                         <img class="search-menu-trigger-open" src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" />
@@ -181,7 +182,7 @@
             <div class="fsmenu-close" id="fsmenuclose"><span>Fermer</span></div>
         </div>
         <div class="fsmenu-infos">
-            <div class="fsmenu-languages">Fr / En</div>
+            <div class="fsmenu-languages"><?php echo do_shortcode('[gtranslate]'); ?></div>
             <div class="fsmenu-logo"><img src="<?php echo get_bloginfo('template_url') ?>/images/fsmenu-logo.svg" /></div>
             <div class="fsmenu-telephone">+41 22 314 56 06</div>
             <div class="fsmenu-email">info@urbak.ch</div>

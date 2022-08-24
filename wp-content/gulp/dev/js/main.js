@@ -1,13 +1,10 @@
 jQuery(document).ready(function () {
-
-
-  jQuery("#cart-trigger .cart-icon-img").on('click', function () {
+  jQuery("#cart-trigger .cart-icon-img").on("click", function () {
     const _this = jQuery(this);
     const elm = jQuery(".cart-dropdown");
     elm.toggleClass("cart-open");
-    _this.toggleClass("cart-icon-img-filter")
+    _this.toggleClass("cart-icon-img-filter");
   });
-
 
   jQuery(".extra-menu").on("click", function () {
     const _fsmenu = document.getElementById("fsmenu");
@@ -43,7 +40,7 @@ jQuery(document).ready(function () {
 
   jQuery(document).ready(function () {
     jQuery(".title-desc").click(function () {
-      var tabId = jQuery(this).attr("tab-id")
+      var tabId = jQuery(this).attr("tab-id");
       jQuery(".info-desc").removeClass("show");
       jQuery(".info_desc_" + tabId).addClass("show");
     });
@@ -61,7 +58,6 @@ jQuery(document).ready(function () {
       hide: true,
     },
   });
-
 
   //Homepage Slider
   var homepageSwiper = new Swiper(".swiper-container-home", {
@@ -192,17 +188,46 @@ jQuery(document).ready(function () {
   });
 });
 
-function genColumn(type, title) {
+function genColumn(title, type) {
   var wrapper = document.getElementById("vendre-content");
   var elementString = jQuery.parseHTML(
-    `<div class="vendre-content-form-output">` +
-    `<span class="vendre-title">${type}</span>` +
-    `<span class="vendre-value">${title}</span>` +
-    `</div>`
+    `<div id="${title.toLowerCase()}" class="vendre-content-form-output">` +
+      `<span class="vendre-title">${title}</span>` +
+      `<span class="vendre-value">${type}</span>` +
+      `</div>`
   );
   jQuery(wrapper).append(elementString);
 }
-
+jQuery("#wpforms-form-226 button.wpforms-page-prev").click(function () {
+  const _this = jQuery(this);
+  const dataPage = _this.attr("data-page") - 1;
+  switch (dataPage) {
+    case 1:
+      jQuery("#marque").remove();
+      jQuery("#modele").remove();
+      jQuery("#capacity").remove();
+      break;
+    case 2:
+      jQuery("#votre").remove();
+      break;
+    case 3:
+      jQuery("#ekran").remove();
+      break;
+    case 4:
+      jQuery("#coque").remove();
+      break;
+    case 5:
+      jQuery("#fonctionnel").remove();
+      jQuery("#icloud").remove();
+      jQuery("#batterie").remove();
+      break;
+    case 6:
+      jQuery("#marque").remove();
+      break;
+    default:
+      break;
+  }
+});
 // vendre form javascript
 jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
   const _this = jQuery(this);
@@ -212,21 +237,20 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
   switch (dataPage) {
     case "1":
       var marque = document.getElementById("wpforms-226-field_3").value;
-      var modele = document.getElementById("wpforms-226-field_4").value;
-      var modeleOptions = document.querySelectorAll(
-        "#wpforms-226-field_4 option"
-      )[modele].innerHTML;
-      console.log(modeleOptions[modele].innerHTML);
+      var modele = jQuery(
+        ".wpforms-conditional-show.wpforms-modele select option:selected"
+      ).text();
       var capacity = document.getElementById("wpforms-226-field_7").value;
       genColumn("Marque", marque);
-      genColumn("Modele", modeleOptions);
+      genColumn("Modele", modele);
       genColumn("Capacity", capacity);
+
       break;
     case "2":
       var votre = document.querySelectorAll(
         "#wpforms-226-field_12 input:checked"
       );
-      if (typeof votre !== "undefined") {
+      if (typeof votre !== "undefined" && typeof votre[0] !== "undefined") {
         var votreSelected = votre[0].labels[0].innerHTML;
         genColumn("Votre", votreSelected);
       }
@@ -235,18 +259,17 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
       var ekran = document.querySelectorAll(
         "#wpforms-226-field_14 input:checked"
       );
-      if (typeof ekran !== "undefined") {
+      if (typeof ekran !== "undefined" && typeof ekran[0] !== "undefined") {
         var ekran = ekran[0].labels[0].innerHTML;
         genColumn("Ekran", ekran);
       }
-
 
       break;
     case "4":
       var coque = document.querySelectorAll(
         "#wpforms-226-field_17 input:checked"
       );
-      if (typeof coque !== "undefined") {
+      if (typeof coque !== "undefined" && typeof coque[0] !== "undefined") {
         var coque = coque[0].labels[0].innerHTML;
         genColumn("Coque", coque);
       }
@@ -255,10 +278,31 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
       var fonctionnel = document.querySelectorAll(
         "#wpforms-226-field_19 input:checked"
       );
-      if (typeof fonctionnel !== "undefined") {
+      if (
+        typeof fonctionnel !== "undefined" &&
+        typeof fonctionnel[0] !== "undefined"
+      ) {
         var fonctionnel = fonctionnel[0].labels[0].innerHTML;
         genColumn("Fonctionnel", fonctionnel);
       }
+      var icloud = document.querySelectorAll(
+        "#wpforms-226-field_35 input:checked"
+      );
+      if (typeof icloud !== "undefined" && typeof icloud[0] !== "undefined") {
+        var icloud = icloud[0].labels[0].innerHTML;
+        genColumn("iCloud", icloud);
+      }
+      var batterie = document.getElementById("wpforms-226-field_37").value;
+      var modeleBatterie = document.querySelectorAll(
+        "#wpforms-226-field_37 option"
+      )[batterie].innerHTML;
+      if (
+        typeof modeleBatterie !== "undefined" &&
+        typeof modeleBatterie[0] !== "undefined"
+      ) {
+        genColumn("Batterie", modeleBatterie);
+      }
+
       break;
     case "6":
       break;
@@ -266,17 +310,14 @@ jQuery("#wpforms-form-226 button.wpforms-page-next").click(function () {
     default:
       break;
   }
-
-
 });
-
 
 jQuery(document).mouseup(function (e) {
   var container = jQuery(".cart-dropdown");
 
   // if the target of the click isn't the container nor a descendant of the container
   if (!container.is(e.target) && container.has(e.target).length === 0) {
-    container.removeClass('cart-open');
-    jQuery(".cart-icon-img").removeClass("cart-icon-img-filter")
+    container.removeClass("cart-open");
+    jQuery(".cart-icon-img").removeClass("cart-icon-img-filter");
   }
 });

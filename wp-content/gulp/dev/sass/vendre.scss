@@ -54,7 +54,7 @@ section.vendre {
     }
 }
 section.vendre-section {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -121,11 +121,14 @@ div.wpforms-container-full .wpforms-form .wpforms-page-indicator{
     font-size: 20px;
 }
 #wpforms-226-field_12,
-#wpforms-226-field_19{
+#wpforms-226-field_19,
+#wpforms-226-field_35
+{
     display:flex;
     li{
         display:flex;
         flex:0 0 50%;
+        align-items: center;
     }
 }
 body div.wpforms-container-full .wpforms-form .wpforms-field-label{

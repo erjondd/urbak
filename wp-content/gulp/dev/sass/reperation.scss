@@ -183,11 +183,17 @@ section.reperation-type {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: #fff;
     padding: 50px 0;
     .container {
         width: 100%;
+        min-height: 80vh;
+    }
+    .fat-booking-container{
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .reperation-type-subtittle {
         font-family: satoshi;
