@@ -98,8 +98,7 @@ h4.fat-sb-title {
     font-size: 18px;
 }
 
-.fat-sb-list-brand .fat-sb-item .fat-it-inner .item-title
-.fat-sb-list-model .fat-sb-item .fat-it-inner .item-title{
+.fat-sb-list-brand .fat-sb-item .fat-it-inner .item-title .fat-sb-list-model .fat-sb-item .fat-it-inner .item-title {
     padding-top: 15px;
 }
 
@@ -131,18 +130,32 @@ h4.fat-sb-title {
     margin-bottom: 0px;
 }
 
-
 .fat-sb-flow-layout .field {
     margin-bottom: 10px;
 }
+.fat-sb-flow-layout .fat-sb-go-back {
+    padding: 5px 15px;
+    margin: 30px auto 30px;
+}
 
 .fat-sb-flow-layout .fat-sb-go-back a {
-    font-size: 16px;
+    font-size: 20px;
+    color: #000;
+}
+.fat-sb-flow-layout .fat-sb-go-back a:hover {
+    opacity: 0.4;
 }
 
 .fat-sb-flow-layout .fat-sb-list-garages.fat-sb-item-wrap .fat-sb-item .fat-it-inner {
     height: auto;
-    min-height: 360px;
+    min-height: 160px;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 0 5px 5px #3737370a;
+}
+
+.fat-sb-flow-layout .fat-sb-list-garages.fat-sb-item-wrap .fat-sb-item .fat-it-inner:hover {
+    box-shadow: 0 0 5px 5px #ddd;
 }
 
 .fat-sb-flow-layout .fat-sb-list-garages.fat-sb-item-wrap .fat-sb-item .item-title {
@@ -174,7 +187,6 @@ h4.fat-sb-title {
     width: 900px;
     max-width: 100%;
     color: #343434;
-
 }
 
 .fat-sb-flow-layout .order-wrap-inner .fat-sb-col-left {
@@ -185,7 +197,7 @@ h4.fat-sb-title {
     position: absolute;
     top: 0;
     right: 0px;
-    content: '';
+    content: "";
     width: 1px;
     height: 100%;
     border-right: solid 1px #ddd;
@@ -243,7 +255,6 @@ h4.fat-sb-title {
 .fat-sb-flow-layout .week-header {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .fat-sb-flow-layout .week-day-header {
@@ -262,7 +273,6 @@ h4.fat-sb-title {
 
 .fat-sb-flow-layout .week-date.disabled {
     color: #ddd;
-
 }
 
 .fat-sb-flow-layout .week-date span {
@@ -340,7 +350,7 @@ h4.fat-sb-title {
 
 .gateway-item i.icon.paypal,
 .gateway-item i.icon.stripe {
-    font-family: 'brand-icons' !important;
+    font-family: "brand-icons" !important;
 }
 
 .fat-list-gateway {
@@ -382,12 +392,18 @@ h4.fat-sb-title {
 
 .fat-sb-service-inner .fat-sb-item {
     display: flex;
+    max-height: 150px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 6px;
     box-shadow: 0 0 5px 5px #3737370a;
     margin: 15px;
+}
+
+.fat-sb-service-inner .fat-sb-item:hover  {
+    box-shadow: 0 0 5px 5px #ddd;
 }
 
 .fat-sb-service-inner .fat-sb-item-inner-wrap {
@@ -397,7 +413,7 @@ h4.fat-sb-title {
 }
 
 .fat-sb-service-inner .fat-sb-item-inner-wrap:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 100%;
@@ -409,7 +425,6 @@ h4.fat-sb-title {
 .fat-sb-service-inner .fat-sb-repair-list {
     width: 30%;
     padding-left: 30px;
-
 }
 
 .fat-sb-repair-list ul {
@@ -461,7 +476,7 @@ h4.fat-sb-title {
 }
 
 .fat-sb-repair-list span.service-price a:hover {
-    color: #2185D0;
+    color: #2185d0;
 }
 
 .fat-sb-flow-layout .fat-sb-list-services .fat-sb-item {
@@ -495,7 +510,6 @@ h4.fat-sb-title {
 
 .list-delivery-method.fat-sb-item-wrap .fat-sb-item img {
     top: 33%;
-
 }
 
 .list-delivery-method.fat-sb-item-wrap .fat-sb-item .item-title {
@@ -622,19 +636,18 @@ ul.payment-method-wrap {
     height: 100%;
     background-color: transparent;
     z-index: 99;
-
 }
 
 .fat-sb-appointment-booked-wrap .fat-sb-subtitle {
     margin-top: 30px;
 }
 
-.customer-info-wrap .ui.form .ui.input input{
+.customer-info-wrap .ui.form .ui.input input {
     padding-top: 9px;
     padding-bottom: 9px;
 }
 
-.fat-sb-calendar-time .fat-sb-time-notice{
+.fat-sb-calendar-time .fat-sb-time-notice {
     display: none;
     font-size: 14px;
     color: red;
@@ -643,7 +656,7 @@ ul.payment-method-wrap {
     margin-top: 15px;
 }
 
-.fat-booking-container.hide-payment .repair-summary .payment-method-wrap{
+.fat-booking-container.hide-payment .repair-summary .payment-method-wrap {
     display: none;
 }
 
@@ -667,53 +680,53 @@ ul.payment-method-wrap {
 
 @media (max-width: 767px) {
     .brand-model-step .fat-sb-col-left,
-    .brand-model-step .fat-sb-col-right{
+    .brand-model-step .fat-sb-col-right {
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
     }
 
-    .fat-sb-service-inner{
+    .fat-sb-service-inner {
         flex-wrap: wrap;
     }
     .fat-sb-service-inner .fat-sb-item-inner-wrap,
-    .fat-sb-service-inner .fat-sb-repair-list{
+    .fat-sb-service-inner .fat-sb-repair-list {
         width: 100%;
     }
 
-    .fat-sb-service-inner .fat-sb-item-inner-wrap{
+    .fat-sb-service-inner .fat-sb-item-inner-wrap {
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    .fat-sb-service-inner .fat-sb-repair-list{
+    .fat-sb-service-inner .fat-sb-repair-list {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .fat-sb-service-inner .fat-sb-item-inner-wrap:after{
+    .fat-sb-service-inner .fat-sb-item-inner-wrap:after {
         display: none;
     }
 
     .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-left,
-    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-right{
+    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-right {
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-left:after{
+    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-left:after {
         display: none;
     }
-    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-right{
+    .fat-sb-order-wrap .order-wrap-inner .fat-sb-col-right {
         margin-top: 30px;
     }
 
-    .postal-code-wrap button.fat-bt-next{
+    .postal-code-wrap button.fat-bt-next {
         margin-top: 15px;
     }
 
     .fat-sb-order-wrap.no-appointment-section .location-section-wrap .location-section,
-    .fat-sb-order-wrap.no-appointment-section .location-section-wrap .service-section{
+    .fat-sb-order-wrap.no-appointment-section .location-section-wrap .service-section {
         width: 100%;
         margin-bottom: 15px;
         padding-left: 0px;
