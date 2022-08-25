@@ -1,8 +1,0 @@
-2022-07-25T17:21:03+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\urbak\wp-content\plugins\wpforms/src/WPForms.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\urbak\wp-content\plugins\wpforms\wpforms.php on line 215
-
-2022-07-25T17:21:05+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\urbak\wp-content\plugins\wpforms/src/WPForms.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\urbak\wp-content\plugins\wpforms\wpforms.php on line 215
-
-2022-07-25T17:21:05+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\urbak\wp-content\plugins\wpforms/src/WPForms.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\urbak\wp-content\plugins\wpforms\wpforms.php on line 215
-
-2022-07-25T17:36:30+00:00 CRITICAL syntax error, unexpected 'id' (T_STRING), expecting ']' in C:\xampp\htdocs\urbak\wp-content\themes\urbak\template-vendre.php on line 26
-
