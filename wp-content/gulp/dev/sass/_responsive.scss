@@ -37,6 +37,58 @@
     //     z-index: -1;
     //     width: 100%;
     // }
+    section.vendre-section .vendre-information,
+    .assurance-section-name,
+    .accessoires-smartphones-category .reparation-smartphones-category-title{
+        font-size:25px;
+    }
+    .slide-product a .slide-product-label{
+        font-size:15px;
+    }
+    .accesoires-title{
+        font-size:18px;
+    }
+    body section.accessoires .phone{
+        top: 30%;
+        img{
+            width: 50%;
+        }
+    }
+    body section.accessoires .airpods{
+        right: -400px;
+        top: 25%;
+        img{
+            width: 50%;
+        }
+    }
+    section.acheter .apple-watch {
+        img {
+            width: 60%;
+        }
+    }
+    section.acheter .lights-and-tech .iphone {
+        
+        img {
+            width: 57%;
+        }
+    }
+    .apple-watch {
+        img {
+            width: 60%;
+        }
+    }
+    section.vendre .lights-and-tech .iphone {
+        right: -260px;
+        img {
+            width: 57%;
+        }
+    }
+    .vendre-all-form {
+        flex-direction: column-reverse;
+    }
+    .vendre-content-leftside {
+        padding-bottom: 100px;
+    }
     .woocommerce ul.products[class*="columns-"] li.product,
     .woocommerce-page ul.products[class*="columns-"] li.product {
         margin-right: 5px;
@@ -72,7 +124,9 @@
     }
     body section.reperation-main .reperation-tittle,
     body section.assurance-page .assurance-center-text,
-    body section.vendre .vendre-center-text {
+    body section.vendre .vendre-center-text,
+    body section.acheter .acheter-center-text,
+    body section.accessoires .accessoires-center-text {
         font-size: 90px;
     }
     section.reperation-phone {
@@ -610,12 +664,47 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .navigation-bar{
-        font-size:18px;
+    section.accessoires .phone{
+        top: 20%;
+        img{
+            width: 85%;
+        }
+    }
+    section.accessoires .airpods{
+        right: -100px;
+        img{
+            width: 85%;
+        }
+    }
+    section.acheter .apple-watch {
+        img {
+            width: 85%;
+        }
+    }
+    section.acheter .lights-and-tech .iphone {
+        img {
+            width: 85%;
+        }
+    }
+    
+    .apple-watch {
+        img {
+            width: 85%;
+        }
+    }
+    .iphone {
+        img {
+            width: 85%;
+        }
+    }
+    .navigation-bar {
+        font-size: 18px;
     }
     section.reperation-main .reperation-tittle,
     section.assurance-page .assurance-center-text,
-    section.vendre .vendre-center-text {
+    section.vendre .vendre-center-text,
+    section.acheter .acheter-center-text,
+    section.accessoires .accessoires-center-text {
         font-size: 150px;
     }
     .form-textarea {
@@ -786,8 +875,44 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    .navigation-bar{
-        font-size:15px;
+    section.accessoires .phone{
+        top: 25%;
+        img{
+            width: 65%;
+        }
+    }
+    section.accessoires .airpods{
+        right: -300px;
+        top: 20%;
+        img{
+            width: 65%;
+        }
+    }
+    section.acheter .apple-watch {
+       
+        img {
+            width: 57%;
+        }
+    }
+    section.acheter .lights-and-tech .iphone {
+        right: -260px;
+        img {
+            width: 57%;
+        }
+    }
+    .apple-watch {
+        img {
+            width: 65%;
+        }
+    }
+    section.vendre .lights-and-tech .iphone {
+        right: -170px;
+        img {
+            width: 65%;
+        }
+    }
+    .navigation-bar {
+        font-size: 15px;
     }
     .woocommerce-page div.product div.summary {
         width: 100%;
@@ -821,7 +946,9 @@
     }
     section.reperation-main .reperation-tittle,
     section.assurance-page .assurance-center-text,
-    section.vendre .vendre-center-text  {
+    section.vendre .vendre-center-text,
+    section.acheter .acheter-center-text,
+    section.accessoires .accessoires-center-text {
         font-size: 120px;
     }
     .a-m-text {
@@ -846,7 +973,9 @@
     .ecobike-mid,
     .ecobike-bot a,
     .partner-content,
-    .assurance-bot a {
+    .assurance-bot a,
+    section.reperation-phone .reperation-phone-info,
+    .wpforms-form {
         font-size: 18px;
     }
     .swiper-section,
@@ -866,7 +995,10 @@
     .micro-s-section,
     .ecobike-section,
     .partner-section,
-    .assurance-section {
+    .assurance-section,
+    section.reperation-phone .reperation-phone-tittle,
+    .vendre-information,
+    .contact-wrapper-title {
         font-size: 40px;
     }
     .n-p-f-bottom-slide ul li,
@@ -874,7 +1006,9 @@
         font-size: 25px;
     }
     .about-us-content-bottom,
-    .s-reconditiones-mid {
+    .s-reconditiones-mid,
+    .vendre-title,
+    .vendre-value {
         font-size: 18px;
     }
     .swiper-big-text {
@@ -887,6 +1021,24 @@
     }
 }
 @media screen and (max-width: 450px) {
+    body section.accessoires .phone{
+       displaY:none;
+    }
+    body section.accessoires .airpods{
+        displaY:none;
+    }
+    .apple-watch {
+        display: none;
+    }
+    section.vendre .lights-and-tech .iphone {
+        display: none;
+    }
+    section.acheter .apple-watch {
+        display: none;
+    }
+    section.acheter .lights-and-tech .iphone {
+        display: none;
+    }
     .product_cat-repair .entry-summary .cart .wapf-wrapper .wapf-field-group .wapf-field-row {
         width: 50%;
     }
@@ -901,7 +1053,9 @@
         width: calc(100% / 2 - 45px);
     }
     body section.reperation-main .reperation-tittle,
-    section.assurance-page .assurance-center-text {
+    body section.assurance-page .assurance-center-text,
+    body section.acheter .acheter-center-text,
+    body section.accessoires .accessoires-center-text {
         font-size: 50px;
     }
     section.reperation-phone .reperation-phone-pieces-picture .circle-10 {
