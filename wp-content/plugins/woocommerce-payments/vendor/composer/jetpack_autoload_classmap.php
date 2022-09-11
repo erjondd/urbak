@@ -766,10 +766,6 @@ return array(
 		'version' => '1.6.1.0',
 		'path'    => $vendorDir . '/automattic/jetpack-config/src/class-config.php'
 	),
-	'Automattic\\Jetpack\\Password_Checker' => array(
-		'version' => '0.2.3.0',
-		'path'    => $vendorDir . '/automattic/jetpack-password-checker/src/class-password-checker.php'
-	),
 	'Automattic\\Jetpack\\IdentityCrisis\\UI' => array(
 		'version' => '0.8.4.0',
 		'path'    => $vendorDir . '/automattic/jetpack-identity-crisis/src/class-ui.php'
@@ -781,6 +777,10 @@ return array(
 	'Automattic\\Jetpack\\Identity_Crisis' => array(
 		'version' => '0.8.4.0',
 		'path'    => $vendorDir . '/automattic/jetpack-identity-crisis/src/class-identity-crisis.php'
+	),
+	'Automattic\\Jetpack\\Password_Checker' => array(
+		'version' => '0.2.3.0',
+		'path'    => $vendorDir . '/automattic/jetpack-password-checker/src/class-password-checker.php'
 	),
 	'Automattic\\Jetpack\\Assets\\Logo' => array(
 		'version' => '1.5.14.0',
@@ -890,21 +890,21 @@ return array(
 		'version' => '1.37.3.0',
 		'path'    => $vendorDir . '/automattic/jetpack-connection/src/class-tokens.php'
 	),
-	'Automattic\\Jetpack\\Redirect' => array(
-		'version' => '1.7.12.0',
-		'path'    => $vendorDir . '/automattic/jetpack-redirect/src/class-redirect.php'
-	),
 	'Automattic\\Jetpack\\Admin_UI\\Admin_Menu' => array(
 		'version' => '0.2.5.0',
 		'path'    => $vendorDir . '/automattic/jetpack-admin-ui/src/class-admin-menu.php'
 	),
-	'Automattic\\Jetpack\\Roles' => array(
-		'version' => '1.4.14.0',
-		'path'    => $vendorDir . '/automattic/jetpack-roles/src/class-roles.php'
+	'Automattic\\Jetpack\\Redirect' => array(
+		'version' => '1.7.12.0',
+		'path'    => $vendorDir . '/automattic/jetpack-redirect/src/class-redirect.php'
 	),
 	'Automattic\\Jetpack\\Heartbeat' => array(
 		'version' => '1.4.0.0',
 		'path'    => $vendorDir . '/automattic/jetpack-heartbeat/src/class-heartbeat.php'
+	),
+	'Automattic\\Jetpack\\Roles' => array(
+		'version' => '1.4.14.0',
+		'path'    => $vendorDir . '/automattic/jetpack-roles/src/class-roles.php'
 	),
 	'Jetpack_Tracks_Client' => array(
 		'version' => '1.14.5.0',

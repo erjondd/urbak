@@ -109,18 +109,21 @@ h1.entry-title {
 }
 .woocommerce-product-details__short-description {
     font-family: satoshi;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 .wapf-field-group {
+    margin-bottom: 30px;
     select {
         font-family: satoshi;
-        font-size: 20px;
+        font-size: 18px;
         height: 50px;
         border-radius: 10px;
     }
 }
-.woocommerce-error {
-    display: none;
+.info-desc-wrapper {
+    margin-bottom: 50px;
+    
 }
 .woocommerce-cart {
     .woocommerce {
@@ -246,12 +249,45 @@ button.single_add_to_cart_button.button.alt {
     }
 }
 .info-desc {
+    position: relative;
     &.show {
         .text-desc {
             height: 100%;
             z-index: 11;
             width: 100%;
         }
+        .icon-desc {
+            img{
+                &.minus{
+                    display:flex;
+                }  
+                &.plus{
+                    display:none;
+                } 
+            }
+        }
+    }
+    .icon-desc {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+            object-fit: contain;
+          
+            &.minus{
+                display:none;
+            }
+            &.plus{
+                display:flex;
+            }
+        }
+      
     }
     .text-desc {
         font-family: satoshi;
@@ -265,8 +301,12 @@ button.single_add_to_cart_button.button.alt {
     }
 }
 .title-desc {
-    font-size: 20px;
+   font-size: 20px;
     font-family: satoshi;
+    cursor: pointer;
+    padding: 10px 50px 10px 0px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #A5A5A5;
     cursor: pointer;
 }
 
@@ -741,7 +781,90 @@ div.wpforms-container-full .wpforms-form .wpforms-pagebreak-right .wpforms-page-
         background-color: #333;
     }
 }
-
+section.vendre-section div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+    max-width: 100%;
+}
+section.vendre-section .wpforms-page-6 {
+    input {
+        width: 100%;
+        background: 0 0;
+        height: 40px !important;
+        border-bottom: #000 1px solid !important;
+        color: #000 !important;
+        outline: 0;
+        font-family: satoshi;
+        font-size: 18px !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+    }
+}
+#wpforms-226-field_38-container {
+    display: flex;
+    flex-direction: row;
+}
+section.vendre-section div.wpforms-container-full .wpforms-form button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 30px;
+    font-family: satoshi;
+}
+.wpforms-submit-container {
+    display: flex;
+    justify-content: flex-end;
+}
+section.vendre-section div.wpforms-container-full .wpforms-form .wpforms-field-description {
+    font-size: 100%;
+}
+// form p{
+//     .wpcf7-submit{
+//         padding-right: 20px;
+//     }
+//     position: relative;
+//     &:after {
+//         content: "";
+//         background-image: url(../../../themes/urbak/images/submit-line.svg);
+//         width: 31px;
+//         height: 31px;
+//         position: absolute;
+//         background-repeat: no-repeat;
+//         filter: invert(1);
+//         top: 7px;
+   
+//     }
+// }
+.woocommerce-info{
+    font-family:satoshi;
+    a{
+        text-decoration: none;
+    }
+}
+.woocommerce td.product-name dl.variation p{
+    margin-top: 0px;
+}
+.woocommerce-checkout .woocommerce{
+    font-family:satoshi;
+}
+.woocommerce-terms-and-conditions-wrapper{
+    display:none;
+}
+#wpcf7-f488-o1 form p{
+    &:after {
+        filter: invert(0);
+    }
+}
+section.assurance-form span.wpcf7-list-item {
+    margin: 0 !important;
+}
+.woocommerce-message{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    a{
+        margin-top: 15px !important;
+    }
+}
 // .woocommerce {
 //     .product {
 //         &.product-calendar-view {
@@ -762,3 +885,16 @@ div.wpforms-container-full .wpforms-form .wpforms-pagebreak-right .wpforms-page-
 //         }
 //     }
 // }
+.wapf-field-label{
+    font-size:16px;
+    margin-bottom: 5px;
+}
+.product_cat_accessoires form.cart{
+    display:flex;
+    flex-direction: column;
+}
+.woocommerce button.button.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt{
+    background-color:#000;
+}

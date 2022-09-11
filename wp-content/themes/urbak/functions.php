@@ -7,6 +7,23 @@ function urbak_scripts()
   wp_enqueue_script('urbak-js', get_template_directory_uri() . '/js/bundle.min.js', '', '', true);
 }
 
+add_filter('wpcf7_autop_or_not', '__return_false');
+
+// Renditja e checkout fields
+add_filter( 'woocommerce_checkout_fields', 'misha_email_first' );
+
+function misha_email_first( $checkout_fields ) {
+	$checkout_fields[ 'billing' ][ 'billing_email' ][ 'priority' ] = 30;
+	return $checkout_fields;
+}
+add_filter( 'woocommerce_checkout_fields', 'misha_telephone_first' );
+
+function misha_telephone_first( $checkout_fields ) {
+	$checkout_fields[ 'billing' ][ 'billing_phone' ][ 'priority' ] = 35;
+	return $checkout_fields;
+}
+
+
 
 /*enable svg upload*/
 function add_svg_to_upload_mimes($upload_mimes)

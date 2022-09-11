@@ -21,6 +21,67 @@
     }
 }
 @media screen and (max-width: 768px) {
+    body{
+        width: 100% !important;
+    }
+    .form-inputs{
+        padding-right: 0px !important;
+    }
+    .search-products{
+        grid-template-columns: repeat(2,1fr) !important; 
+    }
+    section.search-section{
+        padding-top: 50px;
+    }
+    .woocommerce-page .site-main{
+        padding-top: 50px;
+      }
+    .partner-form .form-input-row{
+        margin-bottom: 0px;
+        padding-bottom: 0px;;
+      
+    }
+    .partner-form .partner-inputs-wrapper .form-textarea{
+        padding-top: 10px;
+    }
+    .product_cat_accessoires .container .product,
+    .product_cat_acheter .container .product {
+        margin-top: 50px;
+    }
+    div.wpforms-container-full .wpforms-form .wpforms-page-indicator.connector .wpforms-page-indicator-page-title{
+        font-size:13px !important;
+    }
+    .appareil-row .form-input-half:first-child{
+        padding-right: 20px;
+    }
+     .assurance-form.addresse-row
+     {
+        margin-bottom: 0px;
+    }
+    .assurance-form .codepostal-row{
+        margin-bottom: 12px;
+    }
+    .assurance-form .form-input-row{
+        padding-bottom: 0px;
+    }
+    .woocommerce form .form-row{
+        padding-bottom: 20px;
+    }
+    .woocommerce td.product-name dl.variation,
+    .cart-collaterals .cart_totals .woocommerce-shipping-destination{
+        font-size:14px;
+    }
+    .woocommerce-cart .woocommerce-notices-wrapper,
+    .woocommerce-checkout .woocommerce-form-coupon-toggle{
+        padding-top: 50px;
+    }
+    .fsmenu-list ul li.reparation-menulink:before,
+    .fsmenu-list ul li.acheter-menulink:before,
+    .fsmenu-list ul li.vendre-menulink:before,
+    .fsmenu-list ul li.assurance-menulink:before,
+    .fsmenu-list ul li.accessoires-menulink:before{
+        display:none;
+    }
     // .main .lights-and-tech .apple-watch {
     //     position: absolute;
     //     left: -160px;
@@ -37,6 +98,13 @@
     //     z-index: -1;
     //     width: 100%;
     // }
+    footer .rs-top{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .slide-product a img{
+        height:100px !important;
+    }
     section.vendre-section .vendre-information,
     .assurance-section-name,
     .accessoires-smartphones-category .reparation-smartphones-category-title{
@@ -244,7 +312,7 @@
         text-align: left;
         padding-bottom: 40px;
     }
-    section.main .big-text {
+    section.main .big-text a {
         font-size: 20px;
     }
     .main .small-text {
@@ -260,7 +328,7 @@
         font-size: 25px;
     }
     .container .swiper-big-text {
-        font-size: 65px;
+        font-size: 40px;
     }
     .swiper-container-home .swiper-slide .swiper-slider-pic {
         img {
@@ -357,6 +425,10 @@
         padding-top: 50px !important;
         width: 100%;
         padding-bottom: 60px;
+       
+    }
+    .nos-points-forts-bottom{
+        min-height: 190px;
     }
     .about-us-content-top .about-us-pagename,
     .nos-points-forts-top .nos-points-forts-pagename {
@@ -499,13 +571,14 @@
     }
     .form-inputs {
         width: 100%;
+        padding:0px;
     }
     section.partner {
         height: 100%;
     }
     .form-input select {
         height: 50px !important;
-        margin-top: 50px;
+      
     }
     .partner-footer {
         display: flex;
@@ -783,12 +856,12 @@
     .micro-s-mid {
         padding-right: 100px;
     }
-    .form-inputs {
-        padding-right: 40px;
-    }
-    .form-inputs {
-        flex: 0 0 calc(50% - 40px);
-    }
+    // .form-inputs {
+    //     padding-right: 40px;
+    // }
+    // .form-inputs {
+    //     flex: 0 0 calc(50% - 40px);
+    // }
 
     .a-m-text {
         font-size: 90px;
@@ -852,10 +925,10 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .form-textarea textarea {
-        width: 459px;
-        height: 398px;
-    }
+    // .form-textarea textarea {
+    //     width: 459px;
+    //     height: 398px;
+    // }
     section.reperation-phone .reperation-phone-content {
         flex-direction: column;
     }
@@ -875,6 +948,19 @@
     }
 }
 @media screen and (max-width: 1024px) {
+ body .accesoires-title{
+    padding-bottom: 0px;
+    padding-top: 50px;
+ }
+ body .accessoires-smartphones-category{
+    padding-top:0px;
+ }
+    .r-s-c-content .swiper-container{
+        padding:0px !important;
+    }
+    .slide-product a img{
+        height:150px;
+    }
     section.accessoires .phone{
         top: 25%;
         img{
@@ -954,16 +1040,16 @@
     .a-m-text {
         font-size: 70px;
     }
-    .micro-s-top {
-        padding-right: 60px !important;
-    }
+    // .micro-s-top {
+    //     padding-right: 60px !important;
+    // }
     .header-menu {
         display: none !important;
     }
     .acceuil-center-text {
         font-size: 115px;
     }
-    .main .big-text {
+    .main .big-text a{
         font-size: 26px;
     }
     .small-text,
@@ -1020,7 +1106,41 @@
         padding-right: 60px;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+ 
+    .form-textarea{
+        padding-top: 0px;
+    }
+    body section.contact .contact-big-text {
+        font-size: 60px;
+    }
+    section.contact .socials{
+        display:none;
+    }
+    section.contact .email{
+        padding:0px 10px;
+    }
+    section.contact .contact-infos{
+        justify-content: center;
+    }
+   
+    .slide-product a img{
+        height:80px !important;
+        padding:20px 5px;
+    }
+    body .accessoires-smartphones-category{
+        margin-bottom: 30px;
+    }
+    body .reparation-smartphones-category-title{
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+    h1.entry-title{
+        font-size:30px;
+    }
+    .woocommerce div.product p.price{
+        font-size:25px;
+    }
     body section.accessoires .phone{
        displaY:none;
     }
@@ -1045,9 +1165,18 @@
     .category-smartphone {
         min-height: 60px;
         img {
-            max-width: 60px;
-            max-height: 60px;
+            max-width: 100px;
+            max-height: 100px;
         }
+    }
+    .woocommerce ul.products li.product .woocommerce-loop-product__title{
+        font-size:20PX;
+    }
+    .woocommerce ul.products li.product .price{
+        font-size:16px;
+    }
+    .woocommerce-Price-currencySymbol{
+        margin-right: 0px;
     }
     .category-smartphone {
         width: calc(100% / 2 - 45px);

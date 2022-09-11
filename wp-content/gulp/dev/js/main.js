@@ -10,16 +10,19 @@ jQuery(document).ready(function () {
     const _fsmenu = document.getElementById("fsmenu");
     const _body = document.getElementById("body");
     const _onMenu = document.getElementById("onmenu");
-
+    const _html = document.getElementsByTagName("html");
+    jQuery("html").addClass("overflow-menu-hidden");
     _body.classList.add("menu-is-open");
     if (_onMenu !== null) _onMenu.classList.add("is-open");
     if (_fsmenu !== null) _fsmenu.classList.add("is-open");
+    
   });
 
   jQuery("#fsmenuclose").on("click", function () {
     const _elm = document.getElementById("fsmenu");
     const _body = document.getElementById("body");
     _body.classList.remove("menu-is-open");
+    jQuery("html").removeClass("overflow-menu-hidden");
     if (_elm !== null) _elm.classList.remove("is-open");
   });
 
@@ -96,7 +99,7 @@ jQuery(document).ready(function () {
   });
 });
 
-jQuery(".scroll-down").click(function () {
+jQuery("#scroll-down-home").click(function () {
   jQuery("html, body").animate(
     {
       scrollTop: jQuery("#home-slider").offset().top,
@@ -118,6 +121,30 @@ jQuery("#scroll-down-repetation").click(function () {
   jQuery("html, body").animate(
     {
       scrollTop: jQuery("#repetation-phone").offset().top,
+    },
+    1000
+  );
+});
+jQuery("#scroll-down-acheter").click(function () {
+  jQuery("html, body").animate(
+    {
+      scrollTop: jQuery("#acheter-smartphones-category").offset().top,
+    },
+    1000
+  );
+});
+jQuery("#scroll-down-vendre").click(function () {
+  jQuery("html, body").animate(
+    {
+      scrollTop: jQuery("#vendre-section").offset().top,
+    },
+    1000
+  );
+});
+jQuery("#scroll-down-accessoires").click(function () {
+  jQuery("html, body").animate(
+    {
+      scrollTop: jQuery("#accessoires-section").offset().top,
     },
     1000
   );
@@ -320,4 +347,35 @@ jQuery(document).mouseup(function (e) {
     container.removeClass("cart-open");
     jQuery(".cart-icon-img").removeClass("cart-icon-img-filter");
   }
+});
+
+
+jQuery(".second-one").mouseenter(function(){
+
+
+
+});
+jQuery(".second-one").mouseenter(function(){
+  jQuery(".first-one-text").removeClass("active-text");
+  jQuery(".third-one-text").removeClass("active-text");
+  jQuery(".second-one-text").addClass("active-text");
+  jQuery(".first-one").removeClass("with-opacity");
+});
+jQuery(".second-one").mouseleave(function(){
+  jQuery(".first-one-text").addClass("active-text");
+  jQuery(".third-one-text").removeClass("active-text");
+  jQuery(".second-one-text").removeClass("active-text");
+  jQuery(".first-one").addClass("with-opacity");
+});
+jQuery(".third-one").mouseenter(function(){
+  jQuery(".first-one-text").removeClass("active-text");
+  jQuery(".third-one-text").addClass("active-text");
+  jQuery(".second-one-text").removeClass("active-text");
+  jQuery(".first-one").removeClass("with-opacity");
+});
+jQuery(".third-one").mouseleave(function(){
+  jQuery(".first-one-text").addClass("active-text");
+  jQuery(".third-one-text").removeClass("active-text");
+  jQuery(".second-one-text").removeClass("active-text");
+  jQuery(".first-one").addClass("with-opacity");
 });

@@ -146,10 +146,36 @@ section.assurance-form {
   }
   .form-input-row .form-input select{
     width:50%;
+  
   }
   .full-width{
     width: 100%  !important;
   }
+}
+.appareil-row{
+  flex-direction: column;
+}
+.both-forms{
+  display: flex;
+}
+.appareil {
+  font-family: satoshi;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 7px;
+}
+.assurance-form-rows .checkbox-row {
+  margin-bottom: 0px;
+}
+.conditions-link{
+  margin-bottom: 50px;
+  a{
+    color:white;
+    font-family:satoshi;
+  }
+}
+.assurance-form .form-input select option{
+  color:black;
 }
 .special-select{
   margin-left: 10px;

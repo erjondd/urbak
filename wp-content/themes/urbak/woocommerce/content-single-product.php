@@ -50,7 +50,7 @@ if (in_array(24, $category_ids)) {
 
 
 <div class="container">
-	<?= "<h1>Here</h1>" ?>
+
 
 	<?php
 	do_action('woocommerce_before_single_product');

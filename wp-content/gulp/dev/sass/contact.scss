@@ -59,7 +59,10 @@ section.contact {
     width: 50%;
     padding-top: 95px;
 }
-
+.message-textarea .form-input\>.\<span.class\={
+    width: 100%;
+  
+}
 .form-input input,
 .form-input select,
 textarea {
@@ -74,6 +77,8 @@ textarea {
     border-left: none;
     border-right: none;
     border-top: none;
+    border-radius: 0px;
+    max-width: 100%;
     &::placeholder {
         font-family: satoshi;
         font-size: 18px;
@@ -119,7 +124,4 @@ textarea {
     justify-content: space-between;
     display:flex;
     flex-direction: column;
-}
-.contact-form-wrapper .form-input-row  textarea{
-    max-height:200px;
 }

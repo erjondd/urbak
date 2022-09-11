@@ -20,11 +20,11 @@ Template Name: Acheter Template
         <div class="acheter-center-text">Acheter</div>
 
     </div>
-    <div class="scroll-down" id="scroll-down"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
+    <div class="scroll-down" id="scroll-down-acheter"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
 </section>
 
 
-<section class="acheter-smartphones-category">
+<section class="acheter-smartphones-category" id="acheter-smartphones-category">
     <div class="container">
         <div class="reparation-smartphones-category-title">
             Category

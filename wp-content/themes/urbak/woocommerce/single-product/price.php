@@ -23,21 +23,4 @@ global $product;
 
 ?>
 <p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p></div>
-<?php
-$description_infos = get_field("description_infos");
-$count = 0;
-if (have_rows('description_infos')) {
-	while (have_rows('description_infos')) : the_row();
-		$title = get_sub_field('title');
-		$text = get_sub_field('text');
-		
-?>
-		<div class="info-desc info_desc_<?=  $count  ?>" >
-			<div class="title-desc"	tab-id="<?=  $count  ?>"><?= $title; ?></div>
-			<div class="text-desc"><?= $text; ?></div>
-		</div>
-<?php 
-$count++ ;
-	endwhile;
-}
-?>
+

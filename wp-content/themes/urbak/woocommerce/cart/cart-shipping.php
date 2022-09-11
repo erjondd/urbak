@@ -26,7 +26,6 @@ foreach ($items as $item => $values) {
 	array_push($category_ids, $_product->category_ids);
 }
 
-print_r($category_ids);
 
 $formatted_destination    = isset($formatted_destination) ? $formatted_destination : WC()->countries->get_formatted_address($package['destination'], ', ');
 $has_calculated_shipping  = !empty($has_calculated_shipping);

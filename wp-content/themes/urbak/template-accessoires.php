@@ -25,11 +25,11 @@ Template Name: Accessoires Template
         </div>
 
     </div>
-    <div class="scroll-down" id="scroll-down">
+    <div class="scroll-down" id="scroll-down-accessoires">
         <img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" />
     </div>
 </section>
-<section class="accessoires-smartphones-category">
+<section class="accessoires-smartphones-category" id="accessoires-section">
     <div class="container">
         <div class="accesoires-title">
             Accessoires
@@ -65,7 +65,7 @@ Template Name: Accessoires Template
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">
-                                                <?= $product_category->slug ?>
+                                                <?= $product_category->name ?>
                                             </span>
                                         </div>
                                     </a>
@@ -124,7 +124,7 @@ Template Name: Accessoires Template
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">
-                                                <?= $product_category->slug ?>
+                                                <?= $product_category->name ?>
                                             </span>
                                         </div>
                                     </a>
@@ -183,7 +183,7 @@ Template Name: Accessoires Template
                                         <div class="slide-product-box">
                                             <img src="<?= $cat_thumb_url ?>">
                                             <span class="slide-product-label">
-                                                <?= $product_category->slug ?>
+                                                <?= $product_category->name ?>
                                             </span>
                                         </div>
                                     </a>

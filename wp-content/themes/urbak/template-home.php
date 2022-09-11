@@ -19,13 +19,13 @@ Template Name: Homepage Template
         <div class="acceuil-center-text">We got your back.</div>
         <div class="acceuil-text">
             <div class="big-text">
-                <div class="text">Prendre un Rendez-vous</div>
+                <div class="text"><a href="<?php echo get_option('home') ?>/reparation">Prendre un Rendez-vous</a></div>
                 <div class="right-arrow"><img src="<?php echo get_bloginfo('template_url') ?>/images/right-arrow.svg" /></div>
             </div>
             <div class="small-text">Nos experts reparent vos </br>appareils sur place ou a</br> domicile.</div>
         </div>
     </div>
-    <div class="scroll-down" id="scroll-down"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
+    <div class="scroll-down" id="scroll-down-home"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
 </section>
 <section class="home-slider" id="home-slider">
 
@@ -137,21 +137,29 @@ Template Name: Homepage Template
             </div>
             <div class="n-p-f-bottom-slide">
                 <ul>
-                    <li>
+                    <li class="first-one with-opacity">
                         Satisfaction client <span class="showed-arrow"><img src="<?php echo get_bloginfo('template_url') ?>/images/arrow-hover.svg" /></span>
                     </li>
-                    <li>
+                    <li class="second-one">
                         Economie de temps<span><img src="<?php echo get_bloginfo('template_url') ?>/images/arrow-hover.svg" /></span>
                     </li>
-                    <li>
+                    <li class="third-one">
                         Eco-Friendly<span><img src="<?php echo get_bloginfo('template_url') ?>/images/arrow-hover.svg" /></span>
                     </li>
                 </ul>
             </div>
             <div class="nos-points-forts-bottom">
-
-                <div class="n-p-f-bottom-text">
+                <div class="n-p-f-bottom-text first-one-text active-text">
                     Votre satisfaction est le principe directeur de notre société. C’est pour cette raison que tous nos produits ainsi que nos services sont garantis (Voir conditions). Il est fondamental pour nous, de vous proposer les produits d’une excellente qualité.
+                </div>
+                <div class="n-p-f-bottom-text second-one-text">
+                    URBAK vous garantit les prix les plus attractifs en Suisse romande !
+                    Vous avez trouvé un tarif plus bas ailleurs ?
+                    Nous nous alignons dessus et vous offrons 10% de réduction. (Voir conditions)
+                </div>
+                <div class="n-p-f-bottom-text third-one-text">
+                    URBAK s’efforce de contribuer au bien-être environnemental. L’équipe URBAK a en effet pour objectif de réduire les déchets électroniques en offrant la possibilité d’acheter des smartphones reconditionnés. De plus, tous nos spécialistes se déplacent en EcoBike 100% écologique.
+                    Tous les écrans, les batteries et autres composants usagés et issus des réparations sont entièrement recyclés.
                 </div>
             </div>
         </div>
@@ -180,7 +188,7 @@ Template Name: Homepage Template
 
             </div>
             <div class="s-reconditiones-bot">
-                <a>Acheter un smartphone</a>
+                <a href="<?php echo get_option('home') ?>/acheter">Acheter un smartphone</a>
             </div>
         </div>
     </div>
@@ -200,7 +208,7 @@ Template Name: Homepage Template
                 Votre téléphone ne s’allume plus et il n’y a pas de défaut apparent ?
             </div>
             <div class="micro-s-bot">
-                <a>Contactez-nous</a>
+                <a href="<?php echo get_option('home') ?>/contact">Contactez-nous</a>
             </div>
         </div>
         <div class="micro-s-image">
@@ -242,73 +250,9 @@ Template Name: Homepage Template
         </div>
         <div class="partner-content">
             <div class="partner-form">
-                <div class="partner-header">
-                    <div class="form-input-row">
-                        <div class="form-input">
-                            <label>
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                Je suis une société de réparation
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-inputs-wrapper">
-                    <div class="form-inputs">
-                        <div class="form-input-row ">
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="Nom de l’entreprise" name="company-name">
-                            </div>
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="Domaine d’activité" name="field-of-activity">
-                            </div>
-                        </div>
-                        <div class="form-input-row ">
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="E-mail" name="e-mail">
-                            </div>
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="Téléphone" name="telephone">
-                            </div>
-                        </div>
-                        <div class="form-input-row ">
-                            <div class="form-input form-input-full">
-                                <input type="text" placeholder="Taille de l’entreprise" name="size-of-company">
-                            </div>
-                        </div>
-                        <div class="form-input-row">
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="Pays" name="country">
-                            </div>
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="Ville" name="city">
-                            </div>
-                        </div>
-                        <div class="form-input-row ">
-                            <div class="form-input form-input-full">
-                                <input type="text" placeholder="Adresse" name="address">
-                            </div>
-                        </div>
-                        <div class="form-input-row">
-                            <div class="form-input form-input-half">
-                                <input type="text" placeholder="N° de rue" name="street-number">
-                            </div>
-                            <div class="form-input form-input-half">
-                                <select name="code-postal" placeholder="Code postal">
-                                    <option value="123">Code Postal</option>
-                                 
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-textarea">
-                        <label>Message</label>
-                        <textarea name="message" rows="10" cols="30"></textarea>
-                    </div>
-                </div>
-                <div class="partner-footer">
-                    Envoyer<span> <img src="<?php echo get_bloginfo('template_url') ?>/images/partner-arrow.svg" /></span>
-                </div>
+                <?php echo apply_shortcodes('[contact-form-7 id="532" title="Homepage Contact Form"]'); ?>
+
+                
 
             </div>
         </div>
@@ -334,7 +278,7 @@ Template Name: Homepage Template
                 </div>
             </div>
             <div class="assurance-bot">
-                <a>Acheter un smartphone</a>
+                <a href="<?php echo get_option('home') ?>/acheter">Acheter un smartphone</a>
             </div>
         </div>
     </div>

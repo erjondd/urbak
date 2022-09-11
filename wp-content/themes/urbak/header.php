@@ -31,7 +31,7 @@
             <div class="header-wrapper">
                 <div class="header-logo">
                     <a href="<?= get_home_url() ?>">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/images/logo.svg" />
+                        <img src="<?php echo get_bloginfo('template_url') ?>/images/logoo.png" />
                     </a>
                 </div>
                 <div class="header-menu">
@@ -159,7 +159,7 @@
                 <div class="extra-menu">Menu</div>
             </div>
             <div class="extra-search">
-                <form role="search" method="get" id="searchform" class="extra-search-content" action="http://localhost/urbak/">
+                <form role="search" method="get" id="searchform" class="extra-search-content" action="http://julifer.host">
                     <input type="text" value="" placeholder="Search..." name="s" id="s">
                     <button type="submit" class="search-input-icon"><img src="<?php echo get_bloginfo('template_url') ?>/images/search-icon1.svg" /></button>
                 </form>
@@ -196,7 +196,7 @@
         <div class="footer-onmenu" id="onmenu">
             <div class="onmenu-first-col">
                 <div class="onmenu-logo">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/images/onmenu-logo.svg" />
+                    <img src="<?php echo get_bloginfo('template_url') ?>/images/logo-footer.png" />
                 </div>
                 <div class="onmenu-infos">
                     <div class="onmenu-info">+41 22 314 56 06</div>

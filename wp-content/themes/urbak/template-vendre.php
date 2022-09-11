@@ -17,9 +17,9 @@ Template Name: Vendre Template
         </div>
         <div class="vendre-center-text">Vendre</div>
     </div>
-    <div class="scroll-down" id="scroll-down"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
+    <div class="scroll-down" id="scroll-down-vendre"><img src="<?php echo get_bloginfo('template_url') ?>/images/scroll-down.png" /></div>
 </section>
-<section class="vendre-section">
+<section class="vendre-section"  id="vendre-section">
     <div class="container">
         <div class="vendre-content">
             <div class="vendre-content-top">

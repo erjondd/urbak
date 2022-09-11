@@ -1,8 +1,4 @@
-<?php
-if (is_page('150')) {
-	echo "Cart page";
-}
-?>
+
 <div class="container">
 	<?php
 	/**
@@ -29,7 +25,7 @@ if (is_page('150')) {
 		array_push($category_ids, $_product->category_ids);
 	}
 
-	print_r($category_ids);
+
 	?>
 
 	<?php
